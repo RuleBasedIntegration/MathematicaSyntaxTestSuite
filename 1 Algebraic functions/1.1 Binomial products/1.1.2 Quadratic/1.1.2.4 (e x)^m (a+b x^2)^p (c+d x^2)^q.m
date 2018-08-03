@@ -164,7 +164,7 @@
 
 {(1 + x^2)/(16 + x^2)^3, x, 3, -((15*x)/(64*(16 + x^2)^2)) + (19*x)/(2048*(16 + x^2)) + (19*ArcTan[x/4])/8192}
 
-{(1 + 2*x^2)/(x^5*(1 + x^2)^3), x, 1, -1/(4*x^4*(1 + x^2)^2)}
+{(1 + 2*x^2)/(x^5*(1 + x^2)^3), x, 2, -1/(4*x^4*(1 + x^2)^2)}
 
 
 {(1 - x^2)^2/(-1 + x^2)^2, x, 2, x}
@@ -856,9 +856,9 @@
 {(A + B*x^2)/(x^2*(a + b*x^2)^(3/2)), x, 2, -(A/(a*x*Sqrt[a + b*x^2])) - ((2*A*b - a*B)*x)/(a^2*Sqrt[a + b*x^2])}
 {(A + B*x^2)/(x^3*(a + b*x^2)^(3/2)), x, 5, -((3*A*b - 2*a*B)/(2*a^2*Sqrt[a + b*x^2])) - A/(2*a*x^2*Sqrt[a + b*x^2]) + ((3*A*b - 2*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(2*a^(5/2))}
 {(A + B*x^2)/(x^4*(a + b*x^2)^(3/2)), x, 3, -(A/(3*a*x^3*Sqrt[a + b*x^2])) + (4*A*b - 3*a*B)/(3*a^2*x*Sqrt[a + b*x^2]) + (2*b*(4*A*b - 3*a*B)*x)/(3*a^3*Sqrt[a + b*x^2])}
-{(A + B*x^2)/(x^5*(a + b*x^2)^(3/2)), x, 6, -(A/(4*a*x^4*Sqrt[a + b*x^2])) - (5*A*b - 4*a*B)/(4*a^2*x^2*Sqrt[a + b*x^2]) + (3*(5*A*b - 4*a*B)*Sqrt[a + b*x^2])/(8*a^3*x^2) - (3*b*(5*A*b - 4*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(8*a^(7/2))}
+{(A + B*x^2)/(x^5*(a + b*x^2)^(3/2)), x, 6, (3*b*(5*A*b - 4*a*B))/(8*a^3*Sqrt[a + b*x^2]) - A/(4*a*x^4*Sqrt[a + b*x^2]) + (5*A*b - 4*a*B)/(8*a^2*x^2*Sqrt[a + b*x^2]) - (3*b*(5*A*b - 4*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(8*a^(7/2))}
 {(A + B*x^2)/(x^6*(a + b*x^2)^(3/2)), x, 4, -(A/(5*a*x^5*Sqrt[a + b*x^2])) + (6*A*b - 5*a*B)/(15*a^2*x^3*Sqrt[a + b*x^2]) - (4*b*(6*A*b - 5*a*B))/(15*a^3*x*Sqrt[a + b*x^2]) - (8*b^2*(6*A*b - 5*a*B)*x)/(15*a^4*Sqrt[a + b*x^2])}
-{(A + B*x^2)/(x^7*(a + b*x^2)^(3/2)), x, 7, -(A/(6*a*x^6*Sqrt[a + b*x^2])) - (7*A*b - 6*a*B)/(6*a^2*x^4*Sqrt[a + b*x^2]) + (5*(7*A*b - 6*a*B)*Sqrt[a + b*x^2])/(24*a^3*x^4) - (5*b*(7*A*b - 6*a*B)*Sqrt[a + b*x^2])/(16*a^4*x^2) + (5*b^2*(7*A*b - 6*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(16*a^(9/2))}
+{(A + B*x^2)/(x^7*(a + b*x^2)^(3/2)), x, 7, -((5*b^2*(7*A*b - 6*a*B))/(16*a^4*Sqrt[a + b*x^2])) - A/(6*a*x^6*Sqrt[a + b*x^2]) + (7*A*b - 6*a*B)/(24*a^2*x^4*Sqrt[a + b*x^2]) - (5*b*(7*A*b - 6*a*B))/(48*a^3*x^2*Sqrt[a + b*x^2]) + (5*b^2*(7*A*b - 6*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(16*a^(9/2))}
 {(A + B*x^2)/(x^8*(a + b*x^2)^(3/2)), x, 5, -(A/(7*a*x^7*Sqrt[a + b*x^2])) + (8*A*b - 7*a*B)/(35*a^2*x^5*Sqrt[a + b*x^2]) - (2*b*(8*A*b - 7*a*B))/(35*a^3*x^3*Sqrt[a + b*x^2]) + (8*b^2*(8*A*b - 7*a*B))/(35*a^4*x*Sqrt[a + b*x^2]) + (16*b^3*(8*A*b - 7*a*B)*x)/(35*a^5*Sqrt[a + b*x^2])}
 
 
@@ -874,7 +874,7 @@
 {(A + B*x^2)/(x^2*(a + b*x^2)^(5/2)), x, 3, -(A/(a*x*(a + b*x^2)^(3/2))) - ((4*A*b - a*B)*x)/(3*a^2*(a + b*x^2)^(3/2)) - (2*(4*A*b - a*B)*x)/(3*a^3*Sqrt[a + b*x^2])}
 {(A + B*x^2)/(x^3*(a + b*x^2)^(5/2)), x, 6, -(5*A*b - 2*a*B)/(6*a^2*(a + b*x^2)^(3/2)) - A/(2*a*x^2*(a + b*x^2)^(3/2)) - (5*A*b - 2*a*B)/(2*a^3*Sqrt[a + b*x^2]) + ((5*A*b - 2*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(2*a^(7/2))}
 {(A + B*x^2)/(x^4*(a + b*x^2)^(5/2)), x, 4, -(A/(3*a*x^3*(a + b*x^2)^(3/2))) + (2*A*b - a*B)/(a^2*x*(a + b*x^2)^(3/2)) + (4*b*(2*A*b - a*B)*x)/(3*a^3*(a + b*x^2)^(3/2)) + (8*b*(2*A*b - a*B)*x)/(3*a^4*Sqrt[a + b*x^2])}
-{(A + B*x^2)/(x^5*(a + b*x^2)^(5/2)), x, 7, -A/(4*a*x^4*(a + b*x^2)^(3/2)) - (7*A*b - 4*a*B)/(12*a^2*x^2*(a + b*x^2)^(3/2)) - (5*(7*A*b - 4*a*B))/(12*a^3*x^2*Sqrt[a + b*x^2]) + (5*(7*A*b - 4*a*B)*Sqrt[a + b*x^2])/(8*a^4*x^2) - (5*b*(7*A*b - 4*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(8*a^(9/2))}
+{(A + B*x^2)/(x^5*(a + b*x^2)^(5/2)), x, 7, (5*b*(7*A*b - 4*a*B))/(24*a^3*(a + b*x^2)^(3/2)) - A/(4*a*x^4*(a + b*x^2)^(3/2)) + (7*A*b - 4*a*B)/(8*a^2*x^2*(a + b*x^2)^(3/2)) + (5*b*(7*A*b - 4*a*B))/(8*a^4*Sqrt[a + b*x^2]) - (5*b*(7*A*b - 4*a*B)*ArcTanh[Sqrt[a + b*x^2]/Sqrt[a]])/(8*a^(9/2))}
 {(A + B*x^2)/(x^6*(a + b*x^2)^(5/2)), x, 5, -(A/(5*a*x^5*(a + b*x^2)^(3/2))) + (8*A*b - 5*a*B)/(15*a^2*x^3*(a + b*x^2)^(3/2)) - (2*b*(8*A*b - 5*a*B))/(5*a^3*x*(a + b*x^2)^(3/2)) - (8*b^2*(8*A*b - 5*a*B)*x)/(15*a^4*(a + b*x^2)^(3/2)) - (16*b^2*(8*A*b - 5*a*B)*x)/(15*a^5*Sqrt[a + b*x^2])}
 
 
@@ -960,7 +960,7 @@
 {(a + b*x^2)^2/(x^4*(c + d*x^2)^(3/2)), x, 3, -(a^2/(3*c*x^3*Sqrt[c + d*x^2])) - (2*a*(3*b*c - 2*a*d))/(3*c^2*x*Sqrt[c + d*x^2]) + ((3*b^2*c^2 - 4*a*d*(3*b*c - 2*a*d))*x)/(3*c^3*Sqrt[c + d*x^2])}
 {(a + b*x^2)^2/(x^5*(c + d*x^2)^(3/2)), x, 6, (8*b^2*c^2 - 3*a*d*(8*b*c - 5*a*d))/(8*c^3*Sqrt[c + d*x^2]) - a^2/(4*c*x^4*Sqrt[c + d*x^2]) - (a*(8*b*c - 5*a*d))/(8*c^2*x^2*Sqrt[c + d*x^2]) - ((8*b^2*c^2 - 3*a*d*(8*b*c - 5*a*d))*ArcTanh[Sqrt[c + d*x^2]/Sqrt[c]])/(8*c^(7/2))}
 {(a + b*x^2)^2/(x^6*(c + d*x^2)^(3/2)), x, 4, -(a^2/(5*c*x^5*Sqrt[c + d*x^2])) - (2*a*(5*b*c - 3*a*d))/(15*c^2*x^3*Sqrt[c + d*x^2]) - (15*b^2*c^2 - 8*a*d*(5*b*c - 3*a*d))/(15*c^3*x*Sqrt[c + d*x^2]) - (2*d*(15*b^2*c^2 - 8*a*d*(5*b*c - 3*a*d))*x)/(15*c^4*Sqrt[c + d*x^2])}
-{(a + b*x^2)^2/(x^7*(c + d*x^2)^(3/2)), x, 7, -(a^2/(6*c*x^6*Sqrt[c + d*x^2])) - (a*(12*b*c - 7*a*d))/(24*c^2*x^4*Sqrt[c + d*x^2]) + (24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d))/(24*c^3*x^2*Sqrt[c + d*x^2]) - ((24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d))*Sqrt[c + d*x^2])/(16*c^4*x^2) + (d*(24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d))*ArcTanh[Sqrt[c + d*x^2]/Sqrt[c]])/(16*c^(9/2))}
+{(a + b*x^2)^2/(x^7*(c + d*x^2)^(3/2)), x, 7, -((d*(24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d)))/(16*c^4*Sqrt[c + d*x^2])) - a^2/(6*c*x^6*Sqrt[c + d*x^2]) - (a*(12*b*c - 7*a*d))/(24*c^2*x^4*Sqrt[c + d*x^2]) - (24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d))/(48*c^3*x^2*Sqrt[c + d*x^2]) + (d*(24*b^2*c^2 - 5*a*d*(12*b*c - 7*a*d))*ArcTanh[Sqrt[c + d*x^2]/Sqrt[c]])/(16*c^(9/2))}
 
 
 {(x^4*(a + b*x^2)^2)/(c + d*x^2)^(5/2), x, 6, ((b*c - a*d)^2*x^5)/(3*c*d^2*(c + d*x^2)^(3/2)) + ((35*b^2*c^2 - 40*a*b*c*d + 8*a^2*d^2)*x^3)/(12*c*d^3*Sqrt[c + d*x^2]) + (b^2*x^5)/(4*d^2*Sqrt[c + d*x^2]) - ((35*b^2*c^2 - 40*a*b*c*d + 8*a^2*d^2)*x*Sqrt[c + d*x^2])/(8*c*d^4) + ((35*b^2*c^2 - 40*a*b*c*d + 8*a^2*d^2)*ArcTanh[(Sqrt[d]*x)/Sqrt[c + d*x^2]])/(8*d^(9/2))}
@@ -1428,10 +1428,10 @@
 (*p>0*)
 
 
-{x^5*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 6, ((5*b^2*c^2 + 2*a*b*c*d + a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*b^2*d^3) - ((5*b*c + 3*a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*b^2*d^2) + (x^2*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(6*b*d) - ((b*c - a*d)*(5*b^2*c^2 + 2*a*b*c*d + a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*b^(5/2)*d^(7/2))}
-{x^3*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 5, -((3*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*b*d^2) + ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*b*d) + ((b*c - a*d)*(3*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*b^(3/2)*d^(5/2))}
-{x^1*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 4, (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*d) - ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*Sqrt[b]*d^(3/2))}
-{1/x^1*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 6, -((Sqrt[a]*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c]) + (Sqrt[b]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
+{x^5*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 7, ((5*b^2*c^2 + 2*a*b*c*d + a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*b^2*d^3) - ((5*b*c + 3*a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*b^2*d^2) + (x^2*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(6*b*d) - ((b*c - a*d)*(5*b^2*c^2 + 2*a*b*c*d + a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*b^(5/2)*d^(7/2))}
+{x^3*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 6, -((3*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*b*d^2) + ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*b*d) + ((b*c - a*d)*(3*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*b^(3/2)*d^(5/2))}
+{x^1*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 5, (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*d) - ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*Sqrt[b]*d^(3/2))}
+{1/x^1*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 8, -((Sqrt[a]*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c]) + (Sqrt[b]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
 {1/x^3*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 4, -((Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*c*x^2)) - ((b*c - a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*Sqrt[a]*c^(3/2))}
 {1/x^5*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 5, ((b*c + 3*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*a*c^2*x^2) - ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*a*c*x^4) + ((b*c - a*d)*(b*c + 3*a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(8*a^(3/2)*c^(5/2))}
 
@@ -1441,11 +1441,11 @@
 {1/x^4*(a + b*x^2)^(1/2)/Sqrt[c + d*x^2], x, 6, (d*(b*c - 2*a*d)*x*Sqrt[a + b*x^2])/(3*a*c^2*Sqrt[c + d*x^2]) - (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*c*x^3) - ((b*c - 2*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*a*c^2*x) - (Sqrt[d]*(b*c - 2*a*d)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*a*c^(3/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) - (b*Sqrt[d]*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*a*Sqrt[c]*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
 
 
-{x^5*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 7, -(((b*c - a*d)*(35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(128*b^2*d^4)) + ((35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(192*b^2*d^3) - ((7*b*c + 3*a*d)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(48*b^2*d^2) + (x^2*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(8*b*d) + ((b*c - a*d)^2*(35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(128*b^(5/2)*d^(9/2))}
-{x^3*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 6, ((b*c - a*d)*(5*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*b*d^3) - ((5*b*c + a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*b*d^2) + ((a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(6*b*d) - ((b*c - a*d)^2*(5*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*b^(3/2)*d^(7/2))}
-{x^1*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 5, -((3*(b*c - a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*d^2)) + ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*d) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*Sqrt[b]*d^(5/2))}
-{1/x^1*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 7, (b*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*d) - (a^(3/2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c] - (Sqrt[b]*(b*c - 3*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*d^(3/2))}
-{1/x^3*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 7, -((a*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*c*x^2)) - (Sqrt[a]*(3*b*c - a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*c^(3/2)) + (b^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
+{x^5*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 8, -(((b*c - a*d)*(35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(128*b^2*d^4)) + ((35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(192*b^2*d^3) - ((7*b*c + 3*a*d)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(48*b^2*d^2) + (x^2*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(8*b*d) + ((b*c - a*d)^2*(35*b^2*c^2 + 10*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(128*b^(5/2)*d^(9/2))}
+{x^3*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 7, ((b*c - a*d)*(5*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*b*d^3) - ((5*b*c + a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*b*d^2) + ((a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(6*b*d) - ((b*c - a*d)^2*(5*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*b^(3/2)*d^(7/2))}
+{x^1*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 6, -((3*(b*c - a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*d^2)) + ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*d) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*Sqrt[b]*d^(5/2))}
+{1/x^1*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 8, (b*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*d) - (a^(3/2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c] - (Sqrt[b]*(b*c - 3*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*d^(3/2))}
+{1/x^3*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 8, -((a*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*c*x^2)) - (Sqrt[a]*(3*b*c - a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*c^(3/2)) + (b^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
 {1/x^5*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 5, -((3*(b*c - a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*c^2*x^2)) - ((a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*c*x^4) - (3*(b*c - a*d)^2*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(8*Sqrt[a]*c^(5/2))}
 
 {x^4*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 7, -((2*(2*b*c - a*d)*(4*b^2*c^2 - 4*a*b*c*d - a^2*d^2)*x*Sqrt[a + b*x^2])/(35*b^2*d^3*Sqrt[c + d*x^2])) + ((8*b^2*c^2 - 11*a*b*c*d + a^2*d^2)*x*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(35*b*d^3) - (2*(3*b*c - 4*a*d)*x^3*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(35*d^2) + (b*x^5*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(7*d) + (2*Sqrt[c]*(2*b*c - a*d)*(4*b^2*c^2 - 4*a*b*c*d - a^2*d^2)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(35*b^2*d^(7/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) - (c^(3/2)*(8*b^2*c^2 - 11*a*b*c*d + a^2*d^2)*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(35*b*d^(7/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
@@ -1454,12 +1454,12 @@
 {1/x^4*(a + b*x^2)^(3/2)/Sqrt[c + d*x^2], x, 6, (2*d*(2*b*c - a*d)*x*Sqrt[a + b*x^2])/(3*c^2*Sqrt[c + d*x^2]) - (a*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*c*x^3) - (2*(2*b*c - a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*c^2*x) - (2*Sqrt[d]*(2*b*c - a*d)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*c^(3/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) + (b*(3*b*c - a*d)*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*a*Sqrt[c]*Sqrt[d]*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
 
 
-{x^5*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, ((b*c - a*d)^2*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(256*b^2*d^5) - ((b*c - a*d)*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(384*b^2*d^4) + ((63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(480*b^2*d^3) - (3*(3*b*c + a*d)*(a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(80*b^2*d^2) + (x^2*(a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(10*b*d) - ((b*c - a*d)^3*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(256*b^(5/2)*d^(11/2))}
-{x^3*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 7, (-5*(b*c - a*d)^2*(7*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(128*b*d^4) + (5*(b*c - a*d)*(7*b*c + a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(192*b*d^3) - ((7*b*c + a*d)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(48*b*d^2) + ((a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(8*b*d) + (5*(b*c - a*d)^3*(7*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(128*b^(3/2)*d^(9/2))}
-{x^1*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 6, (5*(b*c - a*d)^2*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*d^3) - (5*(b*c - a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*d^2) + ((a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(6*d) - (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*Sqrt[b]*d^(7/2))}
-{1/x^1*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, -((b*(3*b*c - 7*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*d^2)) + (b*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*d) - (a^(5/2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c] + (Sqrt[b]*(3*b^2*c^2 - 10*a*b*c*d + 15*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*d^(5/2))}
-{1/x^3*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, (b*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*c*d) - (a*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(2*c*x^2) - (a^(3/2)*(5*b*c - a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*c^(3/2)) - (b^(3/2)*(b*c - 5*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*d^(3/2))}
-{1/x^5*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, -((a*(7*b*c - 3*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*c^2*x^2)) - (a*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*c*x^4) - (Sqrt[a]*(15*b^2*c^2 - 10*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(8*c^(5/2)) + (b^(5/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
+{x^5*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 9, ((b*c - a*d)^2*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(256*b^2*d^5) - ((b*c - a*d)*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(384*b^2*d^4) + ((63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(480*b^2*d^3) - (3*(3*b*c + a*d)*(a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(80*b^2*d^2) + (x^2*(a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(10*b*d) - ((b*c - a*d)^3*(63*b^2*c^2 + 14*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(256*b^(5/2)*d^(11/2))}
+{x^3*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, (-5*(b*c - a*d)^2*(7*b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(128*b*d^4) + (5*(b*c - a*d)*(7*b*c + a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(192*b*d^3) - ((7*b*c + a*d)*(a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(48*b*d^2) + ((a + b*x^2)^(7/2)*Sqrt[c + d*x^2])/(8*b*d) + (5*(b*c - a*d)^3*(7*b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(128*b^(3/2)*d^(9/2))}
+{x^1*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 7, (5*(b*c - a*d)^2*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(16*d^3) - (5*(b*c - a*d)*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(24*d^2) + ((a + b*x^2)^(5/2)*Sqrt[c + d*x^2])/(6*d) - (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(16*Sqrt[b]*d^(7/2))}
+{1/x^1*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 9, -((b*(3*b*c - 7*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*d^2)) + (b*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*d) - (a^(5/2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/Sqrt[c] + (Sqrt[b]*(3*b^2*c^2 - 10*a*b*c*d + 15*a^2*d^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*d^(5/2))}
+{1/x^3*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 9, (b*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*c*d) - (a*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(2*c*x^2) - (a^(3/2)*(5*b*c - a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*c^(3/2)) - (b^(3/2)*(b*c - 5*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*d^(3/2))}
+{1/x^5*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 9, -((a*(7*b*c - 3*a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*c^2*x^2)) - (a*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(4*c*x^4) - (Sqrt[a]*(15*b^2*c^2 - 10*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(8*c^(5/2)) + (b^(5/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/Sqrt[d]}
 
 {x^4*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 8, ((128*b^4*c^4 - 328*a*b^3*c^3*d + 243*a^2*b^2*c^2*d^2 - 25*a^3*b*c*d^3 - 10*a^4*d^4)*x*Sqrt[a + b*x^2])/(315*b^2*d^4*Sqrt[c + d*x^2]) - ((64*b^3*c^3 - 156*a*b^2*c^2*d + 105*a^2*b*c*d^2 - 5*a^3*d^3)*x*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(315*b*d^4) + ((48*b^2*c^2 - 115*a*b*c*d + 75*a^2*d^2)*x^3*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(315*d^3) - (4*b*(2*b*c - 3*a*d)*x^5*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(63*d^2) + (b*x^5*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(9*d) - (Sqrt[c]*(128*b^4*c^4 - 328*a*b^3*c^3*d + 243*a^2*b^2*c^2*d^2 - 25*a^3*b*c*d^3 - 10*a^4*d^4)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(315*b^2*d^(9/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) + (c^(3/2)*(64*b^3*c^3 - 156*a*b^2*c^2*d + 105*a^2*b*c*d^2 - 5*a^3*d^3)*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(315*b*d^(9/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
 {x^2*(a + b*x^2)^(5/2)/Sqrt[c + d*x^2], x, 7, -(((48*b^3*c^3 - 128*a*b^2*c^2*d + 103*a^2*b*c*d^2 - 15*a^3*d^3)*x*Sqrt[a + b*x^2])/(105*b*d^3*Sqrt[c + d*x^2])) + ((24*b^2*c^2 - 61*a*b*c*d + 45*a^2*d^2)*x*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(105*d^3) - (2*b*(3*b*c - 5*a*d)*x^3*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(35*d^2) + (b*x^3*(a + b*x^2)^(3/2)*Sqrt[c + d*x^2])/(7*d) + (Sqrt[c]*(48*b^3*c^3 - 128*a*b^2*c^2*d + 103*a^2*b*c*d^2 - 15*a^3*d^3)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(105*b*d^(7/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) - (c^(3/2)*(24*b^2*c^2 - 61*a*b*c*d + 45*a^2*d^2)*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(105*d^(7/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
@@ -1479,9 +1479,9 @@
 (*p<0*)
 
 
-{x^5/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 5, -((3*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*b^2*d^2)) + (x^2*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(4*b*d) - ((4*a*b*c*d - 3*(b*c + a*d)^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*b^(5/2)*d^(5/2))}
-{x^3/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 4, (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*b*d) - ((b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*b^(3/2)*d^(3/2))}
-{x^1/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 3, ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(Sqrt[b]*Sqrt[d])}
+{x^5/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 6, -((3*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*b^2*d^2)) + (x^2*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(4*b*d) - ((4*a*b*c*d - 3*(b*c + a*d)^2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(8*b^(5/2)*d^(5/2))}
+{x^3/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 5, (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*b*d) - ((b*c + a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*b^(3/2)*d^(3/2))}
+{x^1/((a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 4, ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(Sqrt[b]*Sqrt[d])}
 {1/(x^1*(a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 3, -(ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])]/(Sqrt[a]*Sqrt[c]))}
 {1/(x^3*(a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 4, -((Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*a*c*x^2)) + ((b*c + a*d)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(2*a^(3/2)*c^(3/2))}
 {1/(x^5*(a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 6, -((Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(4*a*c*x^4)) + (3*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(8*a^2*c^2*x^2) - ((3*b^2*c^2 + 2*a*b*c*d + 3*a^2*d^2)*ArcTanh[(Sqrt[c]*Sqrt[a + b*x^2])/(Sqrt[a]*Sqrt[c + d*x^2])])/(8*a^(5/2)*c^(5/2))}
@@ -1493,12 +1493,12 @@
 {1/(x^4*(a + b*x^2)^(1/2)*Sqrt[c + d*x^2]), x, 6, -((2*d*(b*c + a*d)*x*Sqrt[a + b*x^2])/(3*a^2*c^2*Sqrt[c + d*x^2])) - (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*a*c*x^3) + (2*(b*c + a*d)*Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(3*a^2*c^2*x) + (2*Sqrt[d]*(b*c + a*d)*Sqrt[a + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*a^2*c^(3/2)*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2]) - (b*Sqrt[d]*Sqrt[a + b*x^2]*EllipticF[ArcTan[(Sqrt[d]*x)/Sqrt[c]], 1 - (b*c)/(a*d)])/(3*a^2*Sqrt[c]*Sqrt[(c*(a + b*x^2))/(a*(c + d*x^2))]*Sqrt[c + d*x^2])}
 
 
-{x^5/((a + b*x^2)^(3/2)*Sqrt[c + d*x^2]), x, 5, -((a^2*Sqrt[c + d*x^2])/(b^2*(b*c - a*d)*Sqrt[a + b*x^2])) + (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*b^2*d) - ((b*c + 3*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*b^(5/2)*d^(3/2))}
-{x^3/((a + b*x^2)^(3/2)*Sqrt[c + d*x^2]), x, 4, (a*Sqrt[c + d*x^2])/(b*(b*c - a*d)*Sqrt[a + b*x^2]) + ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(b^(3/2)*Sqrt[d])}
+{x^5/((a + b*x^2)^(3/2)*Sqrt[c + d*x^2]), x, 6, -((a^2*Sqrt[c + d*x^2])/(b^2*(b*c - a*d)*Sqrt[a + b*x^2])) + (Sqrt[a + b*x^2]*Sqrt[c + d*x^2])/(2*b^2*d) - ((b*c + 3*a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])])/(2*b^(5/2)*d^(3/2))}
+{x^3/((a + b*x^2)^(3/2)*Sqrt[c + d*x^2]), x, 5, (a*Sqrt[c + d*x^2])/(b*(b*c - a*d)*Sqrt[a + b*x^2]) + ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(b^(3/2)*Sqrt[d])}
 {x^1/((a + b*x^2)^(3/2)*Sqrt[c + d*x^2]), x, 2, -(Sqrt[c + d*x^2]/((b*c - a*d)*Sqrt[a + b*x^2]))}
 
 
-{x^5/((a + b*x^2)^(5/2)*Sqrt[c + d*x^2]), x, 5, -((a^2*Sqrt[c + d*x^2])/(3*b^2*(b*c - a*d)*(a + b*x^2)^(3/2))) + (2*a*(3*b*c - 2*a*d)*Sqrt[c + d*x^2])/(3*b^2*(b*c - a*d)^2*Sqrt[a + b*x^2]) + ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(b^(5/2)*Sqrt[d])}
+{x^5/((a + b*x^2)^(5/2)*Sqrt[c + d*x^2]), x, 6, -((a^2*Sqrt[c + d*x^2])/(3*b^2*(b*c - a*d)*(a + b*x^2)^(3/2))) + (2*a*(3*b*c - 2*a*d)*Sqrt[c + d*x^2])/(3*b^2*(b*c - a*d)^2*Sqrt[a + b*x^2]) + ArcTanh[(Sqrt[d]*Sqrt[a + b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(b^(5/2)*Sqrt[d])}
 {x^3/((a + b*x^2)^(5/2)*Sqrt[c + d*x^2]), x, 3, (a*Sqrt[c + d*x^2])/(3*b*(b*c - a*d)*(a + b*x^2)^(3/2)) - ((3*b*c - a*d)*Sqrt[c + d*x^2])/(3*b*(b*c - a*d)^2*Sqrt[a + b*x^2])}
 {x^1/((a + b*x^2)^(5/2)*Sqrt[c + d*x^2]), x, 3, -(Sqrt[c + d*x^2]/(3*(b*c - a*d)*(a + b*x^2)^(3/2))) + (2*d*Sqrt[c + d*x^2])/(3*(b*c - a*d)^2*Sqrt[a + b*x^2])}
 
@@ -1511,8 +1511,8 @@
 {x^5/((a + b*x^2)^(9/2)*Sqrt[c + d*x^2]), x, 5, -((a^2*Sqrt[c + d*x^2])/(7*b^2*(b*c - a*d)*(a + b*x^2)^(7/2))) + (2*a*(7*b*c - 4*a*d)*Sqrt[c + d*x^2])/(35*b^2*(b*c - a*d)^2*(a + b*x^2)^(5/2)) - ((35*b^2*c^2 - 14*a*b*c*d + 3*a^2*d^2)*Sqrt[c + d*x^2])/(105*b^2*(b*c - a*d)^3*(a + b*x^2)^(3/2)) + (2*d*(35*b^2*c^2 - 14*a*b*c*d + 3*a^2*d^2)*Sqrt[c + d*x^2])/(105*b^2*(b*c - a*d)^4*Sqrt[a + b*x^2])}
 
 
-{x/(Sqrt[a - b*x^2]*Sqrt[c + d*x^2]), x, 3, -(ArcTan[(Sqrt[d]*Sqrt[a - b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(Sqrt[b]*Sqrt[d]))}
-{x/(Sqrt[a - b*x^2]*Sqrt[c - d*x^2]), x, 3, -(ArcTanh[(Sqrt[d]*Sqrt[a - b*x^2])/(Sqrt[b]*Sqrt[c - d*x^2])]/(Sqrt[b]*Sqrt[d]))}
+{x/(Sqrt[a - b*x^2]*Sqrt[c + d*x^2]), x, 4, -(ArcTan[(Sqrt[d]*Sqrt[a - b*x^2])/(Sqrt[b]*Sqrt[c + d*x^2])]/(Sqrt[b]*Sqrt[d]))}
+{x/(Sqrt[a - b*x^2]*Sqrt[c - d*x^2]), x, 4, -(ArcTanh[(Sqrt[d]*Sqrt[a - b*x^2])/(Sqrt[b]*Sqrt[c - d*x^2])]/(Sqrt[b]*Sqrt[d]))}
 
 
 {x^2/(Sqrt[2 + b*x^2]*Sqrt[3 + d*x^2]), x, 2, (x*Sqrt[2 + b*x^2])/(b*Sqrt[3 + d*x^2]) - (Sqrt[2]*Sqrt[2 + b*x^2]*EllipticE[ArcTan[(Sqrt[d]*x)/Sqrt[3]], 1 - (3*b)/(2*d)])/(b*Sqrt[d]*Sqrt[(2 + b*x^2)/(3 + d*x^2)]*Sqrt[3 + d*x^2])}

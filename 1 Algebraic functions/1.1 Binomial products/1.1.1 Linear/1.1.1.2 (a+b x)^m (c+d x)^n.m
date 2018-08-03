@@ -516,8 +516,8 @@
 {x^1/(a + b*x)^(3/2), x, 2, (2*a)/(b^2*Sqrt[a + b*x]) + (2*Sqrt[a + b*x])/b^2}
 {x^0/(a + b*x)^(3/2), x, 1, -(2/(b*Sqrt[a + b*x]))}
 {1/(x^1*(a + b*x)^(3/2)), x, 3, 2/(a*Sqrt[a + b*x]) - (2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(3/2)}
-{1/(x^2*(a + b*x)^(3/2)), x, 4, 2/(a*x*Sqrt[a + b*x]) - (3*Sqrt[a + b*x])/(a^2*x) + (3*b*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(5/2)}
-{1/(x^3*(a + b*x)^(3/2)), x, 5, 2/(a*x^2*Sqrt[a + b*x]) - (5*Sqrt[a + b*x])/(2*a^2*x^2) + (15*b*Sqrt[a + b*x])/(4*a^3*x) - (15*b^2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/(4*a^(7/2))}
+{1/(x^2*(a + b*x)^(3/2)), x, 4, -((3*b)/(a^2*Sqrt[a + b*x])) - 1/(a*x*Sqrt[a + b*x]) + (3*b*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(5/2)}
+{1/(x^3*(a + b*x)^(3/2)), x, 5, (15*b^2)/(4*a^3*Sqrt[a + b*x]) - 1/(2*a*x^2*Sqrt[a + b*x]) + (5*b)/(4*a^2*x*Sqrt[a + b*x]) - (15*b^2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/(4*a^(7/2))}
 
 
 {x^4/(a + b*x)^(5/2), x, 2, -((2*a^4)/(3*b^5*(a + b*x)^(3/2))) + (8*a^3)/(b^5*Sqrt[a + b*x]) + (12*a^2*Sqrt[a + b*x])/b^5 - (8*a*(a + b*x)^(3/2))/(3*b^5) + (2*(a + b*x)^(5/2))/(5*b^5)}
@@ -526,8 +526,8 @@
 {x^1/(a + b*x)^(5/2), x, 2, (2*a)/(3*b^2*(a + b*x)^(3/2)) - 2/(b^2*Sqrt[a + b*x])}
 {x^0/(a + b*x)^(5/2), x, 1, -(2/(3*b*(a + b*x)^(3/2)))}
 {1/(x^1*(a + b*x)^(5/2)), x, 4, 2/(3*a*(a + b*x)^(3/2)) + 2/(a^2*Sqrt[a + b*x]) - (2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(5/2)}
-{1/(x^2*(a + b*x)^(5/2)), x, 5, 2/(3*a*x*(a + b*x)^(3/2)) + 10/(3*a^2*x*Sqrt[a + b*x]) - (5*Sqrt[a + b*x])/(a^3*x) + (5*b*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(7/2)}
-{1/(x^3*(a + b*x)^(5/2)), x, 6, 2/(3*a*x^2*(a + b*x)^(3/2)) + 14/(3*a^2*x^2*Sqrt[a + b*x]) - (35*Sqrt[a + b*x])/(6*a^3*x^2) + (35*b*Sqrt[a + b*x])/(4*a^4*x) - (35*b^2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/(4*a^(9/2))}
+{1/(x^2*(a + b*x)^(5/2)), x, 5, -((5*b)/(3*a^2*(a + b*x)^(3/2))) - 1/(a*x*(a + b*x)^(3/2)) - (5*b)/(a^3*Sqrt[a + b*x]) + (5*b*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/a^(7/2)}
+{1/(x^3*(a + b*x)^(5/2)), x, 6, (35*b^2)/(12*a^3*(a + b*x)^(3/2)) - 1/(2*a*x^2*(a + b*x)^(3/2)) + (7*b)/(4*a^2*x*(a + b*x)^(3/2)) + (35*b^2)/(4*a^4*Sqrt[a + b*x]) - (35*b^2*ArcTanh[Sqrt[a + b*x]/Sqrt[a]])/(4*a^(9/2))}
 
 
 {1/(x^1*Sqrt[-a + b*x]), x, 2, (2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/Sqrt[a]}
@@ -536,13 +536,13 @@
 
 
 {1/(x^1*(-a + b*x)^(3/2)), x, 3, -2/(a*Sqrt[-a + b*x]) - (2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(3/2)}
-{1/(x^2*(-a + b*x)^(3/2)), x, 4, -(2/(a*x*Sqrt[-a + b*x])) - (3*Sqrt[-a + b*x])/(a^2*x) - (3*b*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(5/2)}
-{1/(x^3*(-a + b*x)^(3/2)), x, 5, -(2/(a*x^2*Sqrt[-a + b*x])) - (5*Sqrt[-a + b*x])/(2*a^2*x^2) - (15*b*Sqrt[-a + b*x])/(4*a^3*x) - (15*b^2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/(4*a^(7/2))}
+{1/(x^2*(-a + b*x)^(3/2)), x, 4, -((3*b)/(a^2*Sqrt[-a + b*x])) + 1/(a*x*Sqrt[-a + b*x]) - (3*b*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(5/2)}
+{1/(x^3*(-a + b*x)^(3/2)), x, 5, -((15*b^2)/(4*a^3*Sqrt[-a + b*x])) + 1/(2*a*x^2*Sqrt[-a + b*x]) + (5*b)/(4*a^2*x*Sqrt[-a + b*x]) - (15*b^2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/(4*a^(7/2))}
 
 
 {1/(x^1*(-a + b*x)^(5/2)), x, 4, -(2/(3*a*(-a + b*x)^(3/2))) + 2/(a^2*Sqrt[-a + b*x]) + (2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(5/2)}
-{1/(x^2*(-a + b*x)^(5/2)), x, 5, -(2/(3*a*x*(-a + b*x)^(3/2))) + 10/(3*a^2*x*Sqrt[-a + b*x]) + (5*Sqrt[-a + b*x])/(a^3*x) + (5*b*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(7/2)}
-{1/(x^3*(-a + b*x)^(5/2)), x, 6, -(2/(3*a*x^2*(-a + b*x)^(3/2))) + 14/(3*a^2*x^2*Sqrt[-a + b*x]) + (35*Sqrt[-a + b*x])/(6*a^3*x^2) + (35*b*Sqrt[-a + b*x])/(4*a^4*x) + (35*b^2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/(4*a^(9/2))}
+{1/(x^2*(-a + b*x)^(5/2)), x, 5, -((5*b)/(3*a^2*(-a + b*x)^(3/2))) + 1/(a*x*(-a + b*x)^(3/2)) + (5*b)/(a^3*Sqrt[-a + b*x]) + (5*b*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/a^(7/2)}
+{1/(x^3*(-a + b*x)^(5/2)), x, 6, -((35*b^2)/(12*a^3*(-a + b*x)^(3/2))) + 1/(2*a*x^2*(-a + b*x)^(3/2)) + (7*b)/(4*a^2*x*(-a + b*x)^(3/2)) + (35*b^2)/(4*a^4*Sqrt[-a + b*x]) + (35*b^2*ArcTan[Sqrt[-a + b*x]/Sqrt[a]])/(4*a^(9/2))}
 
 
 {(x^(-1 + m)*(2*a*m + b*(-1 + 2*m)*x))/(2*(a + b*x)^(3/2)), x, 2, x^m/Sqrt[a + b*x]}
@@ -622,8 +622,8 @@
 {x/(a + b*x)^(4/3), x, 2, (3*a)/(b^2*(a + b*x)^(1/3)) + (3*(a + b*x)^(2/3))/(2*b^2)}
 {(a + b*x)^(-4/3), x, 1, -3/(b*(a + b*x)^(1/3))}
 {1/(x*(a + b*x)^(4/3)), x, 5, 3/(a*(a + b*x)^(1/3)) + (Sqrt[3]*ArcTan[(a^(1/3) + 2*(a + b*x)^(1/3))/(Sqrt[3]*a^(1/3))])/a^(4/3) - Log[x]/(2*a^(4/3)) + (3*Log[a^(1/3) - (a + b*x)^(1/3)])/(2*a^(4/3))}
-{1/(x^2*(a + b*x)^(4/3)), x, 6, 3/(a*x*(a + b*x)^(1/3)) - (4*(a + b*x)^(2/3))/(a^2*x) - (4*b*ArcTan[(a^(1/3) + 2*(a + b*x)^(1/3))/(Sqrt[3]*a^(1/3))])/(Sqrt[3]*a^(7/3)) + (2*b*Log[x])/(3*a^(7/3)) - (2*b*Log[a^(1/3) - (a + b*x)^(1/3)])/a^(7/3)}
-{1/(x^3*(a + b*x)^(4/3)), x, 7, 3/(a*x^2*(a + b*x)^(1/3)) - (7*(a + b*x)^(2/3))/(2*a^2*x^2) + (14*b*(a + b*x)^(2/3))/(3*a^3*x) + (14*b^2*ArcTan[(a^(1/3) + 2*(a + b*x)^(1/3))/(Sqrt[3]*a^(1/3))])/(3*Sqrt[3]*a^(10/3)) - (7*b^2*Log[x])/(9*a^(10/3)) + (7*b^2*Log[a^(1/3) - (a + b*x)^(1/3)])/(3*a^(10/3))}
+{1/(x^2*(a + b*x)^(4/3)), x, 6, -((4*b)/(a^2*(a + b*x)^(1/3))) - 1/(a*x*(a + b*x)^(1/3)) - (4*b*ArcTan[(a^(1/3) + 2*(a + b*x)^(1/3))/(Sqrt[3]*a^(1/3))])/(Sqrt[3]*a^(7/3)) + (2*b*Log[x])/(3*a^(7/3)) - (2*b*Log[a^(1/3) - (a + b*x)^(1/3)])/a^(7/3)}
+{1/(x^3*(a + b*x)^(4/3)), x, 7, (14*b^2)/(3*a^3*(a + b*x)^(1/3)) - 1/(2*a*x^2*(a + b*x)^(1/3)) + (7*b)/(6*a^2*x*(a + b*x)^(1/3)) + (14*b^2*ArcTan[(a^(1/3) + 2*(a + b*x)^(1/3))/(Sqrt[3]*a^(1/3))])/(3*Sqrt[3]*a^(10/3)) - (7*b^2*Log[x])/(9*a^(10/3)) + (7*b^2*Log[a^(1/3) - (a + b*x)^(1/3)])/(3*a^(10/3))}
 
 
 {1/(x*(a^3 + b^3*x)^(1/3)), x, 4, (Sqrt[3]*ArcTan[(a + 2*(a^3 + b^3*x)^(1/3))/(Sqrt[3]*a)])/a - Log[x]/(2*a) + (3*Log[a - (a^3 + b^3*x)^(1/3)])/(2*a)}
@@ -740,21 +740,21 @@
 (*n>0*)
 
 
-{x^(5/2)*Sqrt[a + b*x], x, 6, (5*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b^3) - (5*a^2*x^(3/2)*Sqrt[a + b*x])/(96*b^2) + (a*x^(5/2)*Sqrt[a + b*x])/(24*b) + (1/4)*x^(7/2)*Sqrt[a + b*x] - (5*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(7/2))}
-{x^(3/2)*Sqrt[a + b*x], x, 5, -((a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b^2)) + (a*x^(3/2)*Sqrt[a + b*x])/(12*b) + (1/3)*x^(5/2)*Sqrt[a + b*x] + (a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(5/2))}
-{Sqrt[x]*Sqrt[a + b*x], x, 4, (a*Sqrt[x]*Sqrt[a + b*x])/(4*b) + (1/2)*x^(3/2)*Sqrt[a + b*x] - (a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(3/2))}
-{Sqrt[a + b*x]/Sqrt[x], x, 3, Sqrt[x]*Sqrt[a + b*x] + (a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/Sqrt[b]}
-{Sqrt[a + b*x]/x^(3/2), x, 3, (-2*Sqrt[a + b*x])/Sqrt[x] + 2*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
+{x^(5/2)*Sqrt[a + b*x], x, 7, (5*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b^3) - (5*a^2*x^(3/2)*Sqrt[a + b*x])/(96*b^2) + (a*x^(5/2)*Sqrt[a + b*x])/(24*b) + (1/4)*x^(7/2)*Sqrt[a + b*x] - (5*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(7/2))}
+{x^(3/2)*Sqrt[a + b*x], x, 6, -((a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b^2)) + (a*x^(3/2)*Sqrt[a + b*x])/(12*b) + (1/3)*x^(5/2)*Sqrt[a + b*x] + (a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(5/2))}
+{Sqrt[x]*Sqrt[a + b*x], x, 5, (a*Sqrt[x]*Sqrt[a + b*x])/(4*b) + (1/2)*x^(3/2)*Sqrt[a + b*x] - (a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(3/2))}
+{Sqrt[a + b*x]/Sqrt[x], x, 4, Sqrt[x]*Sqrt[a + b*x] + (a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/Sqrt[b]}
+{Sqrt[a + b*x]/x^(3/2), x, 4, (-2*Sqrt[a + b*x])/Sqrt[x] + 2*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
 {Sqrt[a + b*x]/x^(5/2), x, 1, (-2*(a + b*x)^(3/2))/(3*a*x^(3/2))}
 {Sqrt[a + b*x]/x^(7/2), x, 2, -((2*(a + b*x)^(3/2))/(5*a*x^(5/2))) + (4*b*(a + b*x)^(3/2))/(15*a^2*x^(3/2))}
 {Sqrt[a + b*x]/x^(9/2), x, 3, -((2*(a + b*x)^(3/2))/(7*a*x^(7/2))) + (8*b*(a + b*x)^(3/2))/(35*a^2*x^(5/2)) - (16*b^2*(a + b*x)^(3/2))/(105*a^3*x^(3/2))}
 
 
-{x^(5/2)*Sqrt[a - b*x], x, 6, -((5*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b^3)) - (5*a^2*x^(3/2)*Sqrt[a - b*x])/(96*b^2) - (a*x^(5/2)*Sqrt[a - b*x])/(24*b) + (1/4)*x^(7/2)*Sqrt[a - b*x] + (5*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(7/2))}
-{x^(3/2)*Sqrt[a - b*x], x, 5, -((a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b^2)) - (a*x^(3/2)*Sqrt[a - b*x])/(12*b) + (1/3)*x^(5/2)*Sqrt[a - b*x] + (a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(5/2))}
-{Sqrt[x]*Sqrt[a - b*x], x, 4, -((a*Sqrt[x]*Sqrt[a - b*x])/(4*b)) + (1/2)*x^(3/2)*Sqrt[a - b*x] + (a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(3/2))}
-{Sqrt[a - b*x]/Sqrt[x], x, 3, Sqrt[x]*Sqrt[a - b*x] + (a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/Sqrt[b]}
-{Sqrt[a - b*x]/x^(3/2), x, 3, (-2*Sqrt[a - b*x])/Sqrt[x] - 2*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
+{x^(5/2)*Sqrt[a - b*x], x, 7, -((5*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b^3)) - (5*a^2*x^(3/2)*Sqrt[a - b*x])/(96*b^2) - (a*x^(5/2)*Sqrt[a - b*x])/(24*b) + (1/4)*x^(7/2)*Sqrt[a - b*x] + (5*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(7/2))}
+{x^(3/2)*Sqrt[a - b*x], x, 6, -((a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b^2)) - (a*x^(3/2)*Sqrt[a - b*x])/(12*b) + (1/3)*x^(5/2)*Sqrt[a - b*x] + (a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(5/2))}
+{Sqrt[x]*Sqrt[a - b*x], x, 5, -((a*Sqrt[x]*Sqrt[a - b*x])/(4*b)) + (1/2)*x^(3/2)*Sqrt[a - b*x] + (a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(3/2))}
+{Sqrt[a - b*x]/Sqrt[x], x, 4, Sqrt[x]*Sqrt[a - b*x] + (a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/Sqrt[b]}
+{Sqrt[a - b*x]/x^(3/2), x, 4, (-2*Sqrt[a - b*x])/Sqrt[x] - 2*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
 {Sqrt[a - b*x]/x^(5/2), x, 1, (-2*(a - b*x)^(3/2))/(3*a*x^(3/2))}
 {Sqrt[a - b*x]/x^(7/2), x, 2, -((2*(a - b*x)^(3/2))/(5*a*x^(5/2))) - (4*b*(a - b*x)^(3/2))/(15*a^2*x^(3/2))}
 {Sqrt[a - b*x]/x^(9/2), x, 3, -((2*(a - b*x)^(3/2))/(7*a*x^(7/2))) - (8*b*(a - b*x)^(3/2))/(35*a^2*x^(5/2)) - (16*b^2*(a - b*x)^(3/2))/(105*a^3*x^(3/2))}
@@ -780,20 +780,20 @@
 {Sqrt[2 - b*x]/x^(9/2), x, 3, -((2 - b*x)^(3/2)/(7*x^(7/2))) - (2*b*(2 - b*x)^(3/2))/(35*x^(5/2)) - (2*b^2*(2 - b*x)^(3/2))/(105*x^(3/2))}
 
 
-{x^(5/2)*(a + b*x)^(3/2), x, 7, (3*a^4*Sqrt[x]*Sqrt[a + b*x])/(128*b^3) - (a^3*x^(3/2)*Sqrt[a + b*x])/(64*b^2) + (a^2*x^(5/2)*Sqrt[a + b*x])/(80*b) + (3/40)*a*x^(7/2)*Sqrt[a + b*x] + (1/5)*x^(7/2)*(a + b*x)^(3/2) - (3*a^5*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(128*b^(7/2))}
-{x^(3/2)*(a + b*x)^(3/2), x, 6, -((3*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b^2)) + (a^2*x^(3/2)*Sqrt[a + b*x])/(32*b) + (1/8)*a*x^(5/2)*Sqrt[a + b*x] + (1/4)*x^(5/2)*(a + b*x)^(3/2) + (3*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(5/2))}
-{Sqrt[x]*(a + b*x)^(3/2), x, 5, (a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b) + (1/4)*a*x^(3/2)*Sqrt[a + b*x] + (1/3)*x^(3/2)*(a + b*x)^(3/2) - (a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(3/2))}
-{(a + b*x)^(3/2)/Sqrt[x], x, 4, (3/4)*a*Sqrt[x]*Sqrt[a + b*x] + (1/2)*Sqrt[x]*(a + b*x)^(3/2) + (3*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*Sqrt[b])}
-{(a + b*x)^(3/2)/x^(3/2), x, 4, 3*b*Sqrt[x]*Sqrt[a + b*x] - (2*(a + b*x)^(3/2))/Sqrt[x] + 3*a*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
-{(a + b*x)^(3/2)/x^(5/2), x, 4, -((2*b*Sqrt[a + b*x])/Sqrt[x]) - (2*(a + b*x)^(3/2))/(3*x^(3/2)) + 2*b^(3/2)*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
+{x^(5/2)*(a + b*x)^(3/2), x, 8, (3*a^4*Sqrt[x]*Sqrt[a + b*x])/(128*b^3) - (a^3*x^(3/2)*Sqrt[a + b*x])/(64*b^2) + (a^2*x^(5/2)*Sqrt[a + b*x])/(80*b) + (3/40)*a*x^(7/2)*Sqrt[a + b*x] + (1/5)*x^(7/2)*(a + b*x)^(3/2) - (3*a^5*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(128*b^(7/2))}
+{x^(3/2)*(a + b*x)^(3/2), x, 7, -((3*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b^2)) + (a^2*x^(3/2)*Sqrt[a + b*x])/(32*b) + (1/8)*a*x^(5/2)*Sqrt[a + b*x] + (1/4)*x^(5/2)*(a + b*x)^(3/2) + (3*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(5/2))}
+{Sqrt[x]*(a + b*x)^(3/2), x, 6, (a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b) + (1/4)*a*x^(3/2)*Sqrt[a + b*x] + (1/3)*x^(3/2)*(a + b*x)^(3/2) - (a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(3/2))}
+{(a + b*x)^(3/2)/Sqrt[x], x, 5, (3/4)*a*Sqrt[x]*Sqrt[a + b*x] + (1/2)*Sqrt[x]*(a + b*x)^(3/2) + (3*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*Sqrt[b])}
+{(a + b*x)^(3/2)/x^(3/2), x, 5, 3*b*Sqrt[x]*Sqrt[a + b*x] - (2*(a + b*x)^(3/2))/Sqrt[x] + 3*a*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
+{(a + b*x)^(3/2)/x^(5/2), x, 5, -((2*b*Sqrt[a + b*x])/Sqrt[x]) - (2*(a + b*x)^(3/2))/(3*x^(3/2)) + 2*b^(3/2)*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
 
 
-{x^(5/2)*(a - b*x)^(3/2), x, 7, -((3*a^4*Sqrt[x]*Sqrt[a - b*x])/(128*b^3)) - (a^3*x^(3/2)*Sqrt[a - b*x])/(64*b^2) - (a^2*x^(5/2)*Sqrt[a - b*x])/(80*b) + (3/40)*a*x^(7/2)*Sqrt[a - b*x] + (1/5)*x^(7/2)*(a - b*x)^(3/2) + (3*a^5*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(128*b^(7/2))}
-{x^(3/2)*(a - b*x)^(3/2), x, 6, -((3*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b^2)) - (a^2*x^(3/2)*Sqrt[a - b*x])/(32*b) + (1/8)*a*x^(5/2)*Sqrt[a - b*x] + (1/4)*x^(5/2)*(a - b*x)^(3/2) + (3*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(5/2))}
-{Sqrt[x]*(a - b*x)^(3/2), x, 5, -((a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b)) + (1/4)*a*x^(3/2)*Sqrt[a - b*x] + (1/3)*x^(3/2)*(a - b*x)^(3/2) + (a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(3/2))}
-{(a - b*x)^(3/2)/Sqrt[x], x, 4, (3/4)*a*Sqrt[x]*Sqrt[a - b*x] + (1/2)*Sqrt[x]*(a - b*x)^(3/2) + (3*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*Sqrt[b])}
-{(a - b*x)^(3/2)/x^(3/2), x, 4, -3*b*Sqrt[x]*Sqrt[a - b*x] - (2*(a - b*x)^(3/2))/Sqrt[x] - 3*a*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
-{(a - b*x)^(3/2)/x^(5/2), x, 4, (2*b*Sqrt[a - b*x])/Sqrt[x] - (2*(a - b*x)^(3/2))/(3*x^(3/2)) + 2*b^(3/2)*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
+{x^(5/2)*(a - b*x)^(3/2), x, 8, -((3*a^4*Sqrt[x]*Sqrt[a - b*x])/(128*b^3)) - (a^3*x^(3/2)*Sqrt[a - b*x])/(64*b^2) - (a^2*x^(5/2)*Sqrt[a - b*x])/(80*b) + (3/40)*a*x^(7/2)*Sqrt[a - b*x] + (1/5)*x^(7/2)*(a - b*x)^(3/2) + (3*a^5*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(128*b^(7/2))}
+{x^(3/2)*(a - b*x)^(3/2), x, 7, -((3*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b^2)) - (a^2*x^(3/2)*Sqrt[a - b*x])/(32*b) + (1/8)*a*x^(5/2)*Sqrt[a - b*x] + (1/4)*x^(5/2)*(a - b*x)^(3/2) + (3*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(5/2))}
+{Sqrt[x]*(a - b*x)^(3/2), x, 6, -((a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b)) + (1/4)*a*x^(3/2)*Sqrt[a - b*x] + (1/3)*x^(3/2)*(a - b*x)^(3/2) + (a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(3/2))}
+{(a - b*x)^(3/2)/Sqrt[x], x, 5, (3/4)*a*Sqrt[x]*Sqrt[a - b*x] + (1/2)*Sqrt[x]*(a - b*x)^(3/2) + (3*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*Sqrt[b])}
+{(a - b*x)^(3/2)/x^(3/2), x, 5, -3*b*Sqrt[x]*Sqrt[a - b*x] - (2*(a - b*x)^(3/2))/Sqrt[x] - 3*a*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
+{(a - b*x)^(3/2)/x^(5/2), x, 5, (2*b*Sqrt[a - b*x])/Sqrt[x] - (2*(a - b*x)^(3/2))/(3*x^(3/2)) + 2*b^(3/2)*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
 
 
 {x^(5/2)*(2 + b*x)^(3/2), x, 7, (3*Sqrt[x]*Sqrt[2 + b*x])/(8*b^3) - (x^(3/2)*Sqrt[2 + b*x])/(8*b^2) + (x^(5/2)*Sqrt[2 + b*x])/(20*b) + (3/20)*x^(7/2)*Sqrt[2 + b*x] + (1/5)*x^(7/2)*(2 + b*x)^(3/2) - (3*ArcSinh[(Sqrt[b]*Sqrt[x])/Sqrt[2]])/(4*b^(7/2))}
@@ -812,20 +812,20 @@
 {(2 - b*x)^(3/2)/x^(5/2), x, 4, (2*b*Sqrt[2 - b*x])/Sqrt[x] - (2*(2 - b*x)^(3/2))/(3*x^(3/2)) + 2*b^(3/2)*ArcSin[(Sqrt[b]*Sqrt[x])/Sqrt[2]]}
 
 
-{x^(5/2)*(a + b*x)^(5/2), x, 8, (5*a^5*Sqrt[x]*Sqrt[a + b*x])/(512*b^3) - (5*a^4*x^(3/2)*Sqrt[a + b*x])/(768*b^2) + (a^3*x^(5/2)*Sqrt[a + b*x])/(192*b) + (1/32)*a^2*x^(7/2)*Sqrt[a + b*x] + (1/12)*a*x^(7/2)*(a + b*x)^(3/2) + (1/6)*x^(7/2)*(a + b*x)^(5/2) - (5*a^6*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(512*b^(7/2))}
-{x^(3/2)*(a + b*x)^(5/2), x, 7, -((3*a^4*Sqrt[x]*Sqrt[a + b*x])/(128*b^2)) + (a^3*x^(3/2)*Sqrt[a + b*x])/(64*b) + (1/16)*a^2*x^(5/2)*Sqrt[a + b*x] + (1/8)*a*x^(5/2)*(a + b*x)^(3/2) + (1/5)*x^(5/2)*(a + b*x)^(5/2) + (3*a^5*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(128*b^(5/2))}
-{Sqrt[x]*(a + b*x)^(5/2), x, 6, (5*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b) + (5/32)*a^2*x^(3/2)*Sqrt[a + b*x] + (5/24)*a*x^(3/2)*(a + b*x)^(3/2) + (1/4)*x^(3/2)*(a + b*x)^(5/2) - (5*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(3/2))}
-{(a + b*x)^(5/2)/Sqrt[x], x, 5, (5/8)*a^2*Sqrt[x]*Sqrt[a + b*x] + (5/12)*a*Sqrt[x]*(a + b*x)^(3/2) + (1/3)*Sqrt[x]*(a + b*x)^(5/2) + (5*a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*Sqrt[b])}
-{(a + b*x)^(5/2)/x^(3/2), x, 5, (15/4)*a*b*Sqrt[x]*Sqrt[a + b*x] + (5/2)*b*Sqrt[x]*(a + b*x)^(3/2) - (2*(a + b*x)^(5/2))/Sqrt[x] + (15/4)*a^2*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
-{(a + b*x)^(5/2)/x^(5/2), x, 5, 5*b^2*Sqrt[x]*Sqrt[a + b*x] - (10*b*(a + b*x)^(3/2))/(3*Sqrt[x]) - (2*(a + b*x)^(5/2))/(3*x^(3/2)) + 5*a*b^(3/2)*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
+{x^(5/2)*(a + b*x)^(5/2), x, 9, (5*a^5*Sqrt[x]*Sqrt[a + b*x])/(512*b^3) - (5*a^4*x^(3/2)*Sqrt[a + b*x])/(768*b^2) + (a^3*x^(5/2)*Sqrt[a + b*x])/(192*b) + (1/32)*a^2*x^(7/2)*Sqrt[a + b*x] + (1/12)*a*x^(7/2)*(a + b*x)^(3/2) + (1/6)*x^(7/2)*(a + b*x)^(5/2) - (5*a^6*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(512*b^(7/2))}
+{x^(3/2)*(a + b*x)^(5/2), x, 8, -((3*a^4*Sqrt[x]*Sqrt[a + b*x])/(128*b^2)) + (a^3*x^(3/2)*Sqrt[a + b*x])/(64*b) + (1/16)*a^2*x^(5/2)*Sqrt[a + b*x] + (1/8)*a*x^(5/2)*(a + b*x)^(3/2) + (1/5)*x^(5/2)*(a + b*x)^(5/2) + (3*a^5*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(128*b^(5/2))}
+{Sqrt[x]*(a + b*x)^(5/2), x, 7, (5*a^3*Sqrt[x]*Sqrt[a + b*x])/(64*b) + (5/32)*a^2*x^(3/2)*Sqrt[a + b*x] + (5/24)*a*x^(3/2)*(a + b*x)^(3/2) + (1/4)*x^(3/2)*(a + b*x)^(5/2) - (5*a^4*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(64*b^(3/2))}
+{(a + b*x)^(5/2)/Sqrt[x], x, 6, (5/8)*a^2*Sqrt[x]*Sqrt[a + b*x] + (5/12)*a*Sqrt[x]*(a + b*x)^(3/2) + (1/3)*Sqrt[x]*(a + b*x)^(5/2) + (5*a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*Sqrt[b])}
+{(a + b*x)^(5/2)/x^(3/2), x, 6, (15/4)*a*b*Sqrt[x]*Sqrt[a + b*x] + (5/2)*b*Sqrt[x]*(a + b*x)^(3/2) - (2*(a + b*x)^(5/2))/Sqrt[x] + (15/4)*a^2*Sqrt[b]*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
+{(a + b*x)^(5/2)/x^(5/2), x, 6, 5*b^2*Sqrt[x]*Sqrt[a + b*x] - (10*b*(a + b*x)^(3/2))/(3*Sqrt[x]) - (2*(a + b*x)^(5/2))/(3*x^(3/2)) + 5*a*b^(3/2)*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]]}
 
 
-{x^(5/2)*(a - b*x)^(5/2), x, 8, -((5*a^5*Sqrt[x]*Sqrt[a - b*x])/(512*b^3)) - (5*a^4*x^(3/2)*Sqrt[a - b*x])/(768*b^2) - (a^3*x^(5/2)*Sqrt[a - b*x])/(192*b) + (1/32)*a^2*x^(7/2)*Sqrt[a - b*x] + (1/12)*a*x^(7/2)*(a - b*x)^(3/2) + (1/6)*x^(7/2)*(a - b*x)^(5/2) + (5*a^6*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(512*b^(7/2))}
-{x^(3/2)*(a - b*x)^(5/2), x, 7, -((3*a^4*Sqrt[x]*Sqrt[a - b*x])/(128*b^2)) - (a^3*x^(3/2)*Sqrt[a - b*x])/(64*b) + (1/16)*a^2*x^(5/2)*Sqrt[a - b*x] + (1/8)*a*x^(5/2)*(a - b*x)^(3/2) + (1/5)*x^(5/2)*(a - b*x)^(5/2) + (3*a^5*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(128*b^(5/2))}
-{Sqrt[x]*(a - b*x)^(5/2), x, 6, -((5*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b)) + (5/32)*a^2*x^(3/2)*Sqrt[a - b*x] + (5/24)*a*x^(3/2)*(a - b*x)^(3/2) + (1/4)*x^(3/2)*(a - b*x)^(5/2) + (5*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(3/2))}
-{(a - b*x)^(5/2)/Sqrt[x], x, 5, (5/8)*a^2*Sqrt[x]*Sqrt[a - b*x] + (5/12)*a*Sqrt[x]*(a - b*x)^(3/2) + (1/3)*Sqrt[x]*(a - b*x)^(5/2) + (5*a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*Sqrt[b])}
-{(a - b*x)^(5/2)/x^(3/2), x, 5, (-(15/4))*a*b*Sqrt[x]*Sqrt[a - b*x] - (5/2)*b*Sqrt[x]*(a - b*x)^(3/2) - (2*(a - b*x)^(5/2))/Sqrt[x] - (15/4)*a^2*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
-{(a - b*x)^(5/2)/x^(5/2), x, 5, 5*b^2*Sqrt[x]*Sqrt[a - b*x] + (10*b*(a - b*x)^(3/2))/(3*Sqrt[x]) - (2*(a - b*x)^(5/2))/(3*x^(3/2)) + 5*a*b^(3/2)*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
+{x^(5/2)*(a - b*x)^(5/2), x, 9, -((5*a^5*Sqrt[x]*Sqrt[a - b*x])/(512*b^3)) - (5*a^4*x^(3/2)*Sqrt[a - b*x])/(768*b^2) - (a^3*x^(5/2)*Sqrt[a - b*x])/(192*b) + (1/32)*a^2*x^(7/2)*Sqrt[a - b*x] + (1/12)*a*x^(7/2)*(a - b*x)^(3/2) + (1/6)*x^(7/2)*(a - b*x)^(5/2) + (5*a^6*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(512*b^(7/2))}
+{x^(3/2)*(a - b*x)^(5/2), x, 8, -((3*a^4*Sqrt[x]*Sqrt[a - b*x])/(128*b^2)) - (a^3*x^(3/2)*Sqrt[a - b*x])/(64*b) + (1/16)*a^2*x^(5/2)*Sqrt[a - b*x] + (1/8)*a*x^(5/2)*(a - b*x)^(3/2) + (1/5)*x^(5/2)*(a - b*x)^(5/2) + (3*a^5*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(128*b^(5/2))}
+{Sqrt[x]*(a - b*x)^(5/2), x, 7, -((5*a^3*Sqrt[x]*Sqrt[a - b*x])/(64*b)) + (5/32)*a^2*x^(3/2)*Sqrt[a - b*x] + (5/24)*a*x^(3/2)*(a - b*x)^(3/2) + (1/4)*x^(3/2)*(a - b*x)^(5/2) + (5*a^4*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(64*b^(3/2))}
+{(a - b*x)^(5/2)/Sqrt[x], x, 6, (5/8)*a^2*Sqrt[x]*Sqrt[a - b*x] + (5/12)*a*Sqrt[x]*(a - b*x)^(3/2) + (1/3)*Sqrt[x]*(a - b*x)^(5/2) + (5*a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*Sqrt[b])}
+{(a - b*x)^(5/2)/x^(3/2), x, 6, (-(15/4))*a*b*Sqrt[x]*Sqrt[a - b*x] - (5/2)*b*Sqrt[x]*(a - b*x)^(3/2) - (2*(a - b*x)^(5/2))/Sqrt[x] - (15/4)*a^2*Sqrt[b]*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
+{(a - b*x)^(5/2)/x^(5/2), x, 6, 5*b^2*Sqrt[x]*Sqrt[a - b*x] + (10*b*(a - b*x)^(3/2))/(3*Sqrt[x]) - (2*(a - b*x)^(5/2))/(3*x^(3/2)) + 5*a*b^(3/2)*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]]}
 
 
 {x^(5/2)*(2 + b*x)^(5/2), x, 8, (5*Sqrt[x]*Sqrt[2 + b*x])/(16*b^3) - (5*x^(3/2)*Sqrt[2 + b*x])/(48*b^2) + (x^(5/2)*Sqrt[2 + b*x])/(24*b) + (1/8)*x^(7/2)*Sqrt[2 + b*x] + (1/6)*x^(7/2)*(2 + b*x)^(3/2) + (1/6)*x^(7/2)*(2 + b*x)^(5/2) - (5*ArcSinh[(Sqrt[b]*Sqrt[x])/Sqrt[2]])/(8*b^(7/2))}
@@ -848,51 +848,51 @@
 (*n<0*)
 
 
-{x^(5/2)/Sqrt[a + b*x], x, 5, (5*a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b^3) - (5*a*x^(3/2)*Sqrt[a + b*x])/(12*b^2) + (x^(5/2)*Sqrt[a + b*x])/(3*b) - (5*a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(7/2))}
-{x^(3/2)/Sqrt[a + b*x], x, 4, -((3*a*Sqrt[x]*Sqrt[a + b*x])/(4*b^2)) + (x^(3/2)*Sqrt[a + b*x])/(2*b) + (3*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(5/2))}
-{Sqrt[x]/Sqrt[a + b*x], x, 3, (Sqrt[x]*Sqrt[a + b*x])/b - (a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(3/2)}
-{1/(Sqrt[x]*Sqrt[a + b*x]), x, 2, (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/Sqrt[b]}
+{x^(5/2)/Sqrt[a + b*x], x, 6, (5*a^2*Sqrt[x]*Sqrt[a + b*x])/(8*b^3) - (5*a*x^(3/2)*Sqrt[a + b*x])/(12*b^2) + (x^(5/2)*Sqrt[a + b*x])/(3*b) - (5*a^3*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(8*b^(7/2))}
+{x^(3/2)/Sqrt[a + b*x], x, 5, -((3*a*Sqrt[x]*Sqrt[a + b*x])/(4*b^2)) + (x^(3/2)*Sqrt[a + b*x])/(2*b) + (3*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(5/2))}
+{Sqrt[x]/Sqrt[a + b*x], x, 4, (Sqrt[x]*Sqrt[a + b*x])/b - (a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(3/2)}
+{1/(Sqrt[x]*Sqrt[a + b*x]), x, 3, (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/Sqrt[b]}
 {1/(x^(3/2)*Sqrt[a + b*x]), x, 1, (-2*Sqrt[a + b*x])/(a*Sqrt[x])}
 {1/(x^(5/2)*Sqrt[a + b*x]), x, 2, -((2*Sqrt[a + b*x])/(3*a*x^(3/2))) + (4*b*Sqrt[a + b*x])/(3*a^2*Sqrt[x])}
 {1/(x^(7/2)*Sqrt[a + b*x]), x, 3, -((2*Sqrt[a + b*x])/(5*a*x^(5/2))) + (8*b*Sqrt[a + b*x])/(15*a^2*x^(3/2)) - (16*b^2*Sqrt[a + b*x])/(15*a^3*Sqrt[x])}
 {1/(x^(9/2)*Sqrt[a + b*x]), x, 4, -((2*Sqrt[a + b*x])/(7*a*x^(7/2))) + (12*b*Sqrt[a + b*x])/(35*a^2*x^(5/2)) - (16*b^2*Sqrt[a + b*x])/(35*a^3*x^(3/2)) + (32*b^3*Sqrt[a + b*x])/(35*a^4*Sqrt[x])}
 
 
-{x^(5/2)/(a + b*x)^(3/2), x, 5, -((2*x^(5/2))/(b*Sqrt[a + b*x])) - (15*a*Sqrt[x]*Sqrt[a + b*x])/(4*b^3) + (5*x^(3/2)*Sqrt[a + b*x])/(2*b^2) + (15*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(7/2))}
-{x^(3/2)/(a + b*x)^(3/2), x, 4, -((2*x^(3/2))/(b*Sqrt[a + b*x])) + (3*Sqrt[x]*Sqrt[a + b*x])/b^2 - (3*a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(5/2)}
-{Sqrt[x]/(a + b*x)^(3/2), x, 3, (-2*Sqrt[x])/(b*Sqrt[a + b*x]) + (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(3/2)}
+{x^(5/2)/(a + b*x)^(3/2), x, 6, -((2*x^(5/2))/(b*Sqrt[a + b*x])) - (15*a*Sqrt[x]*Sqrt[a + b*x])/(4*b^3) + (5*x^(3/2)*Sqrt[a + b*x])/(2*b^2) + (15*a^2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/(4*b^(7/2))}
+{x^(3/2)/(a + b*x)^(3/2), x, 5, -((2*x^(3/2))/(b*Sqrt[a + b*x])) + (3*Sqrt[x]*Sqrt[a + b*x])/b^2 - (3*a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(5/2)}
+{Sqrt[x]/(a + b*x)^(3/2), x, 4, (-2*Sqrt[x])/(b*Sqrt[a + b*x]) + (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(3/2)}
 {1/(Sqrt[x]*(a + b*x)^(3/2)), x, 1, (2*Sqrt[x])/(a*Sqrt[a + b*x])}
 {1/(x^(3/2)*(a + b*x)^(3/2)), x, 2, 2/(a*Sqrt[x]*Sqrt[a + b*x]) - (4*Sqrt[a + b*x])/(a^2*Sqrt[x])}
 {1/(x^(5/2)*(a + b*x)^(3/2)), x, 3, 2/(a*x^(3/2)*Sqrt[a + b*x]) - (8*Sqrt[a + b*x])/(3*a^2*x^(3/2)) + (16*b*Sqrt[a + b*x])/(3*a^3*Sqrt[x])}
 {1/(x^(7/2)*(a + b*x)^(3/2)), x, 4, 2/(a*x^(5/2)*Sqrt[a + b*x]) - (12*Sqrt[a + b*x])/(5*a^2*x^(5/2)) + (16*b*Sqrt[a + b*x])/(5*a^3*x^(3/2)) - (32*b^2*Sqrt[a + b*x])/(5*a^4*Sqrt[x])}
 
 
-{x^(5/2)/(a + b*x)^(5/2), x, 5, -((2*x^(5/2))/(3*b*(a + b*x)^(3/2))) - (10*x^(3/2))/(3*b^2*Sqrt[a + b*x]) + (5*Sqrt[x]*Sqrt[a + b*x])/b^3 - (5*a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(7/2)}
-{x^(3/2)/(a + b*x)^(5/2), x, 4, -((2*x^(3/2))/(3*b*(a + b*x)^(3/2))) - (2*Sqrt[x])/(b^2*Sqrt[a + b*x]) + (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(5/2)}
+{x^(5/2)/(a + b*x)^(5/2), x, 6, -((2*x^(5/2))/(3*b*(a + b*x)^(3/2))) - (10*x^(3/2))/(3*b^2*Sqrt[a + b*x]) + (5*Sqrt[x]*Sqrt[a + b*x])/b^3 - (5*a*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(7/2)}
+{x^(3/2)/(a + b*x)^(5/2), x, 5, -((2*x^(3/2))/(3*b*(a + b*x)^(3/2))) - (2*Sqrt[x])/(b^2*Sqrt[a + b*x]) + (2*ArcTanh[(Sqrt[b]*Sqrt[x])/Sqrt[a + b*x]])/b^(5/2)}
 {Sqrt[x]/(a + b*x)^(5/2), x, 1, (2*x^(3/2))/(3*a*(a + b*x)^(3/2))}
 {1/(Sqrt[x]*(a + b*x)^(5/2)), x, 2, (2*Sqrt[x])/(3*a*(a + b*x)^(3/2)) + (4*Sqrt[x])/(3*a^2*Sqrt[a + b*x])}
 {1/(x^(3/2)*(a + b*x)^(5/2)), x, 3, 2/(3*a*Sqrt[x]*(a + b*x)^(3/2)) + 8/(3*a^2*Sqrt[x]*Sqrt[a + b*x]) - (16*Sqrt[a + b*x])/(3*a^3*Sqrt[x])}
 {1/(x^(5/2)*(a + b*x)^(5/2)), x, 4, 2/(3*a*x^(3/2)*(a + b*x)^(3/2)) + 4/(a^2*x^(3/2)*Sqrt[a + b*x]) - (16*Sqrt[a + b*x])/(3*a^3*x^(3/2)) + (32*b*Sqrt[a + b*x])/(3*a^4*Sqrt[x])}
 
 
-{x^(5/2)/Sqrt[a - b*x], x, 5, -((5*a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b^3)) - (5*a*x^(3/2)*Sqrt[a - b*x])/(12*b^2) - (x^(5/2)*Sqrt[a - b*x])/(3*b) + (5*a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(7/2))}
-{x^(3/2)/Sqrt[a - b*x], x, 4, -((3*a*Sqrt[x]*Sqrt[a - b*x])/(4*b^2)) - (x^(3/2)*Sqrt[a - b*x])/(2*b) + (3*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(5/2))}
-{Sqrt[x]/Sqrt[a - b*x], x, 3, -((Sqrt[x]*Sqrt[a - b*x])/b) + (a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(3/2)}
-{1/(Sqrt[x]*Sqrt[a - b*x]), x, 2, (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/Sqrt[b]}
+{x^(5/2)/Sqrt[a - b*x], x, 6, -((5*a^2*Sqrt[x]*Sqrt[a - b*x])/(8*b^3)) - (5*a*x^(3/2)*Sqrt[a - b*x])/(12*b^2) - (x^(5/2)*Sqrt[a - b*x])/(3*b) + (5*a^3*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(8*b^(7/2))}
+{x^(3/2)/Sqrt[a - b*x], x, 5, -((3*a*Sqrt[x]*Sqrt[a - b*x])/(4*b^2)) - (x^(3/2)*Sqrt[a - b*x])/(2*b) + (3*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(5/2))}
+{Sqrt[x]/Sqrt[a - b*x], x, 4, -((Sqrt[x]*Sqrt[a - b*x])/b) + (a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(3/2)}
+{1/(Sqrt[x]*Sqrt[a - b*x]), x, 3, (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/Sqrt[b]}
 {1/(x^(3/2)*Sqrt[a - b*x]), x, 1, (-2*Sqrt[a - b*x])/(a*Sqrt[x])}
 {1/(x^(5/2)*Sqrt[a - b*x]), x, 2, -((2*Sqrt[a - b*x])/(3*a*x^(3/2))) - (4*b*Sqrt[a - b*x])/(3*a^2*Sqrt[x])}
 
 
-{x^(5/2)/(a - b*x)^(3/2), x, 5, (2*x^(5/2))/(b*Sqrt[a - b*x]) + (15*a*Sqrt[x]*Sqrt[a - b*x])/(4*b^3) + (5*x^(3/2)*Sqrt[a - b*x])/(2*b^2) - (15*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(7/2))}
-{x^(3/2)/(a - b*x)^(3/2), x, 4, (2*x^(3/2))/(b*Sqrt[a - b*x]) + (3*Sqrt[x]*Sqrt[a - b*x])/b^2 - (3*a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(5/2)}
-{Sqrt[x]/(a - b*x)^(3/2), x, 3, (2*Sqrt[x])/(b*Sqrt[a - b*x]) - (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(3/2)}
+{x^(5/2)/(a - b*x)^(3/2), x, 6, (2*x^(5/2))/(b*Sqrt[a - b*x]) + (15*a*Sqrt[x]*Sqrt[a - b*x])/(4*b^3) + (5*x^(3/2)*Sqrt[a - b*x])/(2*b^2) - (15*a^2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/(4*b^(7/2))}
+{x^(3/2)/(a - b*x)^(3/2), x, 5, (2*x^(3/2))/(b*Sqrt[a - b*x]) + (3*Sqrt[x]*Sqrt[a - b*x])/b^2 - (3*a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(5/2)}
+{Sqrt[x]/(a - b*x)^(3/2), x, 4, (2*Sqrt[x])/(b*Sqrt[a - b*x]) - (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(3/2)}
 {1/(Sqrt[x]*(a - b*x)^(3/2)), x, 1, (2*Sqrt[x])/(a*Sqrt[a - b*x])}
 {1/(x^(3/2)*(a - b*x)^(3/2)), x, 2, 2/(a*Sqrt[x]*Sqrt[a - b*x]) - (4*Sqrt[a - b*x])/(a^2*Sqrt[x])}
 {1/(x^(5/2)*(a - b*x)^(3/2)), x, 3, 2/(a*x^(3/2)*Sqrt[a - b*x]) - (8*Sqrt[a - b*x])/(3*a^2*x^(3/2)) - (16*b*Sqrt[a - b*x])/(3*a^3*Sqrt[x])}
 
 
-{x^(5/2)/(a - b*x)^(5/2), x, 5, (2*x^(5/2))/(3*b*(a - b*x)^(3/2)) - (10*x^(3/2))/(3*b^2*Sqrt[a - b*x]) - (5*Sqrt[x]*Sqrt[a - b*x])/b^3 + (5*a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(7/2)}
-{x^(3/2)/(a - b*x)^(5/2), x, 4, (2*x^(3/2))/(3*b*(a - b*x)^(3/2)) - (2*Sqrt[x])/(b^2*Sqrt[a - b*x]) + (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(5/2)}
+{x^(5/2)/(a - b*x)^(5/2), x, 6, (2*x^(5/2))/(3*b*(a - b*x)^(3/2)) - (10*x^(3/2))/(3*b^2*Sqrt[a - b*x]) - (5*Sqrt[x]*Sqrt[a - b*x])/b^3 + (5*a*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(7/2)}
+{x^(3/2)/(a - b*x)^(5/2), x, 5, (2*x^(3/2))/(3*b*(a - b*x)^(3/2)) - (2*Sqrt[x])/(b^2*Sqrt[a - b*x]) + (2*ArcTan[(Sqrt[b]*Sqrt[x])/Sqrt[a - b*x]])/b^(5/2)}
 {Sqrt[x]/(a - b*x)^(5/2), x, 1, (2*x^(3/2))/(3*a*(a - b*x)^(3/2))}
 {1/(Sqrt[x]*(a - b*x)^(5/2)), x, 2, (2*Sqrt[x])/(3*a*(a - b*x)^(3/2)) + (4*Sqrt[x])/(3*a^2*Sqrt[a - b*x])}
 {1/(x^(3/2)*(a - b*x)^(5/2)), x, 3, 2/(3*a*Sqrt[x]*(a - b*x)^(3/2)) + 8/(3*a^2*Sqrt[x]*Sqrt[a - b*x]) - (16*Sqrt[a - b*x])/(3*a^3*Sqrt[x])}
@@ -1740,7 +1740,7 @@
 {(1 - x)^(3/2)/(1 + x)^(5/2), x, 4, -((2*(1 - x)^(3/2))/(3*(1 + x)^(3/2))) + (2*Sqrt[1 - x])/Sqrt[1 + x] + ArcSin[x]}
 {(1 - x)^(1/2)/(1 + x)^(5/2), x, 1, -((1 - x)^(3/2)/(3*(1 + x)^(3/2)))}
 {1/((1 - x)^(1/2)*(1 + x)^(5/2)), x, 2, -(Sqrt[1 - x]/(3*(1 + x)^(3/2))) - Sqrt[1 - x]/(3*Sqrt[1 + x])}
-{1/((1 - x)^(3/2)*(1 + x)^(5/2)), x, 2, -(1/(3*Sqrt[1 - x]*(1 + x)^(3/2))) + (2*x)/(3*Sqrt[1 - x]*Sqrt[1 + x])}
+{1/((1 - x)^(3/2)*(1 + x)^(5/2)), x, 3, 1/(Sqrt[1 - x]*(1 + x)^(3/2)) - (2*Sqrt[1 - x])/(3*(1 + x)^(3/2)) - (2*Sqrt[1 - x])/(3*Sqrt[1 + x])}
 {1/((1 - x)^(5/2)*(1 + x)^(5/2)), x, 2, x/(3*(1 - x)^(3/2)*(1 + x)^(3/2)) + (2*x)/(3*Sqrt[1 - x]*Sqrt[1 + x])}
 {1/((1 - x)^(7/2)*(1 + x)^(5/2)), x, 3, 1/(5*(1 - x)^(5/2)*(1 + x)^(3/2)) + (4*x)/(15*(1 - x)^(3/2)*(1 + x)^(3/2)) + (8*x)/(15*Sqrt[1 - x]*Sqrt[1 + x])}
 {1/((1 - x)^(9/2)*(1 + x)^(5/2)), x, 4, 1/(7*(1 - x)^(7/2)*(1 + x)^(3/2)) + 1/(7*(1 - x)^(5/2)*(1 + x)^(3/2)) + (4*x)/(21*(1 - x)^(3/2)*(1 + x)^(3/2)) + (8*x)/(21*Sqrt[1 - x]*Sqrt[1 + x])}
@@ -1751,20 +1751,20 @@
 (*Integrands of the form (a+b x)^(m/2) (c+d x)^(m/2) when b c+a d=0*)
 
 
-{(a + a*x)^(5/2)*(c - c*x)^(5/2), x, 5, (5/16)*a^2*c^2*x*Sqrt[a + a*x]*Sqrt[c - c*x] + (5/24)*a*c*x*(a + a*x)^(3/2)*(c - c*x)^(3/2) + (1/6)*x*(a + a*x)^(5/2)*(c - c*x)^(5/2) + (5/8)*a^(5/2)*c^(5/2)*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
-{(a + a*x)^(3/2)*(c - c*x)^(3/2), x, 4, (3/8)*a*c*x*Sqrt[a + a*x]*Sqrt[c - c*x] + (1/4)*x*(a + a*x)^(3/2)*(c - c*x)^(3/2) + (3/4)*a^(3/2)*c^(3/2)*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
-{(a + a*x)^(1/2)*(c - c*x)^(1/2), x, 3, (1/2)*x*Sqrt[a + a*x]*Sqrt[c - c*x] + Sqrt[a]*Sqrt[c]*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
-{1/((a + a*x)^(1/2)*(c - c*x)^(1/2)), x, 2, (2*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])])/(Sqrt[a]*Sqrt[c])}
+{(a + a*x)^(5/2)*(c - c*x)^(5/2), x, 6, (5/16)*a^2*c^2*x*Sqrt[a + a*x]*Sqrt[c - c*x] + (5/24)*a*c*x*(a + a*x)^(3/2)*(c - c*x)^(3/2) + (1/6)*x*(a + a*x)^(5/2)*(c - c*x)^(5/2) + (5/8)*a^(5/2)*c^(5/2)*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
+{(a + a*x)^(3/2)*(c - c*x)^(3/2), x, 5, (3/8)*a*c*x*Sqrt[a + a*x]*Sqrt[c - c*x] + (1/4)*x*(a + a*x)^(3/2)*(c - c*x)^(3/2) + (3/4)*a^(3/2)*c^(3/2)*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
+{(a + a*x)^(1/2)*(c - c*x)^(1/2), x, 4, (1/2)*x*Sqrt[a + a*x]*Sqrt[c - c*x] + Sqrt[a]*Sqrt[c]*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])]}
+{1/((a + a*x)^(1/2)*(c - c*x)^(1/2)), x, 3, (2*ArcTan[(Sqrt[c]*Sqrt[a + a*x])/(Sqrt[a]*Sqrt[c - c*x])])/(Sqrt[a]*Sqrt[c])}
 {1/((a + a*x)^(3/2)*(c - c*x)^(3/2)), x, 1, x/(a*c*Sqrt[a + a*x]*Sqrt[c - c*x])}
 {1/((a + a*x)^(5/2)*(c - c*x)^(5/2)), x, 2, x/(3*a*c*(a + a*x)^(3/2)*(c - c*x)^(3/2)) + (2*x)/(3*a^2*c^2*Sqrt[a + a*x]*Sqrt[c - c*x])}
 {1/((a + a*x)^(7/2)*(c - c*x)^(7/2)), x, 3, x/(5*a*c*(a + a*x)^(5/2)*(c - c*x)^(5/2)) + (4*x)/(15*a^2*c^2*(a + a*x)^(3/2)*(c - c*x)^(3/2)) + (8*x)/(15*a^3*c^3*Sqrt[a + a*x]*Sqrt[c - c*x])}
 {1/((a + a*x)^(9/2)*(c - c*x)^(9/2)), x, 4, x/(7*a*c*(a + a*x)^(7/2)*(c - c*x)^(7/2)) + (6*x)/(35*a^2*c^2*(a + a*x)^(5/2)*(c - c*x)^(5/2)) + (8*x)/(35*a^3*c^3*(a + a*x)^(3/2)*(c - c*x)^(3/2)) + (16*x)/(35*a^4*c^4*Sqrt[a + a*x]*Sqrt[c - c*x])}
 
 
-{(a + b*x)^(5/2)*(a*c - b*c*x)^(5/2), x, 5, (5/16)*a^4*c^2*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (5/24)*a^2*c*x*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2) + (1/6)*x*(a + b*x)^(5/2)*(a*c - b*c*x)^(5/2) + (5*a^6*c^(5/2)*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[a*c - b*c*x]])/(8*b)}
-{(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2), x, 4, (3/8)*a^2*c*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (1/4)*x*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2) + (3*a^4*c^(3/2)*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[a*c - b*c*x]])/(4*b)}
-{(a + b*x)^(1/2)*(a*c - b*c*x)^(1/2), x, 3, (1/2)*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (a^2*Sqrt[c]*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[a*c - b*c*x]])/b}
-{1/((a + b*x)^(1/2)*(a*c - b*c*x)^(1/2)), x, 2, (2*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[a*c - b*c*x]])/(b*Sqrt[c])}
+{(a + b*x)^(5/2)*(a*c - b*c*x)^(5/2), x, 6, (5/16)*a^4*c^2*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (5/24)*a^2*c*x*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2) + (1/6)*x*(a + b*x)^(5/2)*(a*c - b*c*x)^(5/2) + (5*a^6*c^(5/2)*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[c*(a - b*x)]])/(8*b)}
+{(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2), x, 5, (3/8)*a^2*c*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (1/4)*x*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2) + (3*a^4*c^(3/2)*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[c*(a - b*x)]])/(4*b)}
+{(a + b*x)^(1/2)*(a*c - b*c*x)^(1/2), x, 4, (1/2)*x*Sqrt[a + b*x]*Sqrt[a*c - b*c*x] + (a^2*Sqrt[c]*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[c*(a - b*x)]])/b}
+{1/((a + b*x)^(1/2)*(a*c - b*c*x)^(1/2)), x, 3, (2*ArcTan[(Sqrt[c]*Sqrt[a + b*x])/Sqrt[c*(a - b*x)]])/(b*Sqrt[c])}
 {1/((a + b*x)^(3/2)*(a*c - b*c*x)^(3/2)), x, 1, x/(a^2*c*Sqrt[a + b*x]*Sqrt[a*c - b*c*x])}
 {1/((a + b*x)^(5/2)*(a*c - b*c*x)^(5/2)), x, 2, x/(3*a^2*c*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2)) + (2*x)/(3*a^4*c^2*Sqrt[a + b*x]*Sqrt[a*c - b*c*x])}
 {1/((a + b*x)^(7/2)*(a*c - b*c*x)^(7/2)), x, 3, x/(5*a^2*c*(a + b*x)^(5/2)*(a*c - b*c*x)^(5/2)) + (4*x)/(15*a^4*c^2*(a + b*x)^(3/2)*(a*c - b*c*x)^(3/2)) + (8*x)/(15*a^6*c^3*Sqrt[a + b*x]*Sqrt[a*c - b*c*x])}
@@ -1795,14 +1795,14 @@
 {1/((6 - 2*b*x)^(3/2)*(3 + b*x)^(3/2)), x, 1, x/(18*Sqrt[2]*Sqrt[3 - b*x]*Sqrt[3 + b*x])}
 
 
-{1/(Sqrt[a + b*x]*Sqrt[-a*d + b*d*x]), x, 2, (2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/Sqrt[(-a)*d + b*d*x]])/(b*Sqrt[d])}
+{1/(Sqrt[a + b*x]*Sqrt[-a*d + b*d*x]), x, 3, (2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/Sqrt[(-a)*d + b*d*x]])/(b*Sqrt[d])}
 
 
 (* ::Subsection::Closed:: *)
 (*Integrands of the form (a+b x)^(m/4) (c+d x)^(n/4) when b c+a d=0*)
 
 
-{1/((6 - 3*e*x)^(1/4)*(2 + e*x)^(3/4)), x, 10, If[$VersionNumber>=8, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - Log[(Sqrt[2 - e*x] - Sqrt[2]*(2 - e*x)^(1/4)*(2 + e*x)^(1/4) + Sqrt[2 + e*x])/Sqrt[2 + e*x]]/(Sqrt[2]*3^(1/4)*e) + Log[(Sqrt[2 - e*x] + Sqrt[2]*(2 - e*x)^(1/4)*(2 + e*x)^(1/4) + Sqrt[2 + e*x])/Sqrt[2 + e*x]]/(Sqrt[2]*3^(1/4)*e), (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - Log[Sqrt[3] + (Sqrt[3]*Sqrt[2 - e*x])/Sqrt[2 + e*x] - (Sqrt[6]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)]/(Sqrt[2]*3^(1/4)*e) + Log[Sqrt[3] + (Sqrt[3]*Sqrt[2 - e*x])/Sqrt[2 + e*x] + (Sqrt[6]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)]/(Sqrt[2]*3^(1/4)*e)]}
+{1/((6 - 3*e*x)^(1/4)*(2 + e*x)^(3/4)), x, 11, If[$VersionNumber>=8, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - Log[(Sqrt[6 - 3*e*x] - Sqrt[6]*(2 - e*x)^(1/4)*(2 + e*x)^(1/4) + Sqrt[3]*Sqrt[2 + e*x])/Sqrt[2 + e*x]]/(Sqrt[2]*3^(1/4)*e) + Log[(Sqrt[6 - 3*e*x] + Sqrt[6]*(2 - e*x)^(1/4)*(2 + e*x)^(1/4) + Sqrt[3]*Sqrt[2 + e*x])/Sqrt[2 + e*x]]/(Sqrt[2]*3^(1/4)*e), (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)])/(3^(1/4)*e) - Log[Sqrt[3] + (Sqrt[3]*Sqrt[2 - e*x])/Sqrt[2 + e*x] - (Sqrt[6]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)]/(Sqrt[2]*3^(1/4)*e) + Log[Sqrt[3] + (Sqrt[3]*Sqrt[2 - e*x])/Sqrt[2 + e*x] + (Sqrt[6]*(2 - e*x)^(1/4))/(2 + e*x)^(1/4)]/(Sqrt[2]*3^(1/4)*e)]}
 
 
 (* ::Subsubsection:: *)
@@ -1821,16 +1821,16 @@
 {1/((a - I*a*x)^(13/4)*(a + I*a*x)^(1/4)), x, 5, -((4*I)/(15*a^2*(a - I*a*x)^(5/4)*(a + I*a*x)^(1/4))) - (2*I*(a + I*a*x)^(3/4))/(9*a^2*(a - I*a*x)^(9/4)) + (2*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(15*a^3*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(17/4)*(a + I*a*x)^(1/4)), x, 6, -((4*I)/(39*a^3*(a - I*a*x)^(5/4)*(a + I*a*x)^(1/4))) - (2*I*(a + I*a*x)^(3/4))/(13*a^2*(a - I*a*x)^(13/4)) - (10*I*(a + I*a*x)^(3/4))/(117*a^3*(a - I*a*x)^(9/4)) + (2*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(39*a^4*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 
-{(a - I*a*x)^(1/4)/(a + I*a*x)^(1/4), x, 11, -((I*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4))/a) - (I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
-{1/((a - I*a*x)^(3/4)*(a + I*a*x)^(1/4)), x, 10, -((I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a) + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
+{(a - I*a*x)^(1/4)/(a + I*a*x)^(1/4), x, 12, -((I*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4))/a) - (I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
+{1/((a - I*a*x)^(3/4)*(a + I*a*x)^(1/4)), x, 11, -((I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a) + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
 {1/((a - I*a*x)^(7/4)*(a + I*a*x)^(1/4)), x, 1, -((2*I*(a + I*a*x)^(3/4))/(3*a^2*(a - I*a*x)^(3/4)))}
 {1/((a - I*a*x)^(11/4)*(a + I*a*x)^(1/4)), x, 2, -((2*I*(a + I*a*x)^(3/4))/(7*a^2*(a - I*a*x)^(7/4))) - (4*I*(a + I*a*x)^(3/4))/(21*a^3*(a - I*a*x)^(3/4))}
 {1/((a - I*a*x)^(15/4)*(a + I*a*x)^(1/4)), x, 3, -((2*I*(a + I*a*x)^(3/4))/(11*a^2*(a - I*a*x)^(11/4))) - (8*I*(a + I*a*x)^(3/4))/(77*a^3*(a - I*a*x)^(7/4)) - (16*I*(a + I*a*x)^(3/4))/(231*a^4*(a - I*a*x)^(3/4))}
 {1/((a - I*a*x)^(19/4)*(a + I*a*x)^(1/4)), x, 4, -((2*I*(a + I*a*x)^(3/4))/(15*a^2*(a - I*a*x)^(15/4))) - (4*I*(a + I*a*x)^(3/4))/(55*a^3*(a - I*a*x)^(11/4)) - (16*I*(a + I*a*x)^(3/4))/(385*a^4*(a - I*a*x)^(7/4)) - (32*I*(a + I*a*x)^(3/4))/(1155*a^5*(a - I*a*x)^(3/4))}
 
 
-{(a - I*a*x)^(3/4)/(a + I*a*x)^(3/4), x, 11, -((I*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4))/a) - (3*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (3*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (3*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) - (3*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
-{1/((a - I*a*x)^(1/4)*(a + I*a*x)^(3/4)), x, 10, -((I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a) + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
+{(a - I*a*x)^(3/4)/(a + I*a*x)^(3/4), x, 12, -((I*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4))/a) - (3*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (3*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (3*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) - (3*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
+{1/((a - I*a*x)^(1/4)*(a + I*a*x)^(3/4)), x, 11, -((I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a) + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
 {1/((a - I*a*x)^(5/4)*(a + I*a*x)^(3/4)), x, 1, ((-2*I)*(a + I*a*x)^(1/4))/(a^2*(a - I*a*x)^(1/4))}
 {1/((a - I*a*x)^(9/4)*(a + I*a*x)^(3/4)), x, 2, (((-2*I)/5)*(a + I*a*x)^(1/4))/(a^2*(a - I*a*x)^(5/4)) - (((4*I)/5)*(a + I*a*x)^(1/4))/(a^3*(a - I*a*x)^(1/4))}
 {1/((a - I*a*x)^(13/4)*(a + I*a*x)^(3/4)), x, 3, -((2*I*(a + I*a*x)^(1/4))/(9*a^2*(a - I*a*x)^(9/4))) - (8*I*(a + I*a*x)^(1/4))/(45*a^3*(a - I*a*x)^(5/4)) - (16*I*(a + I*a*x)^(1/4))/(45*a^4*(a - I*a*x)^(1/4))}
@@ -1842,8 +1842,8 @@
 {1/((a - I*a*x)^(11/4)*(a + I*a*x)^(3/4)), x, 5, (((-2*I)/7)*(a + I*a*x)^(1/4))/(a^2*(a - I*a*x)^(7/4)) - (((2*I)/7)*(a + I*a*x)^(1/4))/(a^3*(a - I*a*x)^(3/4)) + (2*(1 + x^2)^(3/4)*EllipticF[ArcTan[x]/2, 2])/(7*a^2*(a - I*a*x)^(3/4)*(a + I*a*x)^(3/4))}
 
 
-{(a - I*a*x)^(7/4)/(a + I*a*x)^(7/4), x, 12, (4*I*(a - I*a*x)^(7/4))/(3*a*(a + I*a*x)^(3/4)) + (7*I*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4))/(3*a) + (7*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (7*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (7*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) + (7*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
-{(a - I*a*x)^(3/4)/(a + I*a*x)^(7/4), x, 11, (4*I*(a - I*a*x)^(3/4))/(3*a*(a + I*a*x)^(3/4)) + (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
+{(a - I*a*x)^(7/4)/(a + I*a*x)^(7/4), x, 13, (4*I*(a - I*a*x)^(7/4))/(3*a*(a + I*a*x)^(3/4)) + (7*I*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4))/(3*a) + (7*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (7*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (7*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) + (7*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
+{(a - I*a*x)^(3/4)/(a + I*a*x)^(7/4), x, 12, (4*I*(a - I*a*x)^(3/4))/(3*a*(a + I*a*x)^(3/4)) + (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
 {1/((a - I*a*x)^(1/4)*(a + I*a*x)^(7/4)), x, 1, (((2*I)/3)*(a - I*a*x)^(3/4))/(a^2*(a + I*a*x)^(3/4))}
 {1/((a - I*a*x)^(5/4)*(a + I*a*x)^(7/4)), x, 2, (-2*I)/(a^2*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4)) + (((4*I)/3)*(a - I*a*x)^(3/4))/(a^3*(a + I*a*x)^(3/4))}
 {1/((a - I*a*x)^(9/4)*(a + I*a*x)^(7/4)), x, 3, ((-2*I)/5)/(a^2*(a - I*a*x)^(5/4)*(a + I*a*x)^(3/4)) - ((8*I)/5)/(a^3*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4)) + (((16*I)/15)*(a - I*a*x)^(3/4))/(a^4*(a + I*a*x)^(3/4))}
@@ -1864,8 +1864,8 @@
 {1/((a - I*a*x)^(9/4)*(a + I*a*x)^(5/4)), x, 4, ((-2*I)/5)/(a^2*(a - I*a*x)^(5/4)*(a + I*a*x)^(1/4)) + (6*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(5*a^3*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(13/4)*(a + I*a*x)^(5/4)), x, 5, -((2*I)/(9*a^2*(a - I*a*x)^(9/4)*(a + I*a*x)^(1/4))) - (2*I)/(9*a^3*(a - I*a*x)^(5/4)*(a + I*a*x)^(1/4)) + (2*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(3*a^4*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 
-{(a - I*a*x)^(5/4)/(a + I*a*x)^(5/4), x, 12, (4*I*(a - I*a*x)^(5/4))/(a*(a + I*a*x)^(1/4)) + (5*I*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4))/a + (5*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (5*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (5*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) - (5*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
-{(a - I*a*x)^(1/4)/(a + I*a*x)^(5/4), x, 11, (4*I*(a - I*a*x)^(1/4))/(a*(a + I*a*x)^(1/4)) + (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
+{(a - I*a*x)^(5/4)/(a + I*a*x)^(5/4), x, 13, (4*I*(a - I*a*x)^(5/4))/(a*(a + I*a*x)^(1/4)) + (5*I*(a - I*a*x)^(1/4)*(a + I*a*x)^(3/4))/a + (5*I*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] - (5*I*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/Sqrt[2] + (5*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2]) - (5*I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(2*Sqrt[2])}
+{(a - I*a*x)^(1/4)/(a + I*a*x)^(5/4), x, 12, (4*I*(a - I*a*x)^(1/4))/(a*(a + I*a*x)^(1/4)) + (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
 {1/((a - I*a*x)^(3/4)*(a + I*a*x)^(5/4)), x, 1, ((2*I)*(a - I*a*x)^(1/4))/(a^2*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(7/4)*(a + I*a*x)^(5/4)), x, 2, ((-2*I)/3)/(a^2*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4)) + (((4*I)/3)*(a - I*a*x)^(1/4))/(a^3*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(11/4)*(a + I*a*x)^(5/4)), x, 3, ((-2*I)/7)/(a^2*(a - I*a*x)^(7/4)*(a + I*a*x)^(1/4)) - ((8*I)/21)/(a^3*(a - I*a*x)^(3/4)*(a + I*a*x)^(1/4)) + (((16*I)/21)*(a - I*a*x)^(1/4))/(a^4*(a + I*a*x)^(1/4))}
@@ -1879,7 +1879,7 @@
 {1/((a - I*a*x)^(13/4)*(a + I*a*x)^(9/4)), x, 5, -((2*I)/(9*a^2*(a - I*a*x)^(9/4)*(a + I*a*x)^(5/4))) + (14*x)/(45*a^5*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4)*(1 + x^2)) + (14*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(15*a^5*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(17/4)*(a + I*a*x)^(9/4)), x, 6, -((2*I)/(13*a^2*(a - I*a*x)^(13/4)*(a + I*a*x)^(5/4))) - (2*I)/(13*a^3*(a - I*a*x)^(9/4)*(a + I*a*x)^(5/4)) + (14*x)/(65*a^6*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4)*(1 + x^2)) + (42*(1 + x^2)^(1/4)*EllipticE[ArcTan[x]/2, 2])/(65*a^6*(a - I*a*x)^(1/4)*(a + I*a*x)^(1/4))}
 
-{(a - I*a*x)^(5/4)/(a + I*a*x)^(9/4), x, 12, (4*I*(a - I*a*x)^(5/4))/(5*a*(a + I*a*x)^(5/4)) - (4*I*(a - I*a*x)^(1/4))/(a*(a + I*a*x)^(1/4)) - (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
+{(a - I*a*x)^(5/4)/(a + I*a*x)^(9/4), x, 13, (4*I*(a - I*a*x)^(5/4))/(5*a*(a + I*a*x)^(5/4)) - (4*I*(a - I*a*x)^(1/4))/(a*(a + I*a*x)^(1/4)) - (I*Sqrt[2]*ArcTan[1 - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a + (I*Sqrt[2]*ArcTan[1 + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/a - (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] - (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a) + (I*Log[1 + Sqrt[a - I*a*x]/Sqrt[a + I*a*x] + (Sqrt[2]*(a - I*a*x)^(1/4))/(a + I*a*x)^(1/4)])/(Sqrt[2]*a)}
 {(a - I*a*x)^(1/4)/(a + I*a*x)^(9/4), x, 1, (((2*I)/5)*(a - I*a*x)^(5/4))/(a^2*(a + I*a*x)^(5/4))}
 {1/((a - I*a*x)^(3/4)*(a + I*a*x)^(9/4)), x, 2, (((2*I)/5)*(a - I*a*x)^(1/4))/(a^2*(a + I*a*x)^(5/4)) + (((4*I)/5)*(a - I*a*x)^(1/4))/(a^3*(a + I*a*x)^(1/4))}
 {1/((a - I*a*x)^(7/4)*(a + I*a*x)^(9/4)), x, 3, ((-2*I)/3)/(a^2*(a - I*a*x)^(3/4)*(a + I*a*x)^(5/4)) + (((8*I)/15)*(a - I*a*x)^(1/4))/(a^3*(a + I*a*x)^(5/4)) + (((16*I)/15)*(a - I*a*x)^(1/4))/(a^4*(a + I*a*x)^(1/4))}
@@ -2286,12 +2286,12 @@
 (*n>0*)
 
 
-{(a + b*x)^(7/2)*(c + d*x)^(1/2), x, 7, -((7*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b*d^4)) + (7*(b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(192*b*d^3) - (7*(b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(240*b*d^2) + ((b*c - a*d)*(a + b*x)^(7/2)*Sqrt[c + d*x])/(40*b*d) + ((a + b*x)^(9/2)*Sqrt[c + d*x])/(5*b) + (7*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(3/2)*d^(9/2))}
-{(a + b*x)^(5/2)*(c + d*x)^(1/2), x, 6, (5*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b*d^3) - (5*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(96*b*d^2) + ((b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(24*b*d) + ((a + b*x)^(7/2)*Sqrt[c + d*x])/(4*b) - (5*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(3/2)*d^(7/2))}
-{(a + b*x)^(3/2)*(c + d*x)^(1/2), x, 5, -(((b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b*d^2)) + ((b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*b*d) + ((a + b*x)^(5/2)*Sqrt[c + d*x])/(3*b) + ((b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(3/2)*d^(5/2))}
-{(a + b*x)^(1/2)*(c + d*x)^(1/2), x, 4, ((b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b*d) + ((a + b*x)^(3/2)*Sqrt[c + d*x])/(2*b) - ((b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(3/2)*d^(3/2))}
-{(c + d*x)^(1/2)/(a + b*x)^(1/2), x, 3, (Sqrt[a + b*x]*Sqrt[c + d*x])/b + ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(b^(3/2)*Sqrt[d])}
-{(c + d*x)^(1/2)/(a + b*x)^(3/2), x, 3, -((2*Sqrt[c + d*x])/(b*Sqrt[a + b*x])) + (2*Sqrt[d]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(3/2)}
+{(a + b*x)^(7/2)*(c + d*x)^(1/2), x, 8, -((7*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b*d^4)) + (7*(b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(192*b*d^3) - (7*(b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(240*b*d^2) + ((b*c - a*d)*(a + b*x)^(7/2)*Sqrt[c + d*x])/(40*b*d) + ((a + b*x)^(9/2)*Sqrt[c + d*x])/(5*b) + (7*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(3/2)*d^(9/2))}
+{(a + b*x)^(5/2)*(c + d*x)^(1/2), x, 7, (5*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b*d^3) - (5*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(96*b*d^2) + ((b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(24*b*d) + ((a + b*x)^(7/2)*Sqrt[c + d*x])/(4*b) - (5*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(3/2)*d^(7/2))}
+{(a + b*x)^(3/2)*(c + d*x)^(1/2), x, 6, -(((b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b*d^2)) + ((b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*b*d) + ((a + b*x)^(5/2)*Sqrt[c + d*x])/(3*b) + ((b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(3/2)*d^(5/2))}
+{(a + b*x)^(1/2)*(c + d*x)^(1/2), x, 5, ((b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b*d) + ((a + b*x)^(3/2)*Sqrt[c + d*x])/(2*b) - ((b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(3/2)*d^(3/2))}
+{(c + d*x)^(1/2)/(a + b*x)^(1/2), x, 4, (Sqrt[a + b*x]*Sqrt[c + d*x])/b + ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(b^(3/2)*Sqrt[d])}
+{(c + d*x)^(1/2)/(a + b*x)^(3/2), x, 4, -((2*Sqrt[c + d*x])/(b*Sqrt[a + b*x])) + (2*Sqrt[d]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(3/2)}
 {(c + d*x)^(1/2)/(a + b*x)^(5/2), x, 1, -((2*(c + d*x)^(3/2))/(3*(b*c - a*d)*(a + b*x)^(3/2)))}
 {(c + d*x)^(1/2)/(a + b*x)^(7/2), x, 2, -((2*(c + d*x)^(3/2))/(5*(b*c - a*d)*(a + b*x)^(5/2))) + (4*d*(c + d*x)^(3/2))/(15*(b*c - a*d)^2*(a + b*x)^(3/2))}
 {(c + d*x)^(1/2)/(a + b*x)^(9/2), x, 3, -((2*(c + d*x)^(3/2))/(7*(b*c - a*d)*(a + b*x)^(7/2))) + (8*d*(c + d*x)^(3/2))/(35*(b*c - a*d)^2*(a + b*x)^(5/2)) - (16*d^2*(c + d*x)^(3/2))/(105*(b*c - a*d)^3*(a + b*x)^(3/2))}
@@ -2299,25 +2299,25 @@
 {(c + d*x)^(1/2)/(a + b*x)^(13/2), x, 5, -((2*(c + d*x)^(3/2))/(11*(b*c - a*d)*(a + b*x)^(11/2))) + (16*d*(c + d*x)^(3/2))/(99*(b*c - a*d)^2*(a + b*x)^(9/2)) - (32*d^2*(c + d*x)^(3/2))/(231*(b*c - a*d)^3*(a + b*x)^(7/2)) + (128*d^3*(c + d*x)^(3/2))/(1155*(b*c - a*d)^4*(a + b*x)^(5/2)) - (256*d^4*(c + d*x)^(3/2))/(3465*(b*c - a*d)^5*(a + b*x)^(3/2))}
 
 
-{(a + b*x)^(5/2)*(c + d*x)^(3/2), x, 7, (3*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b^2*d^3) - ((b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(64*b^2*d^2) + ((b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(80*b^2*d) + (3*(b*c - a*d)*(a + b*x)^(7/2)*Sqrt[c + d*x])/(40*b^2) + ((a + b*x)^(7/2)*(c + d*x)^(3/2))/(5*b) - (3*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(5/2)*d^(7/2))}
-{(a + b*x)^(3/2)*(c + d*x)^(3/2), x, 6, -((3*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b^2*d^2)) + ((b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(32*b^2*d) + ((b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(8*b^2) + ((a + b*x)^(5/2)*(c + d*x)^(3/2))/(4*b) + (3*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(5/2)*d^(5/2))}
-{(a + b*x)^(1/2)*(c + d*x)^(3/2), x, 5, ((b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b^2*d) + ((b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(4*b^2) + ((a + b*x)^(3/2)*(c + d*x)^(3/2))/(3*b) - ((b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(5/2)*d^(3/2))}
-{(c + d*x)^(3/2)/(a + b*x)^(1/2), x, 4, (3*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b^2) + (Sqrt[a + b*x]*(c + d*x)^(3/2))/(2*b) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(5/2)*Sqrt[d])}
-{(c + d*x)^(3/2)/(a + b*x)^(3/2), x, 4, (3*d*Sqrt[a + b*x]*Sqrt[c + d*x])/b^2 - (2*(c + d*x)^(3/2))/(b*Sqrt[a + b*x]) + (3*Sqrt[d]*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(5/2)}
-{(c + d*x)^(3/2)/(a + b*x)^(5/2), x, 4, -((2*d*Sqrt[c + d*x])/(b^2*Sqrt[a + b*x])) - (2*(c + d*x)^(3/2))/(3*b*(a + b*x)^(3/2)) + (2*d^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(5/2)}
+{(a + b*x)^(5/2)*(c + d*x)^(3/2), x, 8, (3*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b^2*d^3) - ((b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(64*b^2*d^2) + ((b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(80*b^2*d) + (3*(b*c - a*d)*(a + b*x)^(7/2)*Sqrt[c + d*x])/(40*b^2) + ((a + b*x)^(7/2)*(c + d*x)^(3/2))/(5*b) - (3*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(5/2)*d^(7/2))}
+{(a + b*x)^(3/2)*(c + d*x)^(3/2), x, 7, -((3*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b^2*d^2)) + ((b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(32*b^2*d) + ((b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(8*b^2) + ((a + b*x)^(5/2)*(c + d*x)^(3/2))/(4*b) + (3*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(5/2)*d^(5/2))}
+{(a + b*x)^(1/2)*(c + d*x)^(3/2), x, 6, ((b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b^2*d) + ((b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(4*b^2) + ((a + b*x)^(3/2)*(c + d*x)^(3/2))/(3*b) - ((b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(5/2)*d^(3/2))}
+{(c + d*x)^(3/2)/(a + b*x)^(1/2), x, 5, (3*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b^2) + (Sqrt[a + b*x]*(c + d*x)^(3/2))/(2*b) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(5/2)*Sqrt[d])}
+{(c + d*x)^(3/2)/(a + b*x)^(3/2), x, 5, (3*d*Sqrt[a + b*x]*Sqrt[c + d*x])/b^2 - (2*(c + d*x)^(3/2))/(b*Sqrt[a + b*x]) + (3*Sqrt[d]*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(5/2)}
+{(c + d*x)^(3/2)/(a + b*x)^(5/2), x, 5, -((2*d*Sqrt[c + d*x])/(b^2*Sqrt[a + b*x])) - (2*(c + d*x)^(3/2))/(3*b*(a + b*x)^(3/2)) + (2*d^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(5/2)}
 {(c + d*x)^(3/2)/(a + b*x)^(7/2), x, 1, -((2*(c + d*x)^(5/2))/(5*(b*c - a*d)*(a + b*x)^(5/2)))}
 {(c + d*x)^(3/2)/(a + b*x)^(9/2), x, 2, -((2*(c + d*x)^(5/2))/(7*(b*c - a*d)*(a + b*x)^(7/2))) + (4*d*(c + d*x)^(5/2))/(35*(b*c - a*d)^2*(a + b*x)^(5/2))}
 {(c + d*x)^(3/2)/(a + b*x)^(11/2), x, 3, -((2*(c + d*x)^(5/2))/(9*(b*c - a*d)*(a + b*x)^(9/2))) + (8*d*(c + d*x)^(5/2))/(63*(b*c - a*d)^2*(a + b*x)^(7/2)) - (16*d^2*(c + d*x)^(5/2))/(315*(b*c - a*d)^3*(a + b*x)^(5/2))}
 {(c + d*x)^(3/2)/(a + b*x)^(13/2), x, 4, -((2*(c + d*x)^(5/2))/(11*(b*c - a*d)*(a + b*x)^(11/2))) + (4*d*(c + d*x)^(5/2))/(33*(b*c - a*d)^2*(a + b*x)^(9/2)) - (16*d^2*(c + d*x)^(5/2))/(231*(b*c - a*d)^3*(a + b*x)^(7/2)) + (32*d^3*(c + d*x)^(5/2))/(1155*(b*c - a*d)^4*(a + b*x)^(5/2))}
 
 
-{(a + b*x)^(5/2)*(c + d*x)^(5/2), x, 8, (5*(b*c - a*d)^5*Sqrt[a + b*x]*Sqrt[c + d*x])/(512*b^3*d^3) - (5*(b*c - a*d)^4*(a + b*x)^(3/2)*Sqrt[c + d*x])/(768*b^3*d^2) + ((b*c - a*d)^3*(a + b*x)^(5/2)*Sqrt[c + d*x])/(192*b^3*d) + ((b*c - a*d)^2*(a + b*x)^(7/2)*Sqrt[c + d*x])/(32*b^3) + ((b*c - a*d)*(a + b*x)^(7/2)*(c + d*x)^(3/2))/(12*b^2) + ((a + b*x)^(7/2)*(c + d*x)^(5/2))/(6*b) - (5*(b*c - a*d)^6*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(512*b^(7/2)*d^(7/2))}
-{(a + b*x)^(3/2)*(c + d*x)^(5/2), x, 7, -((3*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b^3*d^2)) + ((b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(64*b^3*d) + ((b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(16*b^3) + ((b*c - a*d)*(a + b*x)^(5/2)*(c + d*x)^(3/2))/(8*b^2) + ((a + b*x)^(5/2)*(c + d*x)^(5/2))/(5*b) + (3*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(7/2)*d^(5/2))}
-{(a + b*x)^(1/2)*(c + d*x)^(5/2), x, 6, (5*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b^3*d) + (5*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(32*b^3) + (5*(b*c - a*d)*(a + b*x)^(3/2)*(c + d*x)^(3/2))/(24*b^2) + ((a + b*x)^(3/2)*(c + d*x)^(5/2))/(4*b) - (5*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(7/2)*d^(3/2))}
-{(c + d*x)^(5/2)/(a + b*x)^(1/2), x, 5, (5*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b^3) + (5*(b*c - a*d)*Sqrt[a + b*x]*(c + d*x)^(3/2))/(12*b^2) + (Sqrt[a + b*x]*(c + d*x)^(5/2))/(3*b) + (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(7/2)*Sqrt[d])}
-{(c + d*x)^(5/2)/(a + b*x)^(3/2), x, 5, (15*d*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b^3) + (5*d*Sqrt[a + b*x]*(c + d*x)^(3/2))/(2*b^2) - (2*(c + d*x)^(5/2))/(b*Sqrt[a + b*x]) + (15*Sqrt[d]*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(7/2))}
-{(c + d*x)^(5/2)/(a + b*x)^(5/2), x, 5, (5*d^2*Sqrt[a + b*x]*Sqrt[c + d*x])/b^3 - (10*d*(c + d*x)^(3/2))/(3*b^2*Sqrt[a + b*x]) - (2*(c + d*x)^(5/2))/(3*b*(a + b*x)^(3/2)) + (5*d^(3/2)*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(7/2)}
-{(c + d*x)^(5/2)/(a + b*x)^(7/2), x, 5, -((2*d^2*Sqrt[c + d*x])/(b^3*Sqrt[a + b*x])) - (2*d*(c + d*x)^(3/2))/(3*b^2*(a + b*x)^(3/2)) - (2*(c + d*x)^(5/2))/(5*b*(a + b*x)^(5/2)) + (2*d^(5/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(7/2)}
+{(a + b*x)^(5/2)*(c + d*x)^(5/2), x, 9, (5*(b*c - a*d)^5*Sqrt[a + b*x]*Sqrt[c + d*x])/(512*b^3*d^3) - (5*(b*c - a*d)^4*(a + b*x)^(3/2)*Sqrt[c + d*x])/(768*b^3*d^2) + ((b*c - a*d)^3*(a + b*x)^(5/2)*Sqrt[c + d*x])/(192*b^3*d) + ((b*c - a*d)^2*(a + b*x)^(7/2)*Sqrt[c + d*x])/(32*b^3) + ((b*c - a*d)*(a + b*x)^(7/2)*(c + d*x)^(3/2))/(12*b^2) + ((a + b*x)^(7/2)*(c + d*x)^(5/2))/(6*b) - (5*(b*c - a*d)^6*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(512*b^(7/2)*d^(7/2))}
+{(a + b*x)^(3/2)*(c + d*x)^(5/2), x, 8, -((3*(b*c - a*d)^4*Sqrt[a + b*x]*Sqrt[c + d*x])/(128*b^3*d^2)) + ((b*c - a*d)^3*(a + b*x)^(3/2)*Sqrt[c + d*x])/(64*b^3*d) + ((b*c - a*d)^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/(16*b^3) + ((b*c - a*d)*(a + b*x)^(5/2)*(c + d*x)^(3/2))/(8*b^2) + ((a + b*x)^(5/2)*(c + d*x)^(5/2))/(5*b) + (3*(b*c - a*d)^5*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(128*b^(7/2)*d^(5/2))}
+{(a + b*x)^(1/2)*(c + d*x)^(5/2), x, 7, (5*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*b^3*d) + (5*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(32*b^3) + (5*(b*c - a*d)*(a + b*x)^(3/2)*(c + d*x)^(3/2))/(24*b^2) + ((a + b*x)^(3/2)*(c + d*x)^(5/2))/(4*b) - (5*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*b^(7/2)*d^(3/2))}
+{(c + d*x)^(5/2)/(a + b*x)^(1/2), x, 6, (5*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*b^3) + (5*(b*c - a*d)*Sqrt[a + b*x]*(c + d*x)^(3/2))/(12*b^2) + (Sqrt[a + b*x]*(c + d*x)^(5/2))/(3*b) + (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*b^(7/2)*Sqrt[d])}
+{(c + d*x)^(5/2)/(a + b*x)^(3/2), x, 6, (15*d*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*b^3) + (5*d*Sqrt[a + b*x]*(c + d*x)^(3/2))/(2*b^2) - (2*(c + d*x)^(5/2))/(b*Sqrt[a + b*x]) + (15*Sqrt[d]*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*b^(7/2))}
+{(c + d*x)^(5/2)/(a + b*x)^(5/2), x, 6, (5*d^2*Sqrt[a + b*x]*Sqrt[c + d*x])/b^3 - (10*d*(c + d*x)^(3/2))/(3*b^2*Sqrt[a + b*x]) - (2*(c + d*x)^(5/2))/(3*b*(a + b*x)^(3/2)) + (5*d^(3/2)*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(7/2)}
+{(c + d*x)^(5/2)/(a + b*x)^(7/2), x, 6, -((2*d^2*Sqrt[c + d*x])/(b^3*Sqrt[a + b*x])) - (2*d*(c + d*x)^(3/2))/(3*b^2*(a + b*x)^(3/2)) - (2*(c + d*x)^(5/2))/(5*b*(a + b*x)^(5/2)) + (2*d^(5/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/b^(7/2)}
 {(c + d*x)^(5/2)/(a + b*x)^(9/2), x, 1, -((2*(c + d*x)^(7/2))/(7*(b*c - a*d)*(a + b*x)^(7/2)))}
 {(c + d*x)^(5/2)/(a + b*x)^(11/2), x, 2, -((2*(c + d*x)^(7/2))/(9*(b*c - a*d)*(a + b*x)^(9/2))) + (4*d*(c + d*x)^(7/2))/(63*(b*c - a*d)^2*(a + b*x)^(7/2))}
 {(c + d*x)^(5/2)/(a + b*x)^(13/2), x, 3, -((2*(c + d*x)^(7/2))/(11*(b*c - a*d)*(a + b*x)^(11/2))) + (8*d*(c + d*x)^(7/2))/(99*(b*c - a*d)^2*(a + b*x)^(9/2)) - (16*d^2*(c + d*x)^(7/2))/(693*(b*c - a*d)^3*(a + b*x)^(7/2))}
@@ -2328,11 +2328,11 @@
 (*n<0*)
 
 
-{(a + b*x)^(7/2)/(c + d*x)^(1/2), x, 6, -((35*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*d^4)) + (35*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(96*d^3) - (7*(b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(24*d^2) + ((a + b*x)^(7/2)*Sqrt[c + d*x])/(4*d) + (35*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*Sqrt[b]*d^(9/2))}
-{(a + b*x)^(5/2)/(c + d*x)^(1/2), x, 5, (5*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^3) - (5*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*d^2) + ((a + b*x)^(5/2)*Sqrt[c + d*x])/(3*d) - (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*Sqrt[b]*d^(7/2))}
-{(a + b*x)^(3/2)/(c + d*x)^(1/2), x, 4, -((3*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^2)) + ((a + b*x)^(3/2)*Sqrt[c + d*x])/(2*d) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*Sqrt[b]*d^(5/2))}
-{(a + b*x)^(1/2)/(c + d*x)^(1/2), x, 3, (Sqrt[a + b*x]*Sqrt[c + d*x])/d - ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*d^(3/2))}
-{1/((a + b*x)^(1/2)*(c + d*x)^(1/2)), x, 2, (2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d])}
+{(a + b*x)^(7/2)/(c + d*x)^(1/2), x, 7, -((35*(b*c - a*d)^3*Sqrt[a + b*x]*Sqrt[c + d*x])/(64*d^4)) + (35*(b*c - a*d)^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(96*d^3) - (7*(b*c - a*d)*(a + b*x)^(5/2)*Sqrt[c + d*x])/(24*d^2) + ((a + b*x)^(7/2)*Sqrt[c + d*x])/(4*d) + (35*(b*c - a*d)^4*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(64*Sqrt[b]*d^(9/2))}
+{(a + b*x)^(5/2)/(c + d*x)^(1/2), x, 6, (5*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^3) - (5*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*d^2) + ((a + b*x)^(5/2)*Sqrt[c + d*x])/(3*d) - (5*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*Sqrt[b]*d^(7/2))}
+{(a + b*x)^(3/2)/(c + d*x)^(1/2), x, 5, -((3*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^2)) + ((a + b*x)^(3/2)*Sqrt[c + d*x])/(2*d) + (3*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*Sqrt[b]*d^(5/2))}
+{(a + b*x)^(1/2)/(c + d*x)^(1/2), x, 4, (Sqrt[a + b*x]*Sqrt[c + d*x])/d - ((b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*d^(3/2))}
+{1/((a + b*x)^(1/2)*(c + d*x)^(1/2)), x, 3, (2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d])}
 {1/((a + b*x)^(3/2)*(c + d*x)^(1/2)), x, 1, -((2*Sqrt[c + d*x])/((b*c - a*d)*Sqrt[a + b*x]))}
 {1/((a + b*x)^(5/2)*(c + d*x)^(1/2)), x, 2, -((2*Sqrt[c + d*x])/(3*(b*c - a*d)*(a + b*x)^(3/2))) + (4*d*Sqrt[c + d*x])/(3*(b*c - a*d)^2*Sqrt[a + b*x])}
 {1/((a + b*x)^(7/2)*(c + d*x)^(1/2)), x, 3, -((2*Sqrt[c + d*x])/(5*(b*c - a*d)*(a + b*x)^(5/2))) + (8*d*Sqrt[c + d*x])/(15*(b*c - a*d)^2*(a + b*x)^(3/2)) - (16*d^2*Sqrt[c + d*x])/(15*(b*c - a*d)^3*Sqrt[a + b*x])}
@@ -2340,10 +2340,10 @@
 {1/((a + b*x)^(11/2)*(c + d*x)^(1/2)), x, 5, -((2*Sqrt[c + d*x])/(9*(b*c - a*d)*(a + b*x)^(9/2))) + (16*d*Sqrt[c + d*x])/(63*(b*c - a*d)^2*(a + b*x)^(7/2)) - (32*d^2*Sqrt[c + d*x])/(105*(b*c - a*d)^3*(a + b*x)^(5/2)) + (128*d^3*Sqrt[c + d*x])/(315*(b*c - a*d)^4*(a + b*x)^(3/2)) - (256*d^4*Sqrt[c + d*x])/(315*(b*c - a*d)^5*Sqrt[a + b*x])}
 
 
-{(a + b*x)^(7/2)/(c + d*x)^(3/2), x, 6, -((2*(a + b*x)^(7/2))/(d*Sqrt[c + d*x])) + (35*b*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^4) - (35*b*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*d^3) + (7*b*(a + b*x)^(5/2)*Sqrt[c + d*x])/(3*d^2) - (35*Sqrt[b]*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*d^(9/2))}
-{(a + b*x)^(5/2)/(c + d*x)^(3/2), x, 5, -((2*(a + b*x)^(5/2))/(d*Sqrt[c + d*x])) - (15*b*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^3) + (5*b*(a + b*x)^(3/2)*Sqrt[c + d*x])/(2*d^2) + (15*Sqrt[b]*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*d^(7/2))}
-{(a + b*x)^(3/2)/(c + d*x)^(3/2), x, 4, -((2*(a + b*x)^(3/2))/(d*Sqrt[c + d*x])) + (3*b*Sqrt[a + b*x]*Sqrt[c + d*x])/d^2 - (3*Sqrt[b]*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(5/2)}
-{(a + b*x)^(1/2)/(c + d*x)^(3/2), x, 3, -((2*Sqrt[a + b*x])/(d*Sqrt[c + d*x])) + (2*Sqrt[b]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(3/2)}
+{(a + b*x)^(7/2)/(c + d*x)^(3/2), x, 7, -((2*(a + b*x)^(7/2))/(d*Sqrt[c + d*x])) + (35*b*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^4) - (35*b*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(12*d^3) + (7*b*(a + b*x)^(5/2)*Sqrt[c + d*x])/(3*d^2) - (35*Sqrt[b]*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*d^(9/2))}
+{(a + b*x)^(5/2)/(c + d*x)^(3/2), x, 6, -((2*(a + b*x)^(5/2))/(d*Sqrt[c + d*x])) - (15*b*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^3) + (5*b*(a + b*x)^(3/2)*Sqrt[c + d*x])/(2*d^2) + (15*Sqrt[b]*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*d^(7/2))}
+{(a + b*x)^(3/2)/(c + d*x)^(3/2), x, 5, -((2*(a + b*x)^(3/2))/(d*Sqrt[c + d*x])) + (3*b*Sqrt[a + b*x]*Sqrt[c + d*x])/d^2 - (3*Sqrt[b]*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(5/2)}
+{(a + b*x)^(1/2)/(c + d*x)^(3/2), x, 4, -((2*Sqrt[a + b*x])/(d*Sqrt[c + d*x])) + (2*Sqrt[b]*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(3/2)}
 {1/((a + b*x)^(1/2)*(c + d*x)^(3/2)), x, 1, (2*Sqrt[a + b*x])/((b*c - a*d)*Sqrt[c + d*x])}
 {1/((a + b*x)^(3/2)*(c + d*x)^(3/2)), x, 2, -(2/((b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])) - (4*d*Sqrt[a + b*x])/((b*c - a*d)^2*Sqrt[c + d*x])}
 {1/((a + b*x)^(5/2)*(c + d*x)^(3/2)), x, 3, -(2/(3*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])) + (8*d)/(3*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x]) + (16*d^2*Sqrt[a + b*x])/(3*(b*c - a*d)^3*Sqrt[c + d*x])}
@@ -2352,10 +2352,10 @@
 {1/((a + b*x)^(11/2)*(c + d*x)^(3/2)), x, 6, -(2/(9*(b*c - a*d)*(a + b*x)^(9/2)*Sqrt[c + d*x])) + (20*d)/(63*(b*c - a*d)^2*(a + b*x)^(7/2)*Sqrt[c + d*x]) - (32*d^2)/(63*(b*c - a*d)^3*(a + b*x)^(5/2)*Sqrt[c + d*x]) + (64*d^3)/(63*(b*c - a*d)^4*(a + b*x)^(3/2)*Sqrt[c + d*x]) - (256*d^4)/(63*(b*c - a*d)^5*Sqrt[a + b*x]*Sqrt[c + d*x]) - (512*d^5*Sqrt[a + b*x])/(63*(b*c - a*d)^6*Sqrt[c + d*x])}
 
 
-{(a + b*x)^(9/2)/(c + d*x)^(5/2), x, 7, -((2*(a + b*x)^(9/2))/(3*d*(c + d*x)^(3/2))) - (6*b*(a + b*x)^(7/2))/(d^2*Sqrt[c + d*x]) + (105*b^2*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^5) - (35*b^2*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(4*d^4) + (7*b^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/d^3 - (105*b^(3/2)*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*d^(11/2))}
-{(a + b*x)^(7/2)/(c + d*x)^(5/2), x, 6, -((2*(a + b*x)^(7/2))/(3*d*(c + d*x)^(3/2))) - (14*b*(a + b*x)^(5/2))/(3*d^2*Sqrt[c + d*x]) - (35*b^2*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^4) + (35*b^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(6*d^3) + (35*b^(3/2)*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*d^(9/2))}
-{(a + b*x)^(5/2)/(c + d*x)^(5/2), x, 5, -((2*(a + b*x)^(5/2))/(3*d*(c + d*x)^(3/2))) - (10*b*(a + b*x)^(3/2))/(3*d^2*Sqrt[c + d*x]) + (5*b^2*Sqrt[a + b*x]*Sqrt[c + d*x])/d^3 - (5*b^(3/2)*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(7/2)}
-{(a + b*x)^(3/2)/(c + d*x)^(5/2), x, 4, -((2*(a + b*x)^(3/2))/(3*d*(c + d*x)^(3/2))) - (2*b*Sqrt[a + b*x])/(d^2*Sqrt[c + d*x]) + (2*b^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(5/2)}
+{(a + b*x)^(9/2)/(c + d*x)^(5/2), x, 8, -((2*(a + b*x)^(9/2))/(3*d*(c + d*x)^(3/2))) - (6*b*(a + b*x)^(7/2))/(d^2*Sqrt[c + d*x]) + (105*b^2*(b*c - a*d)^2*Sqrt[a + b*x]*Sqrt[c + d*x])/(8*d^5) - (35*b^2*(b*c - a*d)*(a + b*x)^(3/2)*Sqrt[c + d*x])/(4*d^4) + (7*b^2*(a + b*x)^(5/2)*Sqrt[c + d*x])/d^3 - (105*b^(3/2)*(b*c - a*d)^3*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(8*d^(11/2))}
+{(a + b*x)^(7/2)/(c + d*x)^(5/2), x, 7, -((2*(a + b*x)^(7/2))/(3*d*(c + d*x)^(3/2))) - (14*b*(a + b*x)^(5/2))/(3*d^2*Sqrt[c + d*x]) - (35*b^2*(b*c - a*d)*Sqrt[a + b*x]*Sqrt[c + d*x])/(4*d^4) + (35*b^2*(a + b*x)^(3/2)*Sqrt[c + d*x])/(6*d^3) + (35*b^(3/2)*(b*c - a*d)^2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(4*d^(9/2))}
+{(a + b*x)^(5/2)/(c + d*x)^(5/2), x, 6, -((2*(a + b*x)^(5/2))/(3*d*(c + d*x)^(3/2))) - (10*b*(a + b*x)^(3/2))/(3*d^2*Sqrt[c + d*x]) + (5*b^2*Sqrt[a + b*x]*Sqrt[c + d*x])/d^3 - (5*b^(3/2)*(b*c - a*d)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(7/2)}
+{(a + b*x)^(3/2)/(c + d*x)^(5/2), x, 5, -((2*(a + b*x)^(3/2))/(3*d*(c + d*x)^(3/2))) - (2*b*Sqrt[a + b*x])/(d^2*Sqrt[c + d*x]) + (2*b^(3/2)*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/d^(5/2)}
 {(a + b*x)^(1/2)/(c + d*x)^(5/2), x, 1, (2*(a + b*x)^(3/2))/(3*(b*c - a*d)*(c + d*x)^(3/2))}
 {1/((a + b*x)^(1/2)*(c + d*x)^(5/2)), x, 2, (2*Sqrt[a + b*x])/(3*(b*c - a*d)*(c + d*x)^(3/2)) + (4*b*Sqrt[a + b*x])/(3*(b*c - a*d)^2*Sqrt[c + d*x])}
 {1/((a + b*x)^(3/2)*(c + d*x)^(5/2)), x, 3, -(2/((b*c - a*d)*Sqrt[a + b*x]*(c + d*x)^(3/2))) - (8*d*Sqrt[a + b*x])/(3*(b*c - a*d)^2*(c + d*x)^(3/2)) - (16*b*d*Sqrt[a + b*x])/(3*(b*c - a*d)^3*Sqrt[c + d*x])}
@@ -2389,7 +2389,7 @@
 {1/(Sqrt[0 - b*x]*Sqrt[2 + b*x]), x, 3, ArcSin[1 + b*x]/b}
 {1/(Sqrt[-1 - b*x]*Sqrt[2 + b*x]), x, 3, ArcSin[3 + 2*b*x]/b}
 {1/(Sqrt[-2 - b*x]*Sqrt[2 + b*x]), x, 2, (Sqrt[2 + b*x]*Log[2 + b*x])/(b*Sqrt[-2 - b*x])}
-{1/(Sqrt[-3 - b*x]*Sqrt[2 + b*x]), x, 2, (-2*ArcTan[Sqrt[-3 - b*x]/Sqrt[2 + b*x]])/b}
+{1/(Sqrt[-3 - b*x]*Sqrt[2 + b*x]), x, 3, (-2*ArcTan[Sqrt[-3 - b*x]/Sqrt[2 + b*x]])/b}
 
 
 {1/(Sqrt[3 - b*x]*Sqrt[2 - b*x]), x, 2, -((2*ArcSinh[Sqrt[2 - b*x]])/b)}
@@ -2401,18 +2401,17 @@
 {1/(Sqrt[-3 - b*x]*Sqrt[2 - b*x]), x, 2, -((2*ArcSinh[Sqrt[-3 - b*x]/Sqrt[5]])/b)}
 
 
-{1/(Sqrt[4+b*x]*Sqrt[-4+b*x]), x, 1, ArcCosh[(b*x)/4]/b}
+{1/(Sqrt[4 + b*x]*Sqrt[-4 + b*x]), x, 1, ArcCosh[(b*x)/4]/b}
 
-{1/(Sqrt[(-b+b*c)/d+b*x]*Sqrt[c+d*x]), x, 2, (2*ArcTanh[(Sqrt[d]*Sqrt[-((b*(1 - c))/d) + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d])}
+{1/(Sqrt[(-b + b*c)/d + b*x]*Sqrt[c + d*x]), x, 2, (2*ArcSinh[(Sqrt[d]*Sqrt[-((b*(1 - c))/d) + b*x])/Sqrt[b]])/(Sqrt[b]*Sqrt[d])}
 {1/(Sqrt[x]*Sqrt[-3 + 2*x]), x, 2, Sqrt[2]*ArcSinh[Sqrt[-3 + 2*x]/Sqrt[3]]}
 {1/(Sqrt[2+3*x]*Sqrt[-3+2*x]), x, 2, Sqrt[2/3]*ArcSinh[Sqrt[3/13]*Sqrt[-3 + 2*x]]}
-{1/(Sqrt[a+b*x]*Sqrt[c+d*x]), x, 2, (2*ArcTanh[(Sqrt[d]*Sqrt[a + b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d])}
 
-{1/(Sqrt[(b-b*c)/d+b*x]*Sqrt[c-d*x]), x, 2, (2*ArcTan[(Sqrt[d]*Sqrt[(b*(1 - c))/d + b*x])/(Sqrt[b]*Sqrt[c - d*x])])/(Sqrt[b]*Sqrt[d])}
+{1/(Sqrt[(b - b*c)/d + b*x]*Sqrt[c - d*x]), x, 2, (2*ArcSin[(Sqrt[d]*Sqrt[(b*(1 - c))/d + b*x])/Sqrt[b]])/(Sqrt[b]*Sqrt[d])}
 {1/(Sqrt[4 - x]*Sqrt[x]), x, 3, -ArcSin[1 - x/2]}
 {1/(Sqrt[x]*Sqrt[3 - 2*x]), x, 2, Sqrt[2]*ArcSin[Sqrt[2/3]*Sqrt[x]]}
 {1/(Sqrt[3+5*x]*Sqrt[3-2*x]), x, 2, Sqrt[2/5]*ArcSin[Sqrt[2/21]*Sqrt[3 + 5*x]]}
-{1/(Sqrt[a-b*x]*Sqrt[c+d*x]), x, 2, -((2*ArcTan[(Sqrt[d]*Sqrt[a - b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d]))}
+{1/(Sqrt[a-b*x]*Sqrt[c+d*x]), x, 3, -((2*ArcTan[(Sqrt[d]*Sqrt[a - b*x])/(Sqrt[b]*Sqrt[c + d*x])])/(Sqrt[b]*Sqrt[d]))}
 
 
 (* ::Subsection::Closed:: *)
@@ -2614,10 +2613,10 @@
 (*n>0*)
 
 
-{(a + b*x)^(3/4)*(c + d*x)^(5/4), x, 7, (5*(b*c - a*d)^2*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(96*b^2*d) + (5*(b*c - a*d)*(a + b*x)^(7/4)*(c + d*x)^(1/4))/(24*b^2) + ((a + b*x)^(7/4)*(c + d*x)^(5/4))/(3*b) + (5*(b*c - a*d)^3*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(64*b^(9/4)*d^(7/4)) - (5*(b*c - a*d)^3*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(64*b^(9/4)*d^(7/4))}
-{(c + d*x)^(5/4)/(a + b*x)^(1/4), x, 6, (5*(b*c - a*d)*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(8*b^2) + ((a + b*x)^(3/4)*(c + d*x)^(5/4))/(2*b) - (5*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(9/4)*d^(3/4)) + (5*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(9/4)*d^(3/4))}
-{(c + d*x)^(5/4)/(a + b*x)^(5/4), x, 6, (5*d*(a + b*x)^(3/4)*(c + d*x)^(1/4))/b^2 - (4*(c + d*x)^(5/4))/(b*(a + b*x)^(1/4)) - (5*d^(1/4)*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(9/4)) + (5*d^(1/4)*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(9/4))}
-{(c + d*x)^(5/4)/(a + b*x)^(9/4), x, 6, (-4*d*(c + d*x)^(1/4))/(b^2*(a + b*x)^(1/4)) - (4*(c + d*x)^(5/4))/(5*b*(a + b*x)^(5/4)) - (2*d^(5/4)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/b^(9/4) + (2*d^(5/4)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/b^(9/4)}
+{(a + b*x)^(3/4)*(c + d*x)^(5/4), x, 8, (5*(b*c - a*d)^2*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(96*b^2*d) + (5*(b*c - a*d)*(a + b*x)^(7/4)*(c + d*x)^(1/4))/(24*b^2) + ((a + b*x)^(7/4)*(c + d*x)^(5/4))/(3*b) + (5*(b*c - a*d)^3*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(64*b^(9/4)*d^(7/4)) - (5*(b*c - a*d)^3*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(64*b^(9/4)*d^(7/4))}
+{(c + d*x)^(5/4)/(a + b*x)^(1/4), x, 7, (5*(b*c - a*d)*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(8*b^2) + ((a + b*x)^(3/4)*(c + d*x)^(5/4))/(2*b) - (5*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(9/4)*d^(3/4)) + (5*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(9/4)*d^(3/4))}
+{(c + d*x)^(5/4)/(a + b*x)^(5/4), x, 7, (5*d*(a + b*x)^(3/4)*(c + d*x)^(1/4))/b^2 - (4*(c + d*x)^(5/4))/(b*(a + b*x)^(1/4)) - (5*d^(1/4)*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(9/4)) + (5*d^(1/4)*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(9/4))}
+{(c + d*x)^(5/4)/(a + b*x)^(9/4), x, 7, (-4*d*(c + d*x)^(1/4))/(b^2*(a + b*x)^(1/4)) - (4*(c + d*x)^(5/4))/(5*b*(a + b*x)^(5/4)) - (2*d^(5/4)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/b^(9/4) + (2*d^(5/4)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/b^(9/4)}
 {(c + d*x)^(5/4)/(a + b*x)^(13/4), x, 1, (-4*(c + d*x)^(9/4))/(9*(b*c - a*d)*(a + b*x)^(9/4))}
 {(c + d*x)^(5/4)/(a + b*x)^(17/4), x, 2, (-4*(c + d*x)^(9/4))/(13*(b*c - a*d)*(a + b*x)^(13/4)) + (16*d*(c + d*x)^(9/4))/(117*(b*c - a*d)^2*(a + b*x)^(9/4))}
 {(c + d*x)^(5/4)/(a + b*x)^(21/4), x, 3, (-4*(c + d*x)^(9/4))/(17*(b*c - a*d)*(a + b*x)^(17/4)) + (32*d*(c + d*x)^(9/4))/(221*(b*c - a*d)^2*(a + b*x)^(13/4)) - (128*d^2*(c + d*x)^(9/4))/(1989*(b*c - a*d)^3*(a + b*x)^(9/4))}
@@ -2636,9 +2635,9 @@
 (*n<0*)
 
 
-{(a + b*x)^(5/4)/(c + d*x)^(1/4), x, 6, (-5*(b*c - a*d)*(a + b*x)^(1/4)*(c + d*x)^(3/4))/(8*d^2) + ((a + b*x)^(5/4)*(c + d*x)^(3/4))/(2*d) + (5*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(3/4)*d^(9/4)) + (5*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(3/4)*d^(9/4))}
-{(a + b*x)^(1/4)/(c + d*x)^(1/4), x, 5, ((a + b*x)^(1/4)*(c + d*x)^(3/4))/d - ((b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(3/4)*d^(5/4)) - ((b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(3/4)*d^(5/4))}
-{1/((a + b*x)^(3/4)*(c + d*x)^(1/4)), x, 4, (2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(3/4)*d^(1/4)) + (2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(3/4)*d^(1/4))}
+{(a + b*x)^(5/4)/(c + d*x)^(1/4), x, 7, (-5*(b*c - a*d)*(a + b*x)^(1/4)*(c + d*x)^(3/4))/(8*d^2) + ((a + b*x)^(5/4)*(c + d*x)^(3/4))/(2*d) + (5*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(3/4)*d^(9/4)) + (5*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(3/4)*d^(9/4))}
+{(a + b*x)^(1/4)/(c + d*x)^(1/4), x, 6, ((a + b*x)^(1/4)*(c + d*x)^(3/4))/d - ((b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(3/4)*d^(5/4)) - ((b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(3/4)*d^(5/4))}
+{1/((a + b*x)^(3/4)*(c + d*x)^(1/4)), x, 5, (2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(3/4)*d^(1/4)) + (2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(3/4)*d^(1/4))}
 {1/((a + b*x)^(7/4)*(c + d*x)^(1/4)), x, 1, (-4*(c + d*x)^(3/4))/(3*(b*c - a*d)*(a + b*x)^(3/4))}
 {1/((a + b*x)^(11/4)*(c + d*x)^(1/4)), x, 2, (-4*(c + d*x)^(3/4))/(7*(b*c - a*d)*(a + b*x)^(7/4)) + (16*d*(c + d*x)^(3/4))/(21*(b*c - a*d)^2*(a + b*x)^(3/4))}
 {1/((a + b*x)^(15/4)*(c + d*x)^(1/4)), x, 3, (-4*(c + d*x)^(3/4))/(11*(b*c - a*d)*(a + b*x)^(11/4)) + (32*d*(c + d*x)^(3/4))/(77*(b*c - a*d)^2*(a + b*x)^(7/4)) - (128*d^2*(c + d*x)^(3/4))/(231*(b*c - a*d)^3*(a + b*x)^(3/4))}
@@ -2651,9 +2650,9 @@
 {1/((a + b*x)^(9/4)*(c + d*x)^(1/4)), x, 7, -((4*(c + d*x)^(3/4))/(5*(b*c - a*d)*(a + b*x)^(5/4))) + (8*d*(c + d*x)^(3/4))/(5*(b*c - a*d)^2*(a + b*x)^(1/4)) - (8*d^(3/2)*Sqrt[(a + b*x)*(c + d*x)]*Sqrt[(b*c + a*d + 2*b*d*x)^2]*Sqrt[(a*d + b*(c + 2*d*x))^2])/(5*Sqrt[b]*(b*c - a*d)^3*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))) + (4*Sqrt[2]*d^(5/4)*((a + b*x)*(c + d*x))^(1/4)*Sqrt[(b*c + a*d + 2*b*d*x)^2]*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))*Sqrt[(a*d + b*(c + 2*d*x))^2/((b*c - a*d)^2*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))^2)]*EllipticE[2*ArcTan[(Sqrt[2]*b^(1/4)*d^(1/4)*((a + b*x)*(c + d*x))^(1/4))/Sqrt[b*c - a*d]], 1/2])/(5*b^(3/4)*Sqrt[b*c - a*d]*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*Sqrt[(a*d + b*(c + 2*d*x))^2]) - (2*Sqrt[2]*d^(5/4)*((a + b*x)*(c + d*x))^(1/4)*Sqrt[(b*c + a*d + 2*b*d*x)^2]*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))*Sqrt[(a*d + b*(c + 2*d*x))^2/((b*c - a*d)^2*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))^2)]*EllipticF[2*ArcTan[(Sqrt[2]*b^(1/4)*d^(1/4)*((a + b*x)*(c + d*x))^(1/4))/Sqrt[b*c - a*d]], 1/2])/(5*b^(3/4)*Sqrt[b*c - a*d]*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*Sqrt[(a*d + b*(c + 2*d*x))^2])}
 
 
-{(a + b*x)^(7/4)/(c + d*x)^(3/4), x, 6, (-7*(b*c - a*d)*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(8*d^2) + ((a + b*x)^(7/4)*(c + d*x)^(1/4))/(2*d) - (21*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(1/4)*d^(11/4)) + (21*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(1/4)*d^(11/4))}
-{(a + b*x)^(3/4)/(c + d*x)^(3/4), x, 5, ((a + b*x)^(3/4)*(c + d*x)^(1/4))/d + (3*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(1/4)*d^(7/4)) - (3*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(1/4)*d^(7/4))}
-{1/((a + b*x)^(1/4)*(c + d*x)^(3/4)), x, 4, (-2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(1/4)*d^(3/4)) + (2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(1/4)*d^(3/4))}
+{(a + b*x)^(7/4)/(c + d*x)^(3/4), x, 7, (-7*(b*c - a*d)*(a + b*x)^(3/4)*(c + d*x)^(1/4))/(8*d^2) + ((a + b*x)^(7/4)*(c + d*x)^(1/4))/(2*d) - (21*(b*c - a*d)^2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(1/4)*d^(11/4)) + (21*(b*c - a*d)^2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(16*b^(1/4)*d^(11/4))}
+{(a + b*x)^(3/4)/(c + d*x)^(3/4), x, 6, ((a + b*x)^(3/4)*(c + d*x)^(1/4))/d + (3*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(1/4)*d^(7/4)) - (3*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*b^(1/4)*d^(7/4))}
+{1/((a + b*x)^(1/4)*(c + d*x)^(3/4)), x, 5, (-2*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(1/4)*d^(3/4)) + (2*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(b^(1/4)*d^(3/4))}
 {1/((a + b*x)^(5/4)*(c + d*x)^(3/4)), x, 1, (-4*(c + d*x)^(1/4))/((b*c - a*d)*(a + b*x)^(1/4))}
 {1/((a + b*x)^(9/4)*(c + d*x)^(3/4)), x, 2, (-4*(c + d*x)^(1/4))/(5*(b*c - a*d)*(a + b*x)^(5/4)) + (16*d*(c + d*x)^(1/4))/(5*(b*c - a*d)^2*(a + b*x)^(1/4))}
 {1/((a + b*x)^(13/4)*(c + d*x)^(3/4)), x, 3, (-4*(c + d*x)^(1/4))/(9*(b*c - a*d)*(a + b*x)^(9/4)) + (32*d*(c + d*x)^(1/4))/(45*(b*c - a*d)^2*(a + b*x)^(5/4)) - (128*d^2*(c + d*x)^(1/4))/(45*(b*c - a*d)^3*(a + b*x)^(1/4))}
@@ -2666,8 +2665,8 @@
 {1/((a + b*x)^(11/4)*(c + d*x)^(3/4)), x, 5, -((4*(c + d*x)^(1/4))/(7*(b*c - a*d)*(a + b*x)^(7/4))) + (8*d*(c + d*x)^(1/4))/(7*(b*c - a*d)^2*(a + b*x)^(3/4)) + (4*Sqrt[2]*d^(7/4)*((a + b*x)*(c + d*x))^(3/4)*Sqrt[(b*c + a*d + 2*b*d*x)^2]*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))*Sqrt[(a*d + b*(c + 2*d*x))^2/((b*c - a*d)^2*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))^2)]*EllipticF[2*ArcTan[(Sqrt[2]*b^(1/4)*d^(1/4)*((a + b*x)*(c + d*x))^(1/4))/Sqrt[b*c - a*d]], 1/2])/(7*b^(1/4)*(b*c - a*d)^(3/2)*(a + b*x)^(3/4)*(c + d*x)^(3/4)*(b*c + a*d + 2*b*d*x)*Sqrt[(a*d + b*(c + 2*d*x))^2])}
 
 
-{(a + b*x)^(5/4)/(c + d*x)^(5/4), x, 6, (-4*(a + b*x)^(5/4))/(d*(c + d*x)^(1/4)) + (5*b*(a + b*x)^(1/4)*(c + d*x)^(3/4))/d^2 - (5*b^(1/4)*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*d^(9/4)) - (5*b^(1/4)*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*d^(9/4))}
-{(a + b*x)^(1/4)/(c + d*x)^(5/4), x, 5, (-4*(a + b*x)^(1/4))/(d*(c + d*x)^(1/4)) + (2*b^(1/4)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/d^(5/4) + (2*b^(1/4)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/d^(5/4)}
+{(a + b*x)^(5/4)/(c + d*x)^(5/4), x, 7, (-4*(a + b*x)^(5/4))/(d*(c + d*x)^(1/4)) + (5*b*(a + b*x)^(1/4)*(c + d*x)^(3/4))/d^2 - (5*b^(1/4)*(b*c - a*d)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*d^(9/4)) - (5*b^(1/4)*(b*c - a*d)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/(2*d^(9/4))}
+{(a + b*x)^(1/4)/(c + d*x)^(5/4), x, 6, (-4*(a + b*x)^(1/4))/(d*(c + d*x)^(1/4)) + (2*b^(1/4)*ArcTan[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/d^(5/4) + (2*b^(1/4)*ArcTanh[(d^(1/4)*(a + b*x)^(1/4))/(b^(1/4)*(c + d*x)^(1/4))])/d^(5/4)}
 {1/((a + b*x)^(3/4)*(c + d*x)^(5/4)), x, 1, (4*(a + b*x)^(1/4))/((b*c - a*d)*(c + d*x)^(1/4))}
 {1/((a + b*x)^(7/4)*(c + d*x)^(5/4)), x, 2, -4/(3*(b*c - a*d)*(a + b*x)^(3/4)*(c + d*x)^(1/4)) - (16*d*(a + b*x)^(1/4))/(3*(b*c - a*d)^2*(c + d*x)^(1/4))}
 {1/((a + b*x)^(11/4)*(c + d*x)^(5/4)), x, 3, -4/(7*(b*c - a*d)*(a + b*x)^(7/4)*(c + d*x)^(1/4)) + (32*d)/(21*(b*c - a*d)^2*(a + b*x)^(3/4)*(c + d*x)^(1/4)) + (128*d^2*(a + b*x)^(1/4))/(21*(b*c - a*d)^3*(c + d*x)^(1/4))}
@@ -2681,8 +2680,8 @@
 {1/((a + b*x)^(9/4)*(c + d*x)^(5/4)), x, 8, -(4/(5*(b*c - a*d)*(a + b*x)^(5/4)*(c + d*x)^(1/4))) + (24*d)/(5*(b*c - a*d)^2*(a + b*x)^(1/4)*(c + d*x)^(1/4)) + (48*d^2*(a + b*x)^(3/4))/(5*(b*c - a*d)^3*(c + d*x)^(1/4)) - (48*Sqrt[b]*d^(3/2)*Sqrt[(a + b*x)*(c + d*x)]*Sqrt[(b*c + a*d + 2*b*d*x)^2]*Sqrt[(a*d + b*(c + 2*d*x))^2])/(5*(b*c - a*d)^4*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))) + (24*Sqrt[2]*b^(1/4)*d^(5/4)*((a + b*x)*(c + d*x))^(1/4)*Sqrt[(b*c + a*d + 2*b*d*x)^2]*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))*Sqrt[(a*d + b*(c + 2*d*x))^2/((b*c - a*d)^2*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))^2)]*EllipticE[2*ArcTan[(Sqrt[2]*b^(1/4)*d^(1/4)*((a + b*x)*(c + d*x))^(1/4))/Sqrt[b*c - a*d]], 1/2])/(5*(b*c - a*d)^(3/2)*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*Sqrt[(a*d + b*(c + 2*d*x))^2]) - (12*Sqrt[2]*b^(1/4)*d^(5/4)*((a + b*x)*(c + d*x))^(1/4)*Sqrt[(b*c + a*d + 2*b*d*x)^2]*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))*Sqrt[(a*d + b*(c + 2*d*x))^2/((b*c - a*d)^2*(1 + (2*Sqrt[b]*Sqrt[d]*Sqrt[(a + b*x)*(c + d*x)])/(b*c - a*d))^2)]*EllipticF[2*ArcTan[(Sqrt[2]*b^(1/4)*d^(1/4)*((a + b*x)*(c + d*x))^(1/4))/Sqrt[b*c - a*d]], 1/2])/(5*(b*c - a*d)^(3/2)*(a + b*x)^(1/4)*(c + d*x)^(1/4)*(b*c + a*d + 2*b*d*x)*Sqrt[(a*d + b*(c + 2*d*x))^2])}
 
 
-{1/((1 - a*x)^(1/4)*(1 + b*x)^(3/4)), x, 10, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*b^(1/4)*(1 - a*x)^(1/4))/(a^(1/4)*(1 + b*x)^(1/4))])/(a^(1/4)*b^(3/4)) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*b^(1/4)*(1 - a*x)^(1/4))/(a^(1/4)*(1 + b*x)^(1/4))])/(a^(1/4)*b^(3/4)) - Log[Sqrt[a] + (Sqrt[b]*Sqrt[1 - a*x])/Sqrt[1 + b*x] - (Sqrt[2]*a^(1/4)*b^(1/4)*(1 - a*x)^(1/4))/(1 + b*x)^(1/4)]/(Sqrt[2]*a^(1/4)*b^(3/4)) + Log[Sqrt[a] + (Sqrt[b]*Sqrt[1 - a*x])/Sqrt[1 + b*x] + (Sqrt[2]*a^(1/4)*b^(1/4)*(1 - a*x)^(1/4))/(1 + b*x)^(1/4)]/(Sqrt[2]*a^(1/4)*b^(3/4))}
-{1/((1 - a*x)^(1/4)*(1 + a*x)^(3/4)), x, 10, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)])/a - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)])/a - Log[1 + Sqrt[1 - a*x]/Sqrt[1 + a*x] - (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)]/(Sqrt[2]*a) + Log[1 + Sqrt[1 - a*x]/Sqrt[1 + a*x] + (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)]/(Sqrt[2]*a)}
+{1/((1 - a*x)^(1/4)*(1 + b*x)^(3/4)), x, 11, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*b^(1/4)*(1 - a*x)^(1/4))/(a^(1/4)*(1 + b*x)^(1/4))])/(a^(1/4)*b^(3/4)) - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*b^(1/4)*(1 - a*x)^(1/4))/(a^(1/4)*(1 + b*x)^(1/4))])/(a^(1/4)*b^(3/4)) - Log[Sqrt[a] + (Sqrt[b]*Sqrt[1 - a*x])/Sqrt[1 + b*x] - (Sqrt[2]*a^(1/4)*b^(1/4)*(1 - a*x)^(1/4))/(1 + b*x)^(1/4)]/(Sqrt[2]*a^(1/4)*b^(3/4)) + Log[Sqrt[a] + (Sqrt[b]*Sqrt[1 - a*x])/Sqrt[1 + b*x] + (Sqrt[2]*a^(1/4)*b^(1/4)*(1 - a*x)^(1/4))/(1 + b*x)^(1/4)]/(Sqrt[2]*a^(1/4)*b^(3/4))}
+{1/((1 - a*x)^(1/4)*(1 + a*x)^(3/4)), x, 11, (Sqrt[2]*ArcTan[1 - (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)])/a - (Sqrt[2]*ArcTan[1 + (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)])/a - Log[1 + Sqrt[1 - a*x]/Sqrt[1 + a*x] - (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)]/(Sqrt[2]*a) + Log[1 + Sqrt[1 - a*x]/Sqrt[1 + a*x] + (Sqrt[2]*(1 - a*x)^(1/4))/(1 + a*x)^(1/4)]/(Sqrt[2]*a)}
 
 
 (* ::Subsection::Closed:: *)
@@ -2763,18 +2762,18 @@
 {(a + b*x)^(1/6)/(c + d*x)^(11/6), x, 2, (6*(a + b*x)^(7/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[7/6, 11/6, 13/6, -((d*(a + b*x))/(b*c - a*d))])/(7*(b*c - a*d)*(c + d*x)^(5/6))}
 {(a + b*x)^(1/6)/(c + d*x)^(17/6), x, 2, (6*b*(a + b*x)^(7/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[7/6, 17/6, 13/6, -((d*(a + b*x))/(b*c - a*d))])/(7*(b*c - a*d)^2*(c + d*x)^(5/6))}
 
-{(a + b*x)^(1/6)*(c + d*x)^(5/6), x, 13, (5*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*b*d) + ((a + b*x)^(7/6)*(c + d*x)^(5/6))/(2*b) + (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(11/6)*d^(7/6)) + (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(11/6)*d^(7/6))}
-{(a + b*x)^(1/6)/(c + d*x)^(1/6), x, 12, ((a + b*x)^(1/6)*(c + d*x)^(5/6))/d + ((b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(5/6)*d^(7/6)) - ((b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(5/6)*d^(7/6)) - ((b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(5/6)*d^(7/6)) + ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(5/6)*d^(7/6)) - ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(5/6)*d^(7/6))}
-{(a + b*x)^(1/6)/(c + d*x)^(7/6), x, 12, -((6*(a + b*x)^(1/6))/(d*(c + d*x)^(1/6))) - (Sqrt[3]*b^(1/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) + (Sqrt[3]*b^(1/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) + (2*b^(1/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) - (b^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(7/6)) + (b^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(7/6))}
+{(a + b*x)^(1/6)*(c + d*x)^(5/6), x, 14, (5*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*b*d) + ((a + b*x)^(7/6)*(c + d*x)^(5/6))/(2*b) + (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(11/6)*d^(7/6)) + (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(11/6)*d^(7/6)) - (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(11/6)*d^(7/6))}
+{(a + b*x)^(1/6)/(c + d*x)^(1/6), x, 13, ((a + b*x)^(1/6)*(c + d*x)^(5/6))/d + ((b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(5/6)*d^(7/6)) - ((b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(5/6)*d^(7/6)) - ((b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(5/6)*d^(7/6)) + ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(5/6)*d^(7/6)) - ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(5/6)*d^(7/6))}
+{(a + b*x)^(1/6)/(c + d*x)^(7/6), x, 13, -((6*(a + b*x)^(1/6))/(d*(c + d*x)^(1/6))) - (Sqrt[3]*b^(1/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) + (Sqrt[3]*b^(1/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) + (2*b^(1/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(7/6) - (b^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(7/6)) + (b^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(7/6))}
 {(a + b*x)^(1/6)/(c + d*x)^(13/6), x, 1, (6*(a + b*x)^(7/6))/(7*(b*c - a*d)*(c + d*x)^(7/6))}
 {(a + b*x)^(1/6)/(c + d*x)^(19/6), x, 2, (6*(a + b*x)^(7/6))/(13*(b*c - a*d)*(c + d*x)^(13/6)) + (36*b*(a + b*x)^(7/6))/(91*(b*c - a*d)^2*(c + d*x)^(7/6))}
 {(a + b*x)^(1/6)/(c + d*x)^(25/6), x, 3, (6*(a + b*x)^(7/6))/(19*(b*c - a*d)*(c + d*x)^(19/6)) + (72*b*(a + b*x)^(7/6))/(247*(b*c - a*d)^2*(c + d*x)^(13/6)) + (432*b^2*(a + b*x)^(7/6))/(1729*(b*c - a*d)^3*(c + d*x)^(7/6))}
 {(a + b*x)^(1/6)/(c + d*x)^(31/6), x, 4, (6*(a + b*x)^(7/6))/(25*(b*c - a*d)*(c + d*x)^(25/6)) + (108*b*(a + b*x)^(7/6))/(475*(b*c - a*d)^2*(c + d*x)^(19/6)) + (1296*b^2*(a + b*x)^(7/6))/(6175*(b*c - a*d)^3*(c + d*x)^(13/6)) + (7776*b^3*(a + b*x)^(7/6))/(43225*(b*c - a*d)^4*(c + d*x)^(7/6))}
 
 
-{(a + b*x)^(5/6)*(c + d*x)^(1/6), x, 13, ((b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b*d) + ((a + b*x)^(11/6)*(c + d*x)^(1/6))/(2*b) - (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(7/6)*d^(11/6)) + (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(7/6)*d^(11/6)) - (5*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(7/6)*d^(11/6)) + (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(7/6)*d^(11/6)) - (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(7/6)*d^(11/6))}
-{(a + b*x)^(5/6)/(c + d*x)^(5/6), x, 12, ((a + b*x)^(5/6)*(c + d*x)^(1/6))/d - (5*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(1/6)*d^(11/6)) + (5*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(1/6)*d^(11/6)) - (5*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(1/6)*d^(11/6)) + (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(1/6)*d^(11/6)) - (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(1/6)*d^(11/6))}
-{(a + b*x)^(5/6)/(c + d*x)^(11/6), x, 12, -((6*(a + b*x)^(5/6))/(5*d*(c + d*x)^(5/6))) + (Sqrt[3]*b^(5/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) - (Sqrt[3]*b^(5/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) + (2*b^(5/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) - (b^(5/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(11/6)) + (b^(5/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(11/6))}
+{(a + b*x)^(5/6)*(c + d*x)^(1/6), x, 14, ((b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b*d) + ((a + b*x)^(11/6)*(c + d*x)^(1/6))/(2*b) - (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(7/6)*d^(11/6)) + (5*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(7/6)*d^(11/6)) - (5*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(7/6)*d^(11/6)) + (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(7/6)*d^(11/6)) - (5*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(7/6)*d^(11/6))}
+{(a + b*x)^(5/6)/(c + d*x)^(5/6), x, 13, ((a + b*x)^(5/6)*(c + d*x)^(1/6))/d - (5*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(1/6)*d^(11/6)) + (5*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(1/6)*d^(11/6)) - (5*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(1/6)*d^(11/6)) + (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(1/6)*d^(11/6)) - (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(1/6)*d^(11/6))}
+{(a + b*x)^(5/6)/(c + d*x)^(11/6), x, 13, -((6*(a + b*x)^(5/6))/(5*d*(c + d*x)^(5/6))) + (Sqrt[3]*b^(5/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) - (Sqrt[3]*b^(5/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) + (2*b^(5/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(11/6) - (b^(5/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(11/6)) + (b^(5/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(11/6))}
 {(a + b*x)^(5/6)/(c + d*x)^(17/6), x, 1, (6*(a + b*x)^(11/6))/(11*(b*c - a*d)*(c + d*x)^(11/6))}
 {(a + b*x)^(5/6)/(c + d*x)^(23/6), x, 2, (6*(a + b*x)^(11/6))/(17*(b*c - a*d)*(c + d*x)^(17/6)) + (36*b*(a + b*x)^(11/6))/(187*(b*c - a*d)^2*(c + d*x)^(11/6))}
 {(a + b*x)^(5/6)/(c + d*x)^(29/6), x, 3, (6*(a + b*x)^(11/6))/(23*(b*c - a*d)*(c + d*x)^(23/6)) + (72*b*(a + b*x)^(11/6))/(391*(b*c - a*d)^2*(c + d*x)^(17/6)) + (432*b^2*(a + b*x)^(11/6))/(4301*(b*c - a*d)^3*(c + d*x)^(11/6))}
@@ -2795,22 +2794,22 @@
 {(a + b*x)^(7/6)/(c + d*x)^(11/6), x, 2, (6*(a + b*x)^(13/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[11/6, 13/6, 19/6, -((d*(a + b*x))/(b*c - a*d))])/(13*(b*c - a*d)*(c + d*x)^(5/6))}
 {(a + b*x)^(7/6)/(c + d*x)^(17/6), x, 2, (6*b*(a + b*x)^(13/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[13/6, 17/6, 19/6, -((d*(a + b*x))/(b*c - a*d))])/(13*(b*c - a*d)^2*(c + d*x)^(5/6))}
 
-{(a + b*x)^(7/6)/(c + d*x)^(1/6), x, 13, -((7*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*d^2)) + ((a + b*x)^(7/6)*(c + d*x)^(5/6))/(2*d) - (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(5/6)*d^(13/6)) - (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(5/6)*d^(13/6))}
-{(a + b*x)^(7/6)/(c + d*x)^(7/6), x, 13, -((6*(a + b*x)^(7/6))/(d*(c + d*x)^(1/6))) + (7*b*(a + b*x)^(1/6)*(c + d*x)^(5/6))/d^2 + (7*b^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*d^(13/6)) + (7*b^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*d^(13/6))}
-{(a + b*x)^(7/6)/(c + d*x)^(13/6), x, 13, -((6*(a + b*x)^(7/6))/(7*d*(c + d*x)^(7/6))) - (6*b*(a + b*x)^(1/6))/(d^2*(c + d*x)^(1/6)) - (Sqrt[3]*b^(7/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) + (Sqrt[3]*b^(7/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) + (2*b^(7/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) - (b^(7/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(13/6)) + (b^(7/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(13/6))}
+{(a + b*x)^(7/6)/(c + d*x)^(1/6), x, 14, -((7*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*d^2)) + ((a + b*x)^(7/6)*(c + d*x)^(5/6))/(2*d) - (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(5/6)*d^(13/6)) - (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(5/6)*d^(13/6)) + (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(5/6)*d^(13/6))}
+{(a + b*x)^(7/6)/(c + d*x)^(7/6), x, 14, -((6*(a + b*x)^(7/6))/(d*(c + d*x)^(1/6))) + (7*b*(a + b*x)^(1/6)*(c + d*x)^(5/6))/d^2 + (7*b^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*d^(13/6)) + (7*b^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*d^(13/6)) - (7*b^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*d^(13/6))}
+{(a + b*x)^(7/6)/(c + d*x)^(13/6), x, 14, -((6*(a + b*x)^(7/6))/(7*d*(c + d*x)^(7/6))) - (6*b*(a + b*x)^(1/6))/(d^2*(c + d*x)^(1/6)) - (Sqrt[3]*b^(7/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) + (Sqrt[3]*b^(7/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) + (2*b^(7/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/d^(13/6) - (b^(7/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(13/6)) + (b^(7/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*d^(13/6))}
 {(a + b*x)^(7/6)/(c + d*x)^(19/6), x, 1, (6*(a + b*x)^(13/6))/(13*(b*c - a*d)*(c + d*x)^(13/6))}
 {(a + b*x)^(7/6)/(c + d*x)^(25/6), x, 2, (6*(a + b*x)^(13/6))/(19*(b*c - a*d)*(c + d*x)^(19/6)) + (36*b*(a + b*x)^(13/6))/(247*(b*c - a*d)^2*(c + d*x)^(13/6))}
 {(a + b*x)^(7/6)/(c + d*x)^(31/6), x, 3, (6*(a + b*x)^(13/6))/(25*(b*c - a*d)*(c + d*x)^(25/6)) + (72*b*(a + b*x)^(13/6))/(475*(b*c - a*d)^2*(c + d*x)^(19/6)) + (432*b^2*(a + b*x)^(13/6))/(6175*(b*c - a*d)^3*(c + d*x)^(13/6))}
 {(a + b*x)^(7/6)/(c + d*x)^(37/6), x, 4, (6*(a + b*x)^(13/6))/(31*(b*c - a*d)*(c + d*x)^(31/6)) + (108*b*(a + b*x)^(13/6))/(775*(b*c - a*d)^2*(c + d*x)^(25/6)) + (1296*b^2*(a + b*x)^(13/6))/(14725*(b*c - a*d)^3*(c + d*x)^(19/6)) + (7776*b^3*(a + b*x)^(13/6))/(191425*(b*c - a*d)^4*(c + d*x)^(13/6))}
-{(c + d*x)^(7/6)/(a + b*x)^(1/6), x, 13, (7*(b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b^2) + ((a + b*x)^(5/6)*(c + d*x)^(7/6))/(2*b) + (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(13/6)*d^(5/6)) - (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(13/6)*d^(5/6)) + (7*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(13/6)*d^(5/6)) - (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(13/6)*d^(5/6)) + (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(13/6)*d^(5/6))}
+{(c + d*x)^(7/6)/(a + b*x)^(1/6), x, 14, (7*(b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b^2) + ((a + b*x)^(5/6)*(c + d*x)^(7/6))/(2*b) + (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(13/6)*d^(5/6)) - (7*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(13/6)*d^(5/6)) + (7*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(13/6)*d^(5/6)) - (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(13/6)*d^(5/6)) + (7*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(13/6)*d^(5/6))}
 
 
 (* ::Subsubsection::Closed:: *)
 (*m<0*)
 
 
-{(c + d*x)^(1/6)/(a + b*x)^(1/6), x, 12, ((a + b*x)^(5/6)*(c + d*x)^(1/6))/b + ((b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(7/6)*d^(5/6)) - ((b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(7/6)*d^(5/6)) + ((b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(7/6)*d^(5/6)) - ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(7/6)*d^(5/6)) + ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(7/6)*d^(5/6))}
-{1/((a + b*x)^(1/6)*(c + d*x)^(5/6)), x, 11, (Sqrt[3]*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) - (Sqrt[3]*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) + (2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) - Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(1/6)*d^(5/6)) + Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(1/6)*d^(5/6))}
+{(c + d*x)^(1/6)/(a + b*x)^(1/6), x, 13, ((a + b*x)^(5/6)*(c + d*x)^(1/6))/b + ((b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(7/6)*d^(5/6)) - ((b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(7/6)*d^(5/6)) + ((b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(7/6)*d^(5/6)) - ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(7/6)*d^(5/6)) + ((b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(7/6)*d^(5/6))}
+{1/((a + b*x)^(1/6)*(c + d*x)^(5/6)), x, 12, (Sqrt[3]*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) - (Sqrt[3]*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) + (2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(b^(1/6)*d^(5/6)) - Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(1/6)*d^(5/6)) + Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(1/6)*d^(5/6))}
 {1/((a + b*x)^(1/6)*(c + d*x)^(11/6)), x, 1, (6*(a + b*x)^(5/6))/(5*(b*c - a*d)*(c + d*x)^(5/6))}
 {1/((a + b*x)^(1/6)*(c + d*x)^(17/6)), x, 2, (6*(a + b*x)^(5/6))/(11*(b*c - a*d)*(c + d*x)^(11/6)) + (36*b*(a + b*x)^(5/6))/(55*(b*c - a*d)^2*(c + d*x)^(5/6))}
 {1/((a + b*x)^(1/6)*(c + d*x)^(23/6)), x, 3, (6*(a + b*x)^(5/6))/(17*(b*c - a*d)*(c + d*x)^(17/6)) + (72*b*(a + b*x)^(5/6))/(187*(b*c - a*d)^2*(c + d*x)^(11/6)) + (432*b^2*(a + b*x)^(5/6))/(935*(b*c - a*d)^3*(c + d*x)^(5/6))}
@@ -2831,18 +2830,18 @@
 {1/((a + b*x)^(5/6)*(c + d*x)^(11/6)), x, 2, (6*(a + b*x)^(1/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[1/6, 11/6, 7/6, -((d*(a + b*x))/(b*c - a*d))])/((b*c - a*d)*(c + d*x)^(5/6))}
 {1/((a + b*x)^(5/6)*(c + d*x)^(17/6)), x, 2, (6*b*(a + b*x)^(1/6)*((b*(c + d*x))/(b*c - a*d))^(5/6)*Hypergeometric2F1[1/6, 17/6, 7/6, -((d*(a + b*x))/(b*c - a*d))])/((b*c - a*d)^2*(c + d*x)^(5/6))}
 
-{(c + d*x)^(11/6)/(a + b*x)^(5/6), x, 13, (11*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*b^2) + ((a + b*x)^(1/6)*(c + d*x)^(11/6))/(2*b) - (55*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(17/6)*d^(1/6)) - (55*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(17/6)*d^(1/6))}
-{(c + d*x)^(5/6)/(a + b*x)^(5/6), x, 12, ((a + b*x)^(1/6)*(c + d*x)^(5/6))/b - (5*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(11/6)*d^(1/6)) - (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(11/6)*d^(1/6))}
-{1/((a + b*x)^(5/6)*(c + d*x)^(1/6)), x, 11, -((Sqrt[3]*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6))) + (Sqrt[3]*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6)) + (2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6)) - Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(5/6)*d^(1/6)) + Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(5/6)*d^(1/6))}
+{(c + d*x)^(11/6)/(a + b*x)^(5/6), x, 14, (11*(b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6))/(12*b^2) + ((a + b*x)^(1/6)*(c + d*x)^(11/6))/(2*b) - (55*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(17/6)*d^(1/6)) - (55*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(17/6)*d^(1/6)) + (55*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(17/6)*d^(1/6))}
+{(c + d*x)^(5/6)/(a + b*x)^(5/6), x, 13, ((a + b*x)^(1/6)*(c + d*x)^(5/6))/b - (5*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(11/6)*d^(1/6)) - (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(11/6)*d^(1/6)) + (5*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(11/6)*d^(1/6))}
+{1/((a + b*x)^(5/6)*(c + d*x)^(1/6)), x, 12, -((Sqrt[3]*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6))) + (Sqrt[3]*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6)) + (2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(b^(5/6)*d^(1/6)) - Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(5/6)*d^(1/6)) + Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)]/(2*b^(5/6)*d^(1/6))}
 {1/((a + b*x)^(5/6)*(c + d*x)^(7/6)), x, 1, (6*(a + b*x)^(1/6))/((b*c - a*d)*(c + d*x)^(1/6))}
 {1/((a + b*x)^(5/6)*(c + d*x)^(13/6)), x, 2, (6*(a + b*x)^(1/6))/(7*(b*c - a*d)*(c + d*x)^(7/6)) + (36*b*(a + b*x)^(1/6))/(7*(b*c - a*d)^2*(c + d*x)^(1/6))}
 {1/((a + b*x)^(5/6)*(c + d*x)^(19/6)), x, 3, (6*(a + b*x)^(1/6))/(13*(b*c - a*d)*(c + d*x)^(13/6)) + (72*b*(a + b*x)^(1/6))/(91*(b*c - a*d)^2*(c + d*x)^(7/6)) + (432*b^2*(a + b*x)^(1/6))/(91*(b*c - a*d)^3*(c + d*x)^(1/6))}
 {1/((a + b*x)^(5/6)*(c + d*x)^(25/6)), x, 4, (6*(a + b*x)^(1/6))/(19*(b*c - a*d)*(c + d*x)^(19/6)) + (108*b*(a + b*x)^(1/6))/(247*(b*c - a*d)^2*(c + d*x)^(13/6)) + (1296*b^2*(a + b*x)^(1/6))/(1729*(b*c - a*d)^3*(c + d*x)^(7/6)) + (7776*b^3*(a + b*x)^(1/6))/(1729*(b*c - a*d)^4*(c + d*x)^(1/6))}
 
 
-{(c + d*x)^(13/6)/(a + b*x)^(7/6), x, 14, (91*d*(b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b^3) + (13*d*(a + b*x)^(5/6)*(c + d*x)^(7/6))/(2*b^2) - (6*(c + d*x)^(13/6))/(b*(a + b*x)^(1/6)) + (91*d^(1/6)*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(19/6)) - (91*d^(1/6)*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(19/6)) + (91*d^(1/6)*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(19/6)) - (91*d^(1/6)*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(19/6)) + (91*d^(1/6)*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(19/6))}
-{(c + d*x)^(7/6)/(a + b*x)^(7/6), x, 13, (7*d*(a + b*x)^(5/6)*(c + d*x)^(1/6))/b^2 - (6*(c + d*x)^(7/6))/(b*(a + b*x)^(1/6)) + (7*d^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(13/6)) - (7*d^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(13/6)) + (7*d^(1/6)*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(13/6)) - (7*d^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(13/6)) + (7*d^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(13/6))}
-{(c + d*x)^(1/6)/(a + b*x)^(7/6), x, 12, -((6*(c + d*x)^(1/6))/(b*(a + b*x)^(1/6))) + (Sqrt[3]*d^(1/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) - (Sqrt[3]*d^(1/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) + (2*d^(1/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) - (d^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*b^(7/6)) + (d^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*b^(7/6))}
+{(c + d*x)^(13/6)/(a + b*x)^(7/6), x, 15, (91*d*(b*c - a*d)*(a + b*x)^(5/6)*(c + d*x)^(1/6))/(12*b^3) + (13*d*(a + b*x)^(5/6)*(c + d*x)^(7/6))/(2*b^2) - (6*(c + d*x)^(13/6))/(b*(a + b*x)^(1/6)) + (91*d^(1/6)*(b*c - a*d)^2*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(19/6)) - (91*d^(1/6)*(b*c - a*d)^2*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(24*Sqrt[3]*b^(19/6)) + (91*d^(1/6)*(b*c - a*d)^2*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(36*b^(19/6)) - (91*d^(1/6)*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(19/6)) + (91*d^(1/6)*(b*c - a*d)^2*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(144*b^(19/6))}
+{(c + d*x)^(7/6)/(a + b*x)^(7/6), x, 14, (7*d*(a + b*x)^(5/6)*(c + d*x)^(1/6))/b^2 - (6*(c + d*x)^(7/6))/(b*(a + b*x)^(1/6)) + (7*d^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(13/6)) - (7*d^(1/6)*(b*c - a*d)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/(2*Sqrt[3]*b^(13/6)) + (7*d^(1/6)*(b*c - a*d)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/(3*b^(13/6)) - (7*d^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(13/6)) + (7*d^(1/6)*(b*c - a*d)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(12*b^(13/6))}
+{(c + d*x)^(1/6)/(a + b*x)^(7/6), x, 13, -((6*(c + d*x)^(1/6))/(b*(a + b*x)^(1/6))) + (Sqrt[3]*d^(1/6)*ArcTan[1/Sqrt[3] - (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) - (Sqrt[3]*d^(1/6)*ArcTan[1/Sqrt[3] + (2*d^(1/6)*(a + b*x)^(1/6))/(Sqrt[3]*b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) + (2*d^(1/6)*ArcTanh[(d^(1/6)*(a + b*x)^(1/6))/(b^(1/6)*(c + d*x)^(1/6))])/b^(7/6) - (d^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) - (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*b^(7/6)) + (d^(1/6)*Log[b^(1/3) + (d^(1/3)*(a + b*x)^(1/3))/(c + d*x)^(1/3) + (b^(1/6)*d^(1/6)*(a + b*x)^(1/6))/(c + d*x)^(1/6)])/(2*b^(7/6))}
 {1/((a + b*x)^(7/6)*(c + d*x)^(5/6)), x, 1, (-6*(c + d*x)^(1/6))/((b*c - a*d)*(a + b*x)^(1/6))}
 {1/((a + b*x)^(7/6)*(c + d*x)^(11/6)), x, 2, -6/((b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(5/6)) - (36*d*(a + b*x)^(5/6))/(5*(b*c - a*d)^2*(c + d*x)^(5/6))}
 {1/((a + b*x)^(7/6)*(c + d*x)^(17/6)), x, 3, -6/((b*c - a*d)*(a + b*x)^(1/6)*(c + d*x)^(11/6)) - (72*d*(a + b*x)^(5/6))/(11*(b*c - a*d)^2*(c + d*x)^(11/6)) - (432*b*d*(a + b*x)^(5/6))/(55*(b*c - a*d)^3*(c + d*x)^(5/6))}
@@ -2858,6 +2857,9 @@
 
 (* ::Subsection::Closed:: *)
 (*Integrands of the form (a+b x)^m (c+d x)^n where m and/or symbolic*)
+
+
+{(a + b*x)^m*(a + b*(m + 2)*x), x, 1, x*(a + b*x)^(1 + m)}
 
 
 {(a + b*x)^m*(c + d*x)^n, x, 2, -(((a + b*x)^(1 + m)*(c + d*x)^(1 + n)*Hypergeometric2F1[1, 2 + m + n, 2 + n, (b*(c + d*x))/(b*c - a*d)])/((b*c - a*d)*(1 + n))), ((a + b*x)^(1 + m)*(c + d*x)^n*Hypergeometric2F1[1 + m, -n, 2 + m, -((d*(a + b*x))/(b*c - a*d))])/(((b*(c + d*x))/(b*c - a*d))^n*(b*(1 + m)))}

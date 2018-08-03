@@ -262,14 +262,14 @@
 {x^4/(-1 + x^4), x, 4, x - ArcTan[x]/2 - ArcTanh[x]/2}
 
 {(-4 + 6*x - x^2 + 3*x^3)/((1 + x^2)*(2 + x^2)), x, 6, -3*ArcTan[x] + Sqrt[2]*ArcTan[x/Sqrt[2]] + (3*Log[1 + x^2])/2}
-{(1 + x - 2*x^2 + x^3)/(4 + 5*x^2 + x^4), x, 6, (-3*ArcTan[x/2])/2 + ArcTan[x] + Log[4 + x^2]/2}
+{(1 + x - 2*x^2 + x^3)/(4 + 5*x^2 + x^4), x, 7, (-3*ArcTan[x/2])/2 + ArcTan[x] + Log[4 + x^2]/2}
 {(-3 + x)/(4 + 2*x + x^2)^2, x, 3, -(7 + 4*x)/(6*(4 + 2*x + x^2)) - (2*ArcTan[(1 + x)/Sqrt[3]])/(3*Sqrt[3])}
 {(1 + x^4)/(x*(1 + x^2)^2), x, 3, (1 + x^2)^(-1) + Log[x]}
 {(Cos[x]*(-3 + 2*Sin[x]))/(2 - 3*Sin[x] + Sin[x]^2), x, 2, Log[2 - 3*Sin[x] + Sin[x]^2]}
 {(Cos[x]^2*Sin[x])/(5 + Cos[x]^2), x, 3, Sqrt[5]*ArcTan[Cos[x]/Sqrt[5]] - Cos[x]}
 
 {1/(x^2 + 2*x - 3), x, 3, Log[1 - x]/4 - Log[3 + x]/4}
-{1/(x^2 - 2*x), x, 4, Log[2 - x]/2 - Log[x]/2}
+{1/(x^2 - 2*x), x, 1, Log[2 - x]/2 - Log[x]/2}
 {(2*x + 1)/(4*x^2 + 12*x - 7), x, 3, Log[1 - 2*x]/8 + (3*Log[7 + 2*x])/8}
 {x/(x^2 + x - 1), x, 3, ((5 - Sqrt[5])*Log[1 - Sqrt[5] + 2*x])/10 + ((5 + Sqrt[5])*Log[1 + Sqrt[5] + 2*x])/10}
 
@@ -301,7 +301,7 @@
 {1/(x^(-1/4) + Sqrt[x]), x, 9, 2*Sqrt[x] + (4*ArcTan[(1 - 2*x^(1/4))/Sqrt[3]])/Sqrt[3] + (4*Log[1 + x^(1/4)])/3 - (2*Log[1 - x^(1/4) + Sqrt[x]])/3}
 {1/(x^(-1/3) + x^(-1/4)), x, 4, 12*x^(1/12) - 6*x^(1/6) + 4*x^(1/4) - 3*x^(1/3) + (12*x^(5/12))/5 - 2*Sqrt[x] + (12*x^(7/12))/7 - (3*x^(2/3))/2 + (4*x^(3/4))/3 - (6*x^(5/6))/5 + (12*x^(11/12))/11 - x + (12*x^(13/12))/13 - (6*x^(7/6))/7 + (4*x^(5/4))/5 - 12*Log[1 + x^(1/12)]}
 {Sqrt[(1 - x)/x], x, 5, Sqrt[-1 + x^(-1)]*x - ArcTan[Sqrt[-1 + x^(-1)]]}
-{Cos[x]/(Sin[x] + Sin[x]^2), x, 5, Log[Sin[x]] - Log[1 + Sin[x]]}
+{Cos[x]/(Sin[x] + Sin[x]^2), x, 2, Log[Sin[x]] - Log[1 + Sin[x]]}
 {E^(2*x)/(2 + 3*E^x + E^(2*x)), x, 4, -Log[1 + E^x] + 2*Log[2 + E^x]}
 {1/Sqrt[1 + E^x], x, 3, -2*ArcTanh[Sqrt[1 + E^x]]}
 {Sqrt[1 - E^x], x, 4, 2*Sqrt[1 - E^x] - 2*ArcTanh[Sqrt[1 - E^x]]}
@@ -447,7 +447,7 @@
 {x^4/E^x, x, 5, -24/E^x - (24*x)/E^x - (12*x^2)/E^x - (4*x^3)/E^x - x^4/E^x}
 {x^4/Sqrt[-2 + x^10], x, 3, ArcTanh[x^5/Sqrt[-2 + x^10]]/5}
 {E^x*Cos[4 + 3*x], x, 1, (E^x*Cos[4 + 3*x])/10 + (3*E^x*Sin[4 + 3*x])/10}
-{E^x*Log[1 + E^x], x, 3, -E^x + (1 + E^x)*Log[1 + E^x]}
+{E^x*Log[1 + E^x], x, 4, -E^x + (1 + E^x)*Log[1 + E^x], -E^x + Log[1 + E^x] + E^x*Log[1 + E^x]}
 {x^2*ArcTan[x], x, 4, -x^2/6 + (x^3*ArcTan[x])/3 + Log[1 + x^2]/6}
 {Sqrt[-1 + E^(2*x)], x, 4, Sqrt[-1 + E^(2*x)] - ArcTan[Sqrt[-1 + E^(2*x)]]}
 {E^Sin[x]*Sin[2*x], x, 4, -2*E^Sin[x] + 2*E^Sin[x]*Sin[x]}

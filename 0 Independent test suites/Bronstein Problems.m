@@ -13,7 +13,7 @@
 {Sqrt[x^8 + 1]/(x*(x^8 + 1)), x, 3, (-(1/4))*ArcTanh[Sqrt[1 + x^8]]}
 {x/Sqrt[1 - x^3], x, 3, (2*Sqrt[1 - x^3])/(1 + Sqrt[3] - x) - (3^(1/4)*Sqrt[2 - Sqrt[3]]*(1 - x)*Sqrt[(1 + x + x^2)/(1 + Sqrt[3] - x)^2]*EllipticE[ArcSin[(1 - Sqrt[3] - x)/(1 + Sqrt[3] - x)], -7 - 4*Sqrt[3]])/(Sqrt[(1 - x)/(1 + Sqrt[3] - x)^2]*Sqrt[1 - x^3]) + (2*Sqrt[2]*(1 - x)*Sqrt[(1 + x + x^2)/(1 + Sqrt[3] - x)^2]*EllipticF[ArcSin[(1 - Sqrt[3] - x)/(1 + Sqrt[3] - x)], -7 - 4*Sqrt[3]])/(3^(1/4)*Sqrt[(1 - x)/(1 + Sqrt[3] - x)^2]*Sqrt[1 - x^3])}
 {1/(x*Sqrt[1 - x^3]), x, 3, (-(2/3))*ArcTanh[Sqrt[1 - x^3]]}
-{x/Sqrt[x^4 + 10*x^2 - 96*x - 71], x, -1, (-(1/8))*Log[(-(x^6 + 15*x^4 - 80*x^3 + 27*x^2 - 528*x + 781))*Sqrt[x^4 + 10*x^2 - 96*x - 71] + x^8 + 20*x^6 - 128*x^5 + 54*x^4 - 1408*x^3 + 3124*x^2 + 10001]}
+{x/Sqrt[x^4 + 10*x^2 - 96*x - 71], x, 1, (1/8)*Log[10001 + 3124*x^2 - 1408*x^3 + 54*x^4 - 128*x^5 + 20*x^6 + x^8 + Sqrt[-71 - 96*x + 10*x^2 + x^4]*(781 - 528*x + 27*x^2 - 80*x^3 + 15*x^4 + x^6)]}
 
 
 (* ::Section::Closed:: *)
@@ -30,7 +30,7 @@
 {(Log[x]^2 + 2*x*Log[x] + x^2 + (x + 1)*Sqrt[x + Log[x]])/(x*Log[x]^2 + 2*x^2*Log[x] + x^3), x, -3, Log[x] - 2/Sqrt[x + Log[x]]}
 
 {(2*Log[x]^2 - Log[x] - x^2)/(Log[x]^3 - x^2*Log[x]), x, 6, (-(1/2))*Log[x - Log[x]] + (1/2)*Log[x + Log[x]] + LogIntegral[x]}
-(* {Log[1 + E^x]^(1/3)/(1 + Log[1 + E^x]), x, 0, Int[Log[1 + E^x]^(1/3)/(1 + Log[1 + E^x]), x]} *)
+(* {Log[1 + E^x]^(1/3)/(1 + Log[1 + E^x]), x, 0, CannotIntegrate[Log[1 + E^x]^(1/3)/(1 + Log[1 + E^x]), x]} *)
 (* {((x^2 + 2*x + 1)*Sqrt[x + Log[x]] + (3*x + 1)*Log[x] + 3*x^2 + x)/((x*Log[x] + x^2)*Sqrt[x + Log[x]] + x^2*Log[x] + x^3), x, 0, 2*Sqrt[x + Log[x]] + 2*Log[x + Sqrt[x + Log[x]]]} *)
 
 

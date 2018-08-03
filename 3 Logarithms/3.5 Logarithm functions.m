@@ -5,6 +5,91 @@
 
 
 (* ::Section::Closed:: *)
+(*Integrands of the form (d x^m+e Log[c x^n]^(q-1)) (a x^m+b Log[c x^n]^q)^p / x*)
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form Log[c x^n]^(q-1) (a x^m+b Log[c x^n]^q)^p / x*)
+
+
+{Log[c*x^n]^(q - 1)*(a*x^m + b*Log[c*x^n]^q)^p/x, x, 1, -((a*m*CannotIntegrate[x^(-1 + m)*(a*x^m + b*Log[c*x^n]^q)^p, x])/(b*n*q)) + (a*x^m + b*Log[c*x^n]^q)^(1 + p)/(b*n*(1 + p)*q)}
+
+
+{Log[c*x^n]^(q - 1)*(a*x^m + b*Log[c*x^n]^q)^3/x, x, 10, (b^3*Log[c*x^n]^(4*q))/(4*n*q) - (3*a*b^2*x^m*Gamma[3*q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^(3*q))/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^(3*q)*n) - (3*a^2*b*x^(2*m)*Gamma[2*q, -((2*m*Log[c*x^n])/n)]*Log[c*x^n]^(2*q))/(4^q*(c*x^n)^((2*m)/n)*(-((m*Log[c*x^n])/n))^(2*q)*n) - (a^3*x^(3*m)*Gamma[q, -((3*m*Log[c*x^n])/n)]*Log[c*x^n]^q)/(3^q*(c*x^n)^((3*m)/n)*(-((m*Log[c*x^n])/n))^q*n)}
+{Log[c*x^n]^(q - 1)*(a*x^m + b*Log[c*x^n]^q)^2/x, x, 8, (b^2*Log[c*x^n]^(3*q))/(3*n*q) - (2*a*b*x^m*Gamma[2*q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^(2*q))/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^(2*q)*n) - (a^2*x^(2*m)*Gamma[q, -((2*m*Log[c*x^n])/n)]*Log[c*x^n]^q)/(2^q*(c*x^n)^((2*m)/n)*(-((m*Log[c*x^n])/n))^q*n)}
+{Log[c*x^n]^(q - 1)*(a*x^m + b*Log[c*x^n]^q)^1/x, x, 6, (b*Log[c*x^n]^(2*q))/(2*n*q) - (a*x^m*Gamma[q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^q)/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^q*n)}
+{Log[c*x^n]^(q - 1)*(a*x^m + b*Log[c*x^n]^q)^0/x, x, 2, Log[c*x^n]^q/(n*q)}
+{Log[c*x^n]^(q - 1)/(x*(a*x^m + b*Log[c*x^n]^q)^1), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q), x])/(b*n*q)) + Log[a*x^m + b*Log[c*x^n]^q]/(b*n*q)}
+{Log[c*x^n]^(q - 1)/(x*(a*x^m + b*Log[c*x^n]^q)^2), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q)^2, x])/(b*n*q)) - 1/(b*n*q*(a*x^m + b*Log[c*x^n]^q))}
+{Log[c*x^n]^(q - 1)/(x*(a*x^m + b*Log[c*x^n]^q)^3), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q)^3, x])/(b*n*q)) - 1/(2*b*n*q*(a*x^m + b*Log[c*x^n]^q)^2)}
+
+
+{Log[c*x^n]*(a*x^m + b*Log[c*x^n]^2)^3/x, x, 13, -((360*a*b^2*n^5*x^m)/m^6) - (9*a^2*b*n^3*x^(2*m))/(8*m^4) - (a^3*n*x^(3*m))/(9*m^2) + (360*a*b^2*n^4*x^m*Log[c*x^n])/m^5 + (9*a^2*b*n^2*x^(2*m)*Log[c*x^n])/(4*m^3) + (a^3*x^(3*m)*Log[c*x^n])/(3*m) - (180*a*b^2*n^3*x^m*Log[c*x^n]^2)/m^4 - (9*a^2*b*n*x^(2*m)*Log[c*x^n]^2)/(4*m^2) + (60*a*b^2*n^2*x^m*Log[c*x^n]^3)/m^3 + (3*a^2*b*x^(2*m)*Log[c*x^n]^3)/(2*m) - (15*a*b^2*n*x^m*Log[c*x^n]^4)/m^2 + (3*a*b^2*x^m*Log[c*x^n]^5)/m + (b^3*Log[c*x^n]^8)/(8*n)}
+{Log[c*x^n]*(a*x^m + b*Log[c*x^n]^2)^2/x, x, 8, -((12*a*b*n^3*x^m)/m^4) - (a^2*n*x^(2*m))/(4*m^2) + (12*a*b*n^2*x^m*Log[c*x^n])/m^3 + (a^2*x^(2*m)*Log[c*x^n])/(2*m) - (6*a*b*n*x^m*Log[c*x^n]^2)/m^2 + (2*a*b*x^m*Log[c*x^n]^3)/m + (b^2*Log[c*x^n]^6)/(6*n)}
+{Log[c*x^n]*(a*x^m + b*Log[c*x^n]^2)^1/x, x, 5, -((a*n*x^m)/m^2) + (a*x^m*Log[c*x^n])/m + (b*Log[c*x^n]^4)/(4*n)}
+{Log[c*x^n]*(a*x^m + b*Log[c*x^n]^2)^0/x, x, 1, Log[c*x^n]^2/(2*n)}
+{Log[c*x^n]/(x*(a*x^m + b*Log[c*x^n]^2)^1), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^2), x])/(2*b*n)) + Log[a*x^m + b*Log[c*x^n]^2]/(2*b*n)}
+{Log[c*x^n]/(x*(a*x^m + b*Log[c*x^n]^2)^2), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^2)^2, x])/(2*b*n)) - 1/(2*b*n*(a*x^m + b*Log[c*x^n]^2))}
+{Log[c*x^n]/(x*(a*x^m + b*Log[c*x^n]^2)^3), x, 1, -((a*m*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^2)^3, x])/(2*b*n)) - 1/(4*b*n*(a*x^m + b*Log[c*x^n]^2)^2)}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (d x^m+e Log[c x^n]^(q-1)) (a x^m+b Log[c x^n]^q)^p / x when a e m-b d n q=0*)
+
+
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^p/x, x, 1, (a*x^m + b*Log[c*x^n]^q)^(1 + p)/(1 + p)}
+
+
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^2/x, x, 1, (1/3)*(a*x^m + b*Log[c*x^n]^q)^3}
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^1/x, x, 1, (1/2)*(a*x^m + b*Log[c*x^n]^q)^2}
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^0/x, x, 4, a*x^m + b*Log[c*x^n]^q}
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^1), x, 1, Log[a*x^m + b*Log[c*x^n]^q]}
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^2), x, 1, -(1/(a*x^m + b*Log[c*x^n]^q))}
+{(a*m*x^m + b*n*q*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^3), x, 1, -(1/(2*(a*x^m + b*Log[c*x^n]^q)^2))}
+
+
+{(a*x^2 + b*x*Log[c*x^n]^2)^2*(a/x^2 + 2*b*n/x^3*Log[c*x^n]), x, 3, (1/3)*(a*x + b*Log[c*x^n]^2)^3}
+{(a*x^2 + b*x*Log[c*x^n]^2)^1*(a/x^1 + 2*b*n/x^2*Log[c*x^n]), x, 3, (1/2)*(a*x + b*Log[c*x^n]^2)^2}
+{(a*x^2 + b*x*Log[c*x^n]^2)^0*(a*x^0 + 2*b*n/x^1*Log[c*x^n]), x, 2, a*x + b*Log[c*x^n]^2}
+{(a*x^1 + 2*b*n*x^0*Log[c*x^n])/(a*x^2 + b*x*Log[c*x^n]^2)^1, x, 2, Log[a*x + b*Log[c*x^n]^2]}
+{(a*x^2 + 2*b*n*x^1*Log[c*x^n])/(a*x^2 + b*x*Log[c*x^n]^2)^2, x, 3, -(1/(a*x + b*Log[c*x^n]^2))}
+{(a*x^3 + 2*b*n*x^2*Log[c*x^n])/(a*x^2 + b*x*Log[c*x^n]^2)^3, x, 3, -(1/(2*(a*x + b*Log[c*x^n]^2)^2))}
+
+
+{(a*(m - 1)*x^(m - 1) + b*n*q*Log[c*x^n]^(q - 1))/(a*x^m + b*x*Log[c*x^n]^q), x, 2, Log[a*x^(m - 1) + b*Log[c*x^n]^q]}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (d x^m+e Log[c x^n]^(q-1)) (a x^m+b Log[c x^n]^q)^p / x*)
+
+
+{(d*x^m + e*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^p/x, x, 1, (d - (a*e*m)/(b*n*q))*CannotIntegrate[x^(-1 + m)*(a*x^m + b*Log[c*x^n]^q)^p, x] + (e*(a*x^m + b*Log[c*x^n]^q)^(1 + p))/(b*n*(1 + p)*q)}
+
+
+{(d*x^m + e*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^3/x, x, 9, -((a^3*(a*e*m - b*d*n*q)*x^(4*m))/(4*b*m*n*q)) - (b^2*(a*e*m - b*d*n*q)*x^m*Gamma[1 + 3*q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^(3*q))/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^(3*q)*(m*n*q)) - (3*2^(-1 - 2*q)*a*b*(a*e*m - b*d*n*q)*x^(2*m)*Gamma[1 + 2*q, -((2*m*Log[c*x^n])/n)]*Log[c*x^n]^(2*q))/((c*x^n)^((2*m)/n)*(-((m*Log[c*x^n])/n))^(2*q)*(m*n*q)) - (a^2*(a*e*m - b*d*n*q)*x^(3*m)*Gamma[1 + q, -((3*m*Log[c*x^n])/n)]*Log[c*x^n]^q)/(3^q*(c*x^n)^((3*m)/n)*(-((m*Log[c*x^n])/n))^q*(m*n*q)) + (e*(a*x^m + b*Log[c*x^n]^q)^4)/(4*b*n*q)}
+{(d*x^m + e*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^2/x, x, 7, -((a^2*(a*e*m - b*d*n*q)*x^(3*m))/(3*b*m*n*q)) - (b*(a*e*m - b*d*n*q)*x^m*Gamma[1 + 2*q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^(2*q))/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^(2*q)*(m*n*q)) - (a*(a*e*m - b*d*n*q)*x^(2*m)*Gamma[1 + q, -((2*m*Log[c*x^n])/n)]*Log[c*x^n]^q)/(2^q*(c*x^n)^((2*m)/n)*(-((m*Log[c*x^n])/n))^q*(m*n*q)) + (e*(a*x^m + b*Log[c*x^n]^q)^3)/(3*b*n*q)}
+{(d*x^m + e*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^1/x, x, 5, -((a*(a*e*m - b*d*n*q)*x^(2*m))/(2*b*m*n*q)) + (((b*d)/m - (a*e)/(n*q))*x^m*Gamma[1 + q, -((m*Log[c*x^n])/n)]*Log[c*x^n]^q)/((c*x^n)^(m/n)*(-((m*Log[c*x^n])/n))^q) + (e*(a*x^m + b*Log[c*x^n]^q)^2)/(2*b*n*q)}
+{(d*x^m + e*Log[c*x^n]^(q - 1))*(a*x^m + b*Log[c*x^n]^q)^0/x, x, 4, (d*x^m)/m + (e*Log[c*x^n]^q)/(n*q)}
+{(d*x^m + e*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^1), x, 1, (d - (a*e*m)/(b*n*q))*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q), x] + (e*Log[a*x^m + b*Log[c*x^n]^q])/(b*n*q)}
+{(d*x^m + e*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^2), x, 1, (d - (a*e*m)/(b*n*q))*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q)^2, x] - e/(b*n*q*(a*x^m + b*Log[c*x^n]^q))}
+{(d*x^m + e*Log[c*x^n]^(q - 1))/(x*(a*x^m + b*Log[c*x^n]^q)^3), x, 1, (d - (a*e*m)/(b*n*q))*CannotIntegrate[x^(-1 + m)/(a*x^m + b*Log[c*x^n]^q)^3, x] - e/(2*b*n*q*(a*x^m + b*Log[c*x^n]^q)^2)}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (d x^m + e x^m Log[c x^n] + f Log[c x^n]^q) / (x (a x^m + b Log[c x^n]^q)^2)*)
+
+
+{(a*d*n*x^m - a*d*m*x^m*Log[c*x^n] - b*d*n*(q - 1)*Log[c*x^n]^q)/(x*(a*x^m + b*Log[c*x^n]^q)^2), x, 1, (d*Log[c*x^n])/(a*x^m + b*Log[c*x^n]^q)}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (d + e Log[c x^n])/(a x + b Log[c x^n]^q)^2*)
+
+
+{(n*q - Log[c*x^n])/(a*x + b*Log[c*x^n]^q)^2, x, 1, -((n*(1 - q)*CannotIntegrate[1/(x*(a*x + b*Log[c*x^n]^q)), x])/a) + Log[c*x^n]/(a*(a*x + b*Log[c*x^n]^q))}
+
+
+(* ::Section::Closed:: *)
 (*Integrands of the form G[x] Log[F[x]] when C=G[x] (1-F[x]) / D[F[x],x]*)
 
 
@@ -147,23 +232,6 @@
 {Log[-1 + 4*x + 4*Sqrt[(-1 + x)*x]]/x^(1/2), x, 12, -2*Sqrt[x] - (2*Sqrt[-x + x^2])/Sqrt[x] - (Sqrt[-x + x^2]*ArcTan[(2/3)*Sqrt[2]*Sqrt[-1 + x]])/(Sqrt[2]*Sqrt[-1 + x]*Sqrt[x]) + ArcTan[2*Sqrt[2]*Sqrt[x]]/Sqrt[2] + 2*Sqrt[x]*Log[-1 + 4*x + 4*Sqrt[-x + x^2]]}
 {Log[-1 + 4*x + 4*Sqrt[(-1 + x)*x]]/x^(3/2), x, 15, -((4*Sqrt[2]*Sqrt[-x + x^2]*ArcTan[(2/3)*Sqrt[2]*Sqrt[-1 + x]])/(Sqrt[-1 + x]*Sqrt[x])) + 4*Sqrt[2]*ArcTan[2*Sqrt[2]*Sqrt[x]] - 8*ArcTan[Sqrt[x]/Sqrt[-x + x^2]] - (2*Log[-1 + 4*x + 4*Sqrt[-x + x^2]])/Sqrt[x]}
 {Log[-1 + 4*x + 4*Sqrt[(-1 + x)*x]]/x^(5/2), x, 18, -(16/(3*Sqrt[x])) + (4*Sqrt[-x + x^2])/(3*x^(3/2)) + (32*Sqrt[2]*Sqrt[-x + x^2]*ArcTan[(2/3)*Sqrt[2]*Sqrt[-1 + x]])/(3*Sqrt[-1 + x]*Sqrt[x]) - (32/3)*Sqrt[2]*ArcTan[2*Sqrt[2]*Sqrt[x]] + (44/3)*ArcTan[Sqrt[x]/Sqrt[-x + x^2]] - (2*Log[-1 + 4*x + 4*Sqrt[-x + x^2]])/(3*x^(3/2))}
-
-
-(* ::Section::Closed:: *)
-(*Integrands of the form u^m (a+b Log[Sqrt[1-c x]/Sqrt[1+c x]])^n*)
-
-
-{(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^n/(1 - c^2*x^2), x, 3, -((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^(1 + n)/(b*c*(1 + n)))}
-
-{(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^3/(1 - c^2*x^2), x, 3, -((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^4/(4*b*c))}
-{(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^2/(1 - c^2*x^2), x, 3, -((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^3/(3*b*c))}
-{(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^1/(1 - c^2*x^2), x, 2, -((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^2/(2*b*c))}
-{1/((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^1*(1 - c^2*x^2)), x, 3, -(Log[a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]]]/(b*c))}
-{1/((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^2*(1 - c^2*x^2)), x, 3, 1/(b*c*(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]]))}
-{1/((a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^3*(1 - c^2*x^2)), x, 3, 1/(2*b*c*(a + b*Log[Sqrt[1 - c*x]/Sqrt[1 + c*x]])^2)}
-
-
-{Log[Sqrt[1 - a*x]/Sqrt[1 + a*x]]^1/(1 - a^2*x^2), x, 1, -(Log[Sqrt[1 - a*x]/Sqrt[1 + a*x]]^2/(2*a))}
 
 
 (* ::Section::Closed:: *)
@@ -416,7 +484,6 @@
 {Log[x + x^3], x, 3, -3*x + 2*ArcTan[x] + x*Log[x + x^3]}
 {2^Log[-8 + 7*x], x, 2, (-8 + 7*x)^(1 + Log[2])/(7*(1 + Log[2]))}
 {Log[(-11 + 5*x)/(5 + 76*x)], x, 2, (-(1/5))*(11 - 5*x)*Log[-((11 - 5*x)/(5 + 76*x))] - (861/380)*Log[5 + 76*x]}
-{Log[(1 + x)/(-1 + x)]/x^2, x, 4, 2*Log[x] - 2*Log[1 + x] - ((1 - x)*Log[-((1 + x)/(1 - x))])/x}
 {Log[1/(13 + x)], x, 2, x + (13 + x)*Log[(13 + x)^(-1)]}
 {x*Log[(1 + x)/x^2], x, 4, x/2 + x^2/4 - (1/2)*Log[1 + x] + (1/2)*x^2*Log[(1 + x)/x^2]}
 {x^3*Log[(7 + 5*x)/x^2], x, 4, (343*x)/500 - (49*x^2)/200 + (7*x^3)/60 + x^4/16 - (2401*Log[7 + 5*x])/2500 + (1/4)*x^4*Log[(7 + 5*x)/x^2]}
@@ -441,7 +508,6 @@
 {1/(a*x + b*x/Log[c*x^n]^4), x, 11, (b^(1/4)*ArcTan[1 - (Sqrt[2]*a^(1/4)*Log[c*x^n])/b^(1/4)])/(2*Sqrt[2]*a^(5/4)*n) - (b^(1/4)*ArcTan[1 + (Sqrt[2]*a^(1/4)*Log[c*x^n])/b^(1/4)])/(2*Sqrt[2]*a^(5/4)*n) + Log[x]/a + (b^(1/4)*Log[Sqrt[b] - Sqrt[2]*a^(1/4)*b^(1/4)*Log[c*x^n] + Sqrt[a]*Log[c*x^n]^2])/(4*Sqrt[2]*a^(5/4)*n) - (b^(1/4)*Log[Sqrt[b] + Sqrt[2]*a^(1/4)*b^(1/4)*Log[c*x^n] + Sqrt[a]*Log[c*x^n]^2])/(4*Sqrt[2]*a^(5/4)*n)}
 
 
-{Log[x]/(x + 4*x*Log[x]^2), x, 2, Log[1 + 4*Log[x]^2]/8}
 {1/(x + x*Log[7*x] + x*Log[7*x]^2), x, 3, (2*ArcTan[(1 + 2*Log[7*x])/Sqrt[3]])/Sqrt[3]}
 
 {(-1 + Log[3*x])/(x*(1 - Log[3*x] + Log[3*x]^2)), x, 5, ArcTan[(1 - 2*Log[3*x])/Sqrt[3]]/Sqrt[3] + (1/2)*Log[1 - Log[3*x] + Log[3*x]^2]}
@@ -484,7 +550,7 @@
 {Log[E^(a + b*x^n)], x, 3, -((b*n*x^(1 + n))/(1 + n)) + x*Log[E^(a + b*x^n)]}
 
 
-{E^x*Log[a + b*E^x], x, 3, -E^x + ((a + b*E^x)*Log[a + b*E^x])/b}
+{E^x*Log[a + b*E^x], x, 5, -E^x + ((a + b*E^x)*Log[a + b*E^x])/b, -E^x + (a*Log[a + b*E^x])/b + E^x*Log[a + b*E^x]}
 
 
 {Log[x]*E^(a + b*x), x, 3, -((E^a*ExpIntegralEi[b*x])/b) + (E^(a + b*x)*Log[x])/b}
@@ -496,6 +562,9 @@
 {x^0/(x + Log[x]), x, 0, CannotIntegrate[1/(x + Log[x]), x]}
 {1/(x^1*(x + Log[x])), x, 0, CannotIntegrate[1/(x*(x + Log[x])), x]}
 {1/(x^2*(x + Log[x])), x, 0, CannotIntegrate[1/(x^2*(x + Log[x])), x]}
+
+
+{Log[x]/(x + 4*x*Log[x]^2), x, 2, Log[1 + 4*Log[x]^2]/8}
 
 
 {(1 - Log[x])/(x*(x + Log[x])), x, 2, Log[1 + Log[x]/x]}

@@ -141,8 +141,8 @@
 
 {f^(a + b*x^2)*x^m, x, 1, (-(1/2))*f^a*x^(1 + m)*Gamma[(1 + m)/2, (-b)*x^2*Log[f]]*((-b)*x^2*Log[f])^((1/2)*(-1 - m))}
 
-{f^(a + b*x^2)*x^11, x, 1, -((f^a*Gamma[6, (-b)*x^2*Log[f]])/(2*b^6*Log[f]^6))}
-{f^(a + b*x^2)*x^9, x, 1, (f^a*Gamma[5, (-b)*x^2*Log[f]])/(2*b^5*Log[f]^5)}
+{f^(a + b*x^2)*x^11, x, 1, -((f^(a + b*x^2)*(120 - 120*b*x^2*Log[f] + 60*b^2*x^4*Log[f]^2 - 20*b^3*x^6*Log[f]^3 + 5*b^4*x^8*Log[f]^4 - b^5*x^10*Log[f]^5))/(2*b^6*Log[f]^6))}
+{f^(a + b*x^2)*x^9, x, 1, (f^(a + b*x^2)*(24 - 24*b*x^2*Log[f] + 12*b^2*x^4*Log[f]^2 - 4*b^3*x^6*Log[f]^3 + b^4*x^8*Log[f]^4))/(2*b^5*Log[f]^5)}
 {f^(a + b*x^2)*x^7, x, 4, -((3*f^(a + b*x^2))/(b^4*Log[f]^4)) + (3*f^(a + b*x^2)*x^2)/(b^3*Log[f]^3) - (3*f^(a + b*x^2)*x^4)/(2*b^2*Log[f]^2) + (f^(a + b*x^2)*x^6)/(2*b*Log[f])}
 {f^(a + b*x^2)*x^5, x, 3, f^(a + b*x^2)/(b^3*Log[f]^3) - (f^(a + b*x^2)*x^2)/(b^2*Log[f]^2) + (f^(a + b*x^2)*x^4)/(2*b*Log[f])}
 {f^(a + b*x^2)*x^3, x, 2, -(f^(a + b*x^2)/(2*b^2*Log[f]^2)) + (f^(a + b*x^2)*x^2)/(2*b*Log[f])}
@@ -171,8 +171,8 @@
 
 {f^(a + b*x^3)*x^m, x, 1, (-(1/3))*f^a*x^(1 + m)*Gamma[(1 + m)/3, (-b)*x^3*Log[f]]*((-b)*x^3*Log[f])^((1/3)*(-1 - m))}
 
-{f^(a + b*x^3)*x^17, x, 1, -((f^a*Gamma[6, (-b)*x^3*Log[f]])/(3*b^6*Log[f]^6))}
-{f^(a + b*x^3)*x^14, x, 1, (f^a*Gamma[5, (-b)*x^3*Log[f]])/(3*b^5*Log[f]^5)}
+{f^(a + b*x^3)*x^17, x, 1, -((f^(a + b*x^3)*(120 - 120*b*x^3*Log[f] + 60*b^2*x^6*Log[f]^2 - 20*b^3*x^9*Log[f]^3 + 5*b^4*x^12*Log[f]^4 - b^5*x^15*Log[f]^5))/(3*b^6*Log[f]^6))}
+{f^(a + b*x^3)*x^14, x, 1, (f^(a + b*x^3)*(24 - 24*b*x^3*Log[f] + 12*b^2*x^6*Log[f]^2 - 4*b^3*x^9*Log[f]^3 + b^4*x^12*Log[f]^4))/(3*b^5*Log[f]^5)}
 {f^(a + b*x^3)*x^11, x, 4, -((2*f^(a + b*x^3))/(b^4*Log[f]^4)) + (2*f^(a + b*x^3)*x^3)/(b^3*Log[f]^3) - (f^(a + b*x^3)*x^6)/(b^2*Log[f]^2) + (f^(a + b*x^3)*x^9)/(3*b*Log[f])}
 {f^(a + b*x^3)*x^8, x, 3, (2*f^(a + b*x^3))/(3*b^3*Log[f]^3) - (2*f^(a + b*x^3)*x^3)/(3*b^2*Log[f]^2) + (f^(a + b*x^3)*x^6)/(3*b*Log[f])}
 {f^(a + b*x^3)*x^5, x, 2, -(f^(a + b*x^3)/(3*b^2*Log[f]^2)) + (f^(a + b*x^3)*x^3)/(3*b*Log[f])}
@@ -211,8 +211,8 @@
 {f^(a + b/x)/x^3, x, 2, f^(a + b/x)/(b^2*Log[f]^2) - f^(a + b/x)/(b*x*Log[f])}
 {f^(a + b/x)/x^4, x, 3, -((2*f^(a + b/x))/(b^3*Log[f]^3)) + (2*f^(a + b/x))/(b^2*x*Log[f]^2) - f^(a + b/x)/(b*x^2*Log[f])}
 {f^(a + b/x)/x^5, x, 4, (6*f^(a + b/x))/(b^4*Log[f]^4) - (6*f^(a + b/x))/(b^3*x*Log[f]^3) + (3*f^(a + b/x))/(b^2*x^2*Log[f]^2) - f^(a + b/x)/(b*x^3*Log[f])}
-{f^(a + b/x)/x^6, x, 1, -((f^a*Gamma[5, -((b*Log[f])/x)])/(b^5*Log[f]^5))}
-{f^(a + b/x)/x^7, x, 1, (f^a*Gamma[6, -((b*Log[f])/x)])/(b^6*Log[f]^6)}
+{f^(a + b/x)/x^6, x, 1, -((f^(a + b/x)*(24*x^4 - 24*b*x^3*Log[f] + 12*b^2*x^2*Log[f]^2 - 4*b^3*x*Log[f]^3 + b^4*Log[f]^4))/(b^5*x^4*Log[f]^5))}
+{f^(a + b/x)/x^7, x, 1, (f^(a + b/x)*(120*x^5 - 120*b*x^4*Log[f] + 60*b^2*x^3*Log[f]^2 - 20*b^3*x^2*Log[f]^3 + 5*b^4*x*Log[f]^4 - b^5*Log[f]^5))/(b^6*x^5*Log[f]^6)}
 
 
 {f^(a + b/x^2)*x^m, x, 1, (1/2)*f^a*x^(1 + m)*Gamma[(1/2)*(-1 - m), -((b*Log[f])/x^2)]*(-((b*Log[f])/x^2))^((1 + m)/2)}
@@ -227,8 +227,8 @@
 {f^(a + b/x^2)/x^5, x, 2, f^(a + b/x^2)/(2*b^2*Log[f]^2) - f^(a + b/x^2)/(2*b*x^2*Log[f])}
 {f^(a + b/x^2)/x^7, x, 3, -(f^(a + b/x^2)/(b^3*Log[f]^3)) + f^(a + b/x^2)/(b^2*x^2*Log[f]^2) - f^(a + b/x^2)/(2*b*x^4*Log[f])}
 {f^(a + b/x^2)/x^9, x, 4, (3*f^(a + b/x^2))/(b^4*Log[f]^4) - (3*f^(a + b/x^2))/(b^3*x^2*Log[f]^3) + (3*f^(a + b/x^2))/(2*b^2*x^4*Log[f]^2) - f^(a + b/x^2)/(2*b*x^6*Log[f])}
-{f^(a + b/x^2)/x^11, x, 1, -((f^a*Gamma[5, -((b*Log[f])/x^2)])/(2*b^5*Log[f]^5))}
-{f^(a + b/x^2)/x^13, x, 1, (f^a*Gamma[6, -((b*Log[f])/x^2)])/(2*b^6*Log[f]^6)}
+{f^(a + b/x^2)/x^11, x, 1, -((f^(a + b/x^2)*(24*x^8 - 24*b*x^6*Log[f] + 12*b^2*x^4*Log[f]^2 - 4*b^3*x^2*Log[f]^3 + b^4*Log[f]^4))/(2*b^5*x^8*Log[f]^5))}
+{f^(a + b/x^2)/x^13, x, 1, (f^(a + b/x^2)*(120*x^10 - 120*b*x^8*Log[f] + 60*b^2*x^6*Log[f]^2 - 20*b^3*x^4*Log[f]^3 + 5*b^4*x^2*Log[f]^4 - b^5*Log[f]^5))/(2*b^6*x^10*Log[f]^6)}
 
 {f^(a + b/x^2)*x^10, x, 1, (1/2)*f^a*x^11*Gamma[-(11/2), -((b*Log[f])/x^2)]*(-((b*Log[f])/x^2))^(11/2)}
 {f^(a + b/x^2)*x^8, x, 1, (1/2)*f^a*x^9*Gamma[-(9/2), -((b*Log[f])/x^2)]*(-((b*Log[f])/x^2))^(9/2)}
@@ -257,8 +257,8 @@
 {f^(a + b/x^3)/x^7, x, 2, f^(a + b/x^3)/(3*b^2*Log[f]^2) - f^(a + b/x^3)/(3*b*x^3*Log[f])}
 {f^(a + b/x^3)/x^10, x, 3, -((2*f^(a + b/x^3))/(3*b^3*Log[f]^3)) + (2*f^(a + b/x^3))/(3*b^2*x^3*Log[f]^2) - f^(a + b/x^3)/(3*b*x^6*Log[f])}
 {f^(a + b/x^3)/x^13, x, 4, (2*f^(a + b/x^3))/(b^4*Log[f]^4) - (2*f^(a + b/x^3))/(b^3*x^3*Log[f]^3) + f^(a + b/x^3)/(b^2*x^6*Log[f]^2) - f^(a + b/x^3)/(3*b*x^9*Log[f])}
-{f^(a + b/x^3)/x^16, x, 1, -((f^a*Gamma[5, -((b*Log[f])/x^3)])/(3*b^5*Log[f]^5))}
-{f^(a + b/x^3)/x^19, x, 1, (f^a*Gamma[6, -((b*Log[f])/x^3)])/(3*b^6*Log[f]^6)}
+{f^(a + b/x^3)/x^16, x, 1, -((f^(a + b/x^3)*(24*x^12 - 24*b*x^9*Log[f] + 12*b^2*x^6*Log[f]^2 - 4*b^3*x^3*Log[f]^3 + b^4*Log[f]^4))/(3*b^5*x^12*Log[f]^5))}
+{f^(a + b/x^3)/x^19, x, 1, (f^(a + b/x^3)*(120*x^15 - 120*b*x^12*Log[f] + 60*b^2*x^9*Log[f]^2 - 20*b^3*x^6*Log[f]^3 + 5*b^4*x^3*Log[f]^4 - b^5*Log[f]^5))/(3*b^6*x^15*Log[f]^6)}
 
 {f^(a + b/x^3)*x^4, x, 1, (1/3)*f^a*x^5*Gamma[-(5/3), -((b*Log[f])/x^3)]*(-((b*Log[f])/x^3))^(5/3)}
 {f^(a + b/x^3)*x^3, x, 1, (1/3)*f^a*x^4*Gamma[-(4/3), -((b*Log[f])/x^3)]*(-((b*Log[f])/x^3))^(4/3)}
@@ -417,8 +417,8 @@
 
 {F^(a + b*(c + d*x)^2)*(c + d*x)^m, x, 1, -((F^a*(c + d*x)^(1 + m)*Gamma[(1 + m)/2, (-b)*(c + d*x)^2*Log[F]]*((-b)*(c + d*x)^2*Log[F])^((1/2)*(-1 - m)))/(2*d))}
 
-{F^(a + b*(c + d*x)^2)*(c + d*x)^11, x, 1, -((F^a*Gamma[6, (-b)*(c + d*x)^2*Log[F]])/(2*b^6*d*Log[F]^6))}
-{F^(a + b*(c + d*x)^2)*(c + d*x)^9, x, 1, (F^a*Gamma[5, (-b)*(c + d*x)^2*Log[F]])/(2*b^5*d*Log[F]^5)}
+{F^(a + b*(c + d*x)^2)*(c + d*x)^11, x, 1, -((F^(a + b*(c + d*x)^2)*(120 - 120*b*(c + d*x)^2*Log[F] + 60*b^2*(c + d*x)^4*Log[F]^2 - 20*b^3*(c + d*x)^6*Log[F]^3 + 5*b^4*(c + d*x)^8*Log[F]^4 - b^5*(c + d*x)^10*Log[F]^5))/(2*b^6*d*Log[F]^6))}
+{F^(a + b*(c + d*x)^2)*(c + d*x)^9, x, 1, (F^(a + b*(c + d*x)^2)*(24 - 24*b*(c + d*x)^2*Log[F] + 12*b^2*(c + d*x)^4*Log[F]^2 - 4*b^3*(c + d*x)^6*Log[F]^3 + b^4*(c + d*x)^8*Log[F]^4))/(2*b^5*d*Log[F]^5)}
 {F^(a + b*(c + d*x)^2)*(c + d*x)^7, x, 4, -((3*F^(a + b*(c + d*x)^2))/(b^4*d*Log[F]^4)) + (3*F^(a + b*(c + d*x)^2)*(c + d*x)^2)/(b^3*d*Log[F]^3) - (3*F^(a + b*(c + d*x)^2)*(c + d*x)^4)/(2*b^2*d*Log[F]^2) + (F^(a + b*(c + d*x)^2)*(c + d*x)^6)/(2*b*d*Log[F])}
 {F^(a + b*(c + d*x)^2)*(c + d*x)^5, x, 3, F^(a + b*(c + d*x)^2)/(b^3*d*Log[F]^3) - (F^(a + b*(c + d*x)^2)*(c + d*x)^2)/(b^2*d*Log[F]^2) + (F^(a + b*(c + d*x)^2)*(c + d*x)^4)/(2*b*d*Log[F])}
 {F^(a + b*(c + d*x)^2)*(c + d*x)^3, x, 2, -(F^(a + b*(c + d*x)^2)/(2*b^2*d*Log[F]^2)) + (F^(a + b*(c + d*x)^2)*(c + d*x)^2)/(2*b*d*Log[F])}
@@ -447,8 +447,8 @@
 
 {F^(a + b*(c + d*x)^3)*(c + d*x)^m, x, 1, -((F^a*(c + d*x)^(1 + m)*Gamma[(1 + m)/3, (-b)*(c + d*x)^3*Log[F]]*((-b)*(c + d*x)^3*Log[F])^((1/3)*(-1 - m)))/(3*d))}
 
-{F^(a + b*(c + d*x)^3)*(c + d*x)^17, x, 1, -((F^a*Gamma[6, (-b)*(c + d*x)^3*Log[F]])/(3*b^6*d*Log[F]^6))}
-{F^(a + b*(c + d*x)^3)*(c + d*x)^14, x, 1, (F^a*Gamma[5, (-b)*(c + d*x)^3*Log[F]])/(3*b^5*d*Log[F]^5)}
+{F^(a + b*(c + d*x)^3)*(c + d*x)^17, x, 1, -((F^(a + b*(c + d*x)^3)*(120 - 120*b*(c + d*x)^3*Log[F] + 60*b^2*(c + d*x)^6*Log[F]^2 - 20*b^3*(c + d*x)^9*Log[F]^3 + 5*b^4*(c + d*x)^12*Log[F]^4 - b^5*(c + d*x)^15*Log[F]^5))/(3*b^6*d*Log[F]^6))}
+{F^(a + b*(c + d*x)^3)*(c + d*x)^14, x, 1, (F^(a + b*(c + d*x)^3)*(24 - 24*b*(c + d*x)^3*Log[F] + 12*b^2*(c + d*x)^6*Log[F]^2 - 4*b^3*(c + d*x)^9*Log[F]^3 + b^4*(c + d*x)^12*Log[F]^4))/(3*b^5*d*Log[F]^5)}
 {F^(a + b*(c + d*x)^3)*(c + d*x)^11, x, 4, -((2*F^(a + b*(c + d*x)^3))/(b^4*d*Log[F]^4)) + (2*F^(a + b*(c + d*x)^3)*(c + d*x)^3)/(b^3*d*Log[F]^3) - (F^(a + b*(c + d*x)^3)*(c + d*x)^6)/(b^2*d*Log[F]^2) + (F^(a + b*(c + d*x)^3)*(c + d*x)^9)/(3*b*d*Log[F])}
 {F^(a + b*(c + d*x)^3)*(c + d*x)^8, x, 3, (2*F^(a + b*(c + d*x)^3))/(3*b^3*d*Log[F]^3) - (2*F^(a + b*(c + d*x)^3)*(c + d*x)^3)/(3*b^2*d*Log[F]^2) + (F^(a + b*(c + d*x)^3)*(c + d*x)^6)/(3*b*d*Log[F])}
 {F^(a + b*(c + d*x)^3)*(c + d*x)^5, x, 2, -(F^(a + b*(c + d*x)^3)/(3*b^2*d*Log[F]^2)) + (F^(a + b*(c + d*x)^3)*(c + d*x)^3)/(3*b*d*Log[F])}
@@ -488,8 +488,8 @@
 {F^(a + b/(c + d*x))/(c + d*x)^3, x, 2, F^(a + b/(c + d*x))/(b^2*d*Log[F]^2) - F^(a + b/(c + d*x))/(b*d*(c + d*x)*Log[F])}
 {F^(a + b/(c + d*x))/(c + d*x)^4, x, 3, -((2*F^(a + b/(c + d*x)))/(b^3*d*Log[F]^3)) + (2*F^(a + b/(c + d*x)))/(b^2*d*(c + d*x)*Log[F]^2) - F^(a + b/(c + d*x))/(b*d*(c + d*x)^2*Log[F])}
 {F^(a + b/(c + d*x))/(c + d*x)^5, x, 4, (6*F^(a + b/(c + d*x)))/(b^4*d*Log[F]^4) - (6*F^(a + b/(c + d*x)))/(b^3*d*(c + d*x)*Log[F]^3) + (3*F^(a + b/(c + d*x)))/(b^2*d*(c + d*x)^2*Log[F]^2) - F^(a + b/(c + d*x))/(b*d*(c + d*x)^3*Log[F])}
-{F^(a + b/(c + d*x))/(c + d*x)^6, x, 1, -((F^a*Gamma[5, -((b*Log[F])/(c + d*x))])/(b^5*d*Log[F]^5))}
-{F^(a + b/(c + d*x))/(c + d*x)^7, x, 1, (F^a*Gamma[6, -((b*Log[F])/(c + d*x))])/(b^6*d*Log[F]^6)}
+{F^(a + b/(c + d*x))/(c + d*x)^6, x, 1, -((F^(a + b/(c + d*x))*(24*(c + d*x)^4 - 24*b*(c + d*x)^3*Log[F] + 12*b^2*(c + d*x)^2*Log[F]^2 - 4*b^3*(c + d*x)*Log[F]^3 + b^4*Log[F]^4))/(b^5*d*(c + d*x)^4*Log[F]^5))}
+{F^(a + b/(c + d*x))/(c + d*x)^7, x, 1, (F^(a + b/(c + d*x))*(120*(c + d*x)^5 - 120*b*(c + d*x)^4*Log[F] + 60*b^2*(c + d*x)^3*Log[F]^2 - 20*b^3*(c + d*x)^2*Log[F]^3 + 5*b^4*(c + d*x)*Log[F]^4 - b^5*Log[F]^5))/(b^6*d*(c + d*x)^5*Log[F]^6)}
 
 
 {F^(a + b/(c + d*x)^2)*(c + d*x)^m, x, 1, (F^a*(c + d*x)^(1 + m)*Gamma[(1/2)*(-1 - m), -((b*Log[F])/(c + d*x)^2)]*(-((b*Log[F])/(c + d*x)^2))^((1 + m)/2))/(2*d)}
@@ -504,8 +504,8 @@
 {F^(a + b/(c + d*x)^2)/(c + d*x)^5, x, 2, F^(a + b/(c + d*x)^2)/(2*b^2*d*Log[F]^2) - F^(a + b/(c + d*x)^2)/(2*b*d*(c + d*x)^2*Log[F])}
 {F^(a + b/(c + d*x)^2)/(c + d*x)^7, x, 3, -(F^(a + b/(c + d*x)^2)/(b^3*d*Log[F]^3)) + F^(a + b/(c + d*x)^2)/(b^2*d*(c + d*x)^2*Log[F]^2) - F^(a + b/(c + d*x)^2)/(2*b*d*(c + d*x)^4*Log[F])}
 {F^(a + b/(c + d*x)^2)/(c + d*x)^9, x, 4, (3*F^(a + b/(c + d*x)^2))/(b^4*d*Log[F]^4) - (3*F^(a + b/(c + d*x)^2))/(b^3*d*(c + d*x)^2*Log[F]^3) + (3*F^(a + b/(c + d*x)^2))/(2*b^2*d*(c + d*x)^4*Log[F]^2) - F^(a + b/(c + d*x)^2)/(2*b*d*(c + d*x)^6*Log[F])}
-{F^(a + b/(c + d*x)^2)/(c + d*x)^11, x, 1, -((F^a*Gamma[5, -((b*Log[F])/(c + d*x)^2)])/(2*b^5*d*Log[F]^5))}
-{F^(a + b/(c + d*x)^2)/(c + d*x)^13, x, 1, (F^a*Gamma[6, -((b*Log[F])/(c + d*x)^2)])/(2*b^6*d*Log[F]^6)}
+{F^(a + b/(c + d*x)^2)/(c + d*x)^11, x, 1, -((F^(a + b/(c + d*x)^2)*(24*(c + d*x)^8 - 24*b*(c + d*x)^6*Log[F] + 12*b^2*(c + d*x)^4*Log[F]^2 - 4*b^3*(c + d*x)^2*Log[F]^3 + b^4*Log[F]^4))/(2*b^5*d*(c + d*x)^8*Log[F]^5))}
+{F^(a + b/(c + d*x)^2)/(c + d*x)^13, x, 1, (F^(a + b/(c + d*x)^2)*(120*(c + d*x)^10 - 120*b*(c + d*x)^8*Log[F] + 60*b^2*(c + d*x)^6*Log[F]^2 - 20*b^3*(c + d*x)^4*Log[F]^3 + 5*b^4*(c + d*x)^2*Log[F]^4 - b^5*Log[F]^5))/(2*b^6*d*(c + d*x)^10*Log[F]^6)}
 
 {F^(a + b/(c + d*x)^2)*(c + d*x)^10, x, 1, (F^a*(c + d*x)^11*Gamma[-(11/2), -((b*Log[F])/(c + d*x)^2)]*(-((b*Log[F])/(c + d*x)^2))^(11/2))/(2*d)}
 {F^(a + b/(c + d*x)^2)*(c + d*x)^8, x, 1, (F^a*(c + d*x)^9*Gamma[-(9/2), -((b*Log[F])/(c + d*x)^2)]*(-((b*Log[F])/(c + d*x)^2))^(9/2))/(2*d)}
@@ -534,8 +534,8 @@
 {F^(a + b/(c + d*x)^3)/(c + d*x)^7, x, 2, F^(a + b/(c + d*x)^3)/(3*b^2*d*Log[F]^2) - F^(a + b/(c + d*x)^3)/(3*b*d*(c + d*x)^3*Log[F])}
 {F^(a + b/(c + d*x)^3)/(c + d*x)^10, x, 3, -((2*F^(a + b/(c + d*x)^3))/(3*b^3*d*Log[F]^3)) + (2*F^(a + b/(c + d*x)^3))/(3*b^2*d*(c + d*x)^3*Log[F]^2) - F^(a + b/(c + d*x)^3)/(3*b*d*(c + d*x)^6*Log[F])}
 {F^(a + b/(c + d*x)^3)/(c + d*x)^13, x, 4, (2*F^(a + b/(c + d*x)^3))/(b^4*d*Log[F]^4) - (2*F^(a + b/(c + d*x)^3))/(b^3*d*(c + d*x)^3*Log[F]^3) + F^(a + b/(c + d*x)^3)/(b^2*d*(c + d*x)^6*Log[F]^2) - F^(a + b/(c + d*x)^3)/(3*b*d*(c + d*x)^9*Log[F])}
-{F^(a + b/(c + d*x)^3)/(c + d*x)^16, x, 1, -((F^a*Gamma[5, -((b*Log[F])/(c + d*x)^3)])/(3*b^5*d*Log[F]^5))}
-{F^(a + b/(c + d*x)^3)/(c + d*x)^19, x, 1, (F^a*Gamma[6, -((b*Log[F])/(c + d*x)^3)])/(3*b^6*d*Log[F]^6)}
+{F^(a + b/(c + d*x)^3)/(c + d*x)^16, x, 1, -((F^(a + b/(c + d*x)^3)*(24*(c + d*x)^12 - 24*b*(c + d*x)^9*Log[F] + 12*b^2*(c + d*x)^6*Log[F]^2 - 4*b^3*(c + d*x)^3*Log[F]^3 + b^4*Log[F]^4))/(3*b^5*d*(c + d*x)^12*Log[F]^5))}
+{F^(a + b/(c + d*x)^3)/(c + d*x)^19, x, 1, (F^(a + b/(c + d*x)^3)*(120*(c + d*x)^15 - 120*b*(c + d*x)^12*Log[F] + 60*b^2*(c + d*x)^9*Log[F]^2 - 20*b^3*(c + d*x)^6*Log[F]^3 + 5*b^4*(c + d*x)^3*Log[F]^4 - b^5*Log[F]^5))/(3*b^6*d*(c + d*x)^15*Log[F]^6)}
 
 {F^(a + b/(c + d*x)^3)*(c + d*x)^3, x, 1, (F^a*(c + d*x)^4*Gamma[-(4/3), -((b*Log[F])/(c + d*x)^3)]*(-((b*Log[F])/(c + d*x)^3))^(4/3))/(3*d)}
 {F^(a + b/(c + d*x)^3)*(c + d*x)^1, x, 1, (F^a*(c + d*x)^2*Gamma[-(2/3), -((b*Log[F])/(c + d*x)^3)]*(-((b*Log[F])/(c + d*x)^3))^(2/3))/(3*d)}
@@ -561,8 +561,8 @@
 {F^(a + b*(c + d*x)^n)/(c + d*x)^4, x, 1, -((F^a*Gamma[-(3/n), (-b)*(c + d*x)^n*Log[F]]*((-b)*(c + d*x)^n*Log[F])^(3/n))/(d*n*(c + d*x)^3))}
 
 
-{F^(a + b*(c + d*x)^n)*(c + d*x)^(6*n - 1), x, 1, -((F^a*Gamma[6, (-b)*(c + d*x)^n*Log[F]])/(b^6*d*n*Log[F]^6))}
-{F^(a + b*(c + d*x)^n)*(c + d*x)^(5*n - 1), x, 1, (F^a*Gamma[5, (-b)*(c + d*x)^n*Log[F]])/(b^5*d*n*Log[F]^5)}
+{F^(a + b*(c + d*x)^n)*(c + d*x)^(6*n - 1), x, 1, -((F^(a + b*(c + d*x)^n)*(120 - 120*b*(c + d*x)^n*Log[F] + 60*b^2*(c + d*x)^(2*n)*Log[F]^2 - 20*b^3*(c + d*x)^(3*n)*Log[F]^3 + 5*b^4*(c + d*x)^(4*n)*Log[F]^4 - b^5*(c + d*x)^(5*n)*Log[F]^5))/(b^6*d*n*Log[F]^6))}
+{F^(a + b*(c + d*x)^n)*(c + d*x)^(5*n - 1), x, 1, (F^(a + b*(c + d*x)^n)*(24 - 24*b*(c + d*x)^n*Log[F] + 12*b^2*(c + d*x)^(2*n)*Log[F]^2 - 4*b^3*(c + d*x)^(3*n)*Log[F]^3 + b^4*(c + d*x)^(4*n)*Log[F]^4))/(b^5*d*n*Log[F]^5)}
 {F^(a + b*(c + d*x)^n)*(c + d*x)^(4*n - 1), x, 4, -((6*F^(a + b*(c + d*x)^n))/(b^4*d*n*Log[F]^4)) + (6*F^(a + b*(c + d*x)^n)*(c + d*x)^n)/(b^3*d*n*Log[F]^3) - (3*F^(a + b*(c + d*x)^n)*(c + d*x)^(2*n))/(b^2*d*n*Log[F]^2) + (F^(a + b*(c + d*x)^n)*(c + d*x)^(3*n))/(b*d*n*Log[F])}
 {F^(a + b*(c + d*x)^n)*(c + d*x)^(3*n - 1), x, 3, (2*F^(a + b*(c + d*x)^n))/(b^3*d*n*Log[F]^3) - (2*F^(a + b*(c + d*x)^n)*(c + d*x)^n)/(b^2*d*n*Log[F]^2) + (F^(a + b*(c + d*x)^n)*(c + d*x)^(2*n))/(b*d*n*Log[F])}
 {F^(a + b*(c + d*x)^n)*(c + d*x)^(2*n - 1), x, 2, -(F^(a + b*(c + d*x)^n)/(b^2*d*n*Log[F]^2)) + (F^(a + b*(c + d*x)^n)*(c + d*x)^n)/(b*d*n*Log[F])}
@@ -936,33 +936,74 @@
 
 
 (* ::Section::Closed:: *)
-(*Integrands of the form (d x)^m F^(a+b Log[c x^n]^2)*)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n]^2))*)
 
 
-{x^2*F^(a + b*Log[c*x^n]^2), x, 3, (F^a*Sqrt[Pi]*x^3*Erfi[(3 + 2*b*n*Log[F]*Log[c*x^n])/(2*Sqrt[b]*n*Sqrt[Log[F]])])/(E^(9/(4*b*n^2*Log[F]))*(c*x^n)^(3/n)*(2*Sqrt[b]*n*Sqrt[Log[F]]))}
-{x^1*F^(a + b*Log[c*x^n]^2), x, 3, (F^a*Sqrt[Pi]*x^2*Erfi[(1 + b*n*Log[F]*Log[c*x^n])/(Sqrt[b]*n*Sqrt[Log[F]])])/(E^(1/(b*n^2*Log[F]))*(c*x^n)^(2/n)*(2*Sqrt[b]*n*Sqrt[Log[F]]))}
-{x^0*F^(a + b*Log[c*x^n]^2), x, 3, (F^a*Sqrt[Pi]*x*Erfi[(1 + 2*b*n*Log[F]*Log[c*x^n])/(2*Sqrt[b]*n*Sqrt[Log[F]])])/(E^(1/(4*b*n^2*Log[F]))*(c*x^n)^n^(-1)*(2*Sqrt[b]*n*Sqrt[Log[F]]))}
-{F^(a + b*Log[c*x^n]^2)/x^1, x, 2, (F^a*Sqrt[Pi]*Erfi[Sqrt[b]*Sqrt[Log[F]]*Log[c*x^n]])/(2*Sqrt[b]*n*Sqrt[Log[F]])}
-{F^(a + b*Log[c*x^n]^2)/x^2, x, 3, (F^a*Sqrt[Pi]*(c*x^n)^(1/n)*Erfi[-((1 - 2*b*n*Log[F]*Log[c*x^n])/(2*Sqrt[b]*n*Sqrt[Log[F]]))])/(E^(1/(4*b*n^2*Log[F]))*(2*Sqrt[b]*n*x*Sqrt[Log[F]]))}
-{F^(a + b*Log[c*x^n]^2)/x^3, x, 3, (F^a*Sqrt[Pi]*(c*x^n)^(2/n)*Erfi[-((1 - b*n*Log[F]*Log[c*x^n])/(Sqrt[b]*n*Sqrt[Log[F]]))])/(E^(1/(b*n^2*Log[F]))*(2*Sqrt[b]*n*x^2*Sqrt[Log[F]]))}
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n]^2)) when e g-d h=0*)
 
 
-{(d x)^m*F^(a + b*Log[c*x^n]^2), x, 3, (F^a*Sqrt[Pi]*(d*x)^(1 + m)*Erfi[(1 + m + 2*b*n*Log[F]*Log[c*x^n])/(2*Sqrt[b]*n*Sqrt[Log[F]])])/(E^((1 + m)^2/(4*b*n^2*Log[F]))*(c*x^n)^((1 + m)/n)*(2*Sqrt[b]*d*n*Sqrt[Log[F]]))}
+{(d + e*x)^m*E^Log[(d + e*x)^n]^2, x, 3, (Sqrt[Pi]*(d + e*x)^(1 + m)*Erfi[(1 + m + 2*n*Log[(d + e*x)^n])/(2*n)])/(E^((1 + m)^2/(4*n^2))*((d + e*x)^n)^((1 + m)/n)*(2*e*n))}
+{(d*g + e*g*x)^m*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 3, (F^(a*f)*Sqrt[Pi]*(d*g + e*g*x)^(1 + m)*Erfi[(1 + m + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^((1 + m)^2/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^((1 + m)/n)*(2*Sqrt[b]*e*Sqrt[f]*g*n*Sqrt[Log[F]]))}
+
+
+{(d*g + e*g*x)^2*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 3, (F^(a*f)*g^2*Sqrt[Pi]*(d + e*x)^3*Erfi[(3 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(9/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*Sqrt[b]*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(d*g + e*g*x)^1*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 3, (F^(a*f)*g*Sqrt[Pi]*(d + e*x)^2*Erfi[(1 + b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*Sqrt[b]*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(d*g + e*g*x)^0*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 3, (F^(a*f)*Sqrt[Pi]*(d + e*x)*Erfi[(1 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*Sqrt[b]*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(d*g + e*g*x)^1, x, 2, (F^(a*f)*Sqrt[Pi]*Erfi[Sqrt[b]*Sqrt[f]*Sqrt[Log[F]]*Log[c*(d + e*x)^n]])/(2*Sqrt[b]*e*Sqrt[f]*g*n*Sqrt[Log[F]])}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(d*g + e*g*x)^2, x, 3, If[$VersionNumber>=8, -((F^(a*f)*Sqrt[Pi]*(c*(d + e*x)^n)^(1/n)*Erfi[(1 - 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(2*Sqrt[b]*e*Sqrt[f]*g^2*n*(d + e*x)*Sqrt[Log[F]]))), (F^(a*f)*Sqrt[Pi]*(c*(d + e*x)^n)^(1/n)*Erfi[-((1 - 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]]))])/(E^(1/(4*b*f*n^2*Log[F]))*(2*Sqrt[b]*e*Sqrt[f]*g^2*n*(d + e*x)*Sqrt[Log[F]]))]}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(d*g + e*g*x)^3, x, 3, If[$VersionNumber>=8, -((F^(a*f)*Sqrt[Pi]*(c*(d + e*x)^n)^(2/n)*Erfi[(1 - b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(b*f*n^2*Log[F]))*(2*Sqrt[b]*e*Sqrt[f]*g^3*n*(d + e*x)^2*Sqrt[Log[F]]))), (F^(a*f)*Sqrt[Pi]*(c*(d + e*x)^n)^(2/n)*Erfi[-((1 - b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]]))])/(E^(1/(b*f*n^2*Log[F]))*(2*Sqrt[b]*e*Sqrt[f]*g^3*n*(d + e*x)^2*Sqrt[Log[F]]))]}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n]^2))*)
+
+
+{(g + h*x)^m*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n]^2))*(g + h*x)^m, x]}
+
+
+{(g + h*x)^3*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 14, (3*F^(a*f)*h*(e*g - d*h)^2*Sqrt[Pi]*(d + e*x)^2*Erfi[(1 + b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*Sqrt[b]*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + (F^(a*f)*h^3*Sqrt[Pi]*(d + e*x)^4*Erfi[(2 + b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(4/(b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(4/n)*(2*Sqrt[b]*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + (F^(a*f)*(e*g - d*h)^3*Sqrt[Pi]*(d + e*x)*Erfi[(1 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*Sqrt[b]*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + (3*F^(a*f)*h^2*(e*g - d*h)*Sqrt[Pi]*(d + e*x)^3*Erfi[(3 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(9/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*Sqrt[b]*e^4*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^2*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 11, (F^(a*f)*h*(e*g - d*h)*Sqrt[Pi]*(d + e*x)^2*Erfi[(1 + b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(Sqrt[b]*e^3*Sqrt[f]*n*Sqrt[Log[F]])) + (F^(a*f)*(e*g - d*h)^2*Sqrt[Pi]*(d + e*x)*Erfi[(1 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*Sqrt[b]*e^3*Sqrt[f]*n*Sqrt[Log[F]])) + (F^(a*f)*h^2*Sqrt[Pi]*(d + e*x)^3*Erfi[(3 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(9/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*Sqrt[b]*e^3*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^1*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 8, (F^(a*f)*h*Sqrt[Pi]*(d + e*x)^2*Erfi[(1 + b*f*n*Log[F]*Log[c*(d + e*x)^n])/(Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(b*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*Sqrt[b]*e^2*Sqrt[f]*n*Sqrt[Log[F]])) + (F^(a*f)*(e*g - d*h)*Sqrt[Pi]*(d + e*x)*Erfi[(1 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*Sqrt[b]*e^2*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^0*F^(f*(a + b*Log[c*(d + e*x)^n]^2)), x, 3, (F^(a*f)*Sqrt[Pi]*(d + e*x)*Erfi[(1 + 2*b*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*Sqrt[b]*Sqrt[f]*n*Sqrt[Log[F]])])/(E^(1/(4*b*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*Sqrt[b]*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x)^1, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x), x]}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x)^2, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x)^2, x]}
+{F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x)^3, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n]^2))/(g + h*x)^3, x]}
 
 
 (* ::Section::Closed:: *)
-(*Integrands of the form (d x)^m F^((a+b Log[c x^n])^2)*)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n])^2)*)
 
 
-{x^2*F^((a + b*Log[c*x^n])^2), x, 6, (Sqrt[Pi]*x^3*Erfi[(3/n + 2*a*b*Log[F] + 2*b^2*Log[F]*Log[c*x^n])/(2*b*Sqrt[Log[F]])])/(E^((3*(3 + 4*a*b*n*Log[F]))/(4*b^2*n^2*Log[F]))*(c*x^n)^(3/n)*(2*b*n*Sqrt[Log[F]]))}
-{x^1*F^((a + b*Log[c*x^n])^2), x, 6, (Sqrt[Pi]*x^2*Erfi[(1/n + a*b*Log[F] + b^2*Log[F]*Log[c*x^n])/(b*Sqrt[Log[F]])])/(E^((1 + 2*a*b*n*Log[F])/(b^2*n^2*Log[F]))*(c*x^n)^(2/n)*(2*b*n*Sqrt[Log[F]]))}
-{x^0*F^((a + b*Log[c*x^n])^2), x, 6, (Sqrt[Pi]*x*Erfi[(1/n + 2*a*b*Log[F] + 2*b^2*Log[F]*Log[c*x^n])/(2*b*Sqrt[Log[F]])])/(E^((1 + 4*a*b*n*Log[F])/(4*b^2*n^2*Log[F]))*(c*x^n)^n^(-1)*(2*b*n*Sqrt[Log[F]]))}
-{F^((a + b*Log[c*x^n])^2)/x^1, x, 6, (Sqrt[Pi]*Erfi[a*Sqrt[Log[F]] + b*Sqrt[Log[F]]*Log[c*x^n]])/(2*b*n*Sqrt[Log[F]])}
-{F^((a + b*Log[c*x^n])^2)/x^2, x, 6, (Sqrt[Pi]*(c*x^n)^(1/n)*Erfi[-((1/n - 2*a*b*Log[F] - 2*b^2*Log[F]*Log[c*x^n])/(2*b*Sqrt[Log[F]]))])/(E^((1 - 4*a*b*n*Log[F])/(4*b^2*n^2*Log[F]))*(2*b*n*x*Sqrt[Log[F]]))}
-{F^((a + b*Log[c*x^n])^2)/x^3, x, 6, (Sqrt[Pi]*(c*x^n)^(2/n)*Erfi[-((1/n - a*b*Log[F] - b^2*Log[F]*Log[c*x^n])/(b*Sqrt[Log[F]]))])/(E^((1 - 2*a*b*n*Log[F])/(b^2*n^2*Log[F]))*(2*b*n*x^2*Sqrt[Log[F]]))}
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n])^2) when e g-d h=0*)
 
 
-{(d x)^m*F^((a + b*Log[c*x^n])^2), x, 7, (F^a^2*Sqrt[Pi]*x*(d*x)^m*Erfi[(1 + m + 2*a*b*n*Log[F] + 2*b^2*n*Log[F]*Log[c*x^n])/(2*b*n*Sqrt[Log[F]])])/(E^((1 + m + 2*a*b*n*Log[F])^2/(4*b^2*n^2*Log[F]))*(c*x^n)^((1 + m)/n)*(2*b*n*Sqrt[Log[F]]))}
+{(d*g + e*g*x)^m*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 4, (F^(a^2*f)*Sqrt[Pi]*(d + e*x)*(d*g + e*g*x)^m*Erfi[(1 + m + 2*a*b*f*n*Log[F] + 2*b^2*f*n*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*n*Sqrt[Log[F]])])/(E^((1 + m + 2*a*b*f*n*Log[F])^2/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^((1 + m)/n)*(2*b*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+
+
+{(d*g + e*g*x)^2*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 4, (g^2*Sqrt[Pi]*(d + e*x)^3*Erfi[(3/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((3*(3 + 4*a*b*f*n*Log[F]))/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*b*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(d*g + e*g*x)^1*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 4, (g*Sqrt[Pi]*(d + e*x)^2*Erfi[(1/n + a*b*f*Log[F] + b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*b*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(d*g + e*g*x)^0*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 4, (Sqrt[Pi]*(d + e*x)*Erfi[(1/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 4*a*b*f*n*Log[F])/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*b*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(d*g + e*g*x)^1, x, 4, (Sqrt[Pi]*Erfi[a*Sqrt[f]*Sqrt[Log[F]] + b*Sqrt[f]*Sqrt[Log[F]]*Log[c*(d + e*x)^n]])/(2*b*e*Sqrt[f]*g*n*Sqrt[Log[F]])}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(d*g + e*g*x)^2, x, 4, If[$VersionNumber>=8, -((E^(a/(b*n) - 1/(4*b^2*f*n^2*Log[F]))*Sqrt[Pi]*(c*(d + e*x)^n)^(1/n)*Erfi[(1/n - 2*a*b*f*Log[F] - 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(2*b*e*Sqrt[f]*g^2*n*(d + e*x)*Sqrt[Log[F]])), (E^(a/(b*n) - 1/(4*b^2*f*n^2*Log[F]))*Sqrt[Pi]*(c*(d + e*x)^n)^(1/n)*Erfi[-((1/n - 2*a*b*f*Log[F] - 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]]))])/(2*b*e*Sqrt[f]*g^2*n*(d + e*x)*Sqrt[Log[F]])]}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(d*g + e*g*x)^3, x, 4, If[$VersionNumber>=8, -((Sqrt[Pi]*(c*(d + e*x)^n)^(2/n)*Erfi[(1/n - a*b*f*Log[F] - b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 - 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(2*b*e*Sqrt[f]*g^3*n*(d + e*x)^2*Sqrt[Log[F]]))), (Sqrt[Pi]*(c*(d + e*x)^n)^(2/n)*Erfi[-((1/n - a*b*f*Log[F] - b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]]))])/(E^((1 - 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(2*b*e*Sqrt[f]*g^3*n*(d + e*x)^2*Sqrt[Log[F]]))]}
+
+
+(* ::Subsection::Closed:: *)
+(*Integrands of the form (g+h x)^m F^(f (a+b Log[c (d+e x)^n])^2)*)
+
+
+{(g + h*x)^m*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n])^2)*(g + h*x)^m, x]}
+
+
+{(g + h*x)^3*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 18, (3*h*(e*g - d*h)^2*Sqrt[Pi]*(d + e*x)^2*Erfi[(1/n + a*b*f*Log[F] + b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*b*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + (h^3*Sqrt[Pi]*(d + e*x)^4*Erfi[(2/n + a*b*f*Log[F] + b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((4*(1 + a*b*f*n*Log[F]))/(b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(4/n)*(2*b*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + ((e*g - d*h)^3*Sqrt[Pi]*(d + e*x)*Erfi[(1/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 4*a*b*f*n*Log[F])/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*b*e^4*Sqrt[f]*n*Sqrt[Log[F]])) + (3*h^2*(e*g - d*h)*Sqrt[Pi]*(d + e*x)^3*Erfi[(3/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((3*(3 + 4*a*b*f*n*Log[F]))/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*b*e^4*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^2*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 14, (h*(e*g - d*h)*Sqrt[Pi]*(d + e*x)^2*Erfi[(1/n + a*b*f*Log[F] + b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(b*e^3*Sqrt[f]*n*Sqrt[Log[F]])) + ((e*g - d*h)^2*Sqrt[Pi]*(d + e*x)*Erfi[(1/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 4*a*b*f*n*Log[F])/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*b*e^3*Sqrt[f]*n*Sqrt[Log[F]])) + (h^2*Sqrt[Pi]*(d + e*x)^3*Erfi[(3/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((3*(3 + 4*a*b*f*n*Log[F]))/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(3/n)*(2*b*e^3*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^1*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 10, (h*Sqrt[Pi]*(d + e*x)^2*Erfi[(1/n + a*b*f*Log[F] + b^2*f*Log[F]*Log[c*(d + e*x)^n])/(b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 2*a*b*f*n*Log[F])/(b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^(2/n)*(2*b*e^2*Sqrt[f]*n*Sqrt[Log[F]])) + ((e*g - d*h)*Sqrt[Pi]*(d + e*x)*Erfi[(1/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 4*a*b*f*n*Log[F])/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*b*e^2*Sqrt[f]*n*Sqrt[Log[F]]))}
+{(g + h*x)^0*F^(f*(a + b*Log[c*(d + e*x)^n])^2), x, 4, (Sqrt[Pi]*(d + e*x)*Erfi[(1/n + 2*a*b*f*Log[F] + 2*b^2*f*Log[F]*Log[c*(d + e*x)^n])/(2*b*Sqrt[f]*Sqrt[Log[F]])])/(E^((1 + 4*a*b*f*n*Log[F])/(4*b^2*f*n^2*Log[F]))*(c*(d + e*x)^n)^n^(-1)*(2*b*e*Sqrt[f]*n*Sqrt[Log[F]]))}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x)^1, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x), x]}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x)^2, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x)^2, x]}
+{F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x)^3, x, 0, Unintegrable[F^(f*(a + b*Log[c*(d + e*x)^n])^2)/(g + h*x)^3, x]}
 
 
 (* ::Section::Closed:: *)
@@ -1226,10 +1267,10 @@
 {E^x/(E^x + x), x, 0, CannotIntegrate[E^x/(E^x + x), x]}
 {E^x/(E^x + x^2), x, 0, CannotIntegrate[E^x/(E^x + x^2), x]}
 
-{f[x]/(f[x] + x), x, 2, x - CannotIntegrate[x/(x + f[x]), x]}
-{f[x]/(f[x] + x^2), x, 2, x - CannotIntegrate[x^2/(x^2 + f[x]), x]}
-{f[x]/(f[x] + x)^2, x, 2, -CannotIntegrate[x/(x + f[x])^2, x] + CannotIntegrate[1/(x + f[x]), x]}
-{f[x]/(f[x] + x^2)^2, x, 2, -CannotIntegrate[x^2/(x^2 + f[x])^2, x] + CannotIntegrate[1/(x^2 + f[x]), x]}
+{F0[x]/(F0[x] + x), x, 2, x - CannotIntegrate[x/(x + F0[x]), x]}
+{F0[x]/(F0[x] + x^2), x, 2, x - CannotIntegrate[x^2/(x^2 + F0[x]), x]}
+{F0[x]/(F0[x] + x)^2, x, 2, -CannotIntegrate[x/(x + F0[x])^2, x] + CannotIntegrate[1/(x + F0[x]), x]}
+{F0[x]/(F0[x] + x^2)^2, x, 2, -CannotIntegrate[x^2/(x^2 + F0[x])^2, x] + CannotIntegrate[1/(x^2 + F0[x]), x]}
 
 
 {(a*F^(c + d*x))^m*(b*F^(e + f*x))^n, x, 4, ((a*F^(c + d*x))^m*(b*F^(e + f*x))^n)/((d*m + f*n)*Log[F])}

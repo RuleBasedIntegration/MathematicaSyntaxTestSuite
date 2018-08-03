@@ -81,15 +81,15 @@
 (*Integrands of the form (e x)^m Erf[d (a+b Log[c x^n])]*)
 
 
-{x^2*Erf[d*(a + b*Log[c*x^n])], x, 7, (x^3*Erf[d*(a + b*Log[c*x^n])])/3 - (E^((9 - 12*a*b*d^2*n)/(4*b^2*d^2*n^2))*x^3*Erf[(2*a*b*d^2 - 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*(c*x^n)^(3/n))}
-{x^1*Erf[d*(a + b*Log[c*x^n])], x, 7, (x^2*Erf[d*(a + b*Log[c*x^n])])/2 - (E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2*Erf[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*(c*x^n)^(2/n))}
-{x^0*Erf[d*(a + b*Log[c*x^n])], x, 7, x*Erf[d*(a + b*Log[c*x^n])] - (E^((1 - 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*x*Erf[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(c*x^n)^n^(-1)}
+{x^2*Erf[d*(a + b*Log[c*x^n])], x, 5, (x^3*Erf[d*(a + b*Log[c*x^n])])/3 - (E^((9 - 12*a*b*d^2*n)/(4*b^2*d^2*n^2))*x^3*Erf[(2*a*b*d^2 - 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*(c*x^n)^(3/n))}
+{x^1*Erf[d*(a + b*Log[c*x^n])], x, 5, (x^2*Erf[d*(a + b*Log[c*x^n])])/2 - (E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2*Erf[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*(c*x^n)^(2/n))}
+{x^0*Erf[d*(a + b*Log[c*x^n])], x, 5, x*Erf[d*(a + b*Log[c*x^n])] - (E^((1 - 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*x*Erf[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(c*x^n)^n^(-1)}
 {Erf[d*(a + b*Log[c*x^n])]/x^1, x, 3, 1/(b*d*E^(d^2*(a + b*Log[c*x^n])^2)*n*Sqrt[Pi]) + (Erf[d*(a + b*Log[c*x^n])]*(a + b*Log[c*x^n]))/(b*n)}
-{Erf[d*(a + b*Log[c*x^n])]/x^2, x, 7, -(Erf[d*(a + b*Log[c*x^n])]/x) + (E^(1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erf[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x}
-{Erf[d*(a + b*Log[c*x^n])]/x^3, x, 7, -Erf[d*(a + b*Log[c*x^n])]/(2*x^2) + (E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n)*Erf[(1 + a*b*d^2*n + b^2*d^2*n*Log[c*x^n])/(b*d*n)])/(2*x^2)}
+{Erf[d*(a + b*Log[c*x^n])]/x^2, x, 5, -(Erf[d*(a + b*Log[c*x^n])]/x) + (E^(1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erf[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x}
+{Erf[d*(a + b*Log[c*x^n])]/x^3, x, 5, -Erf[d*(a + b*Log[c*x^n])]/(2*x^2) + (E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n)*Erf[(1 + a*b*d^2*n + b^2*d^2*n*Log[c*x^n])/(b*d*n)])/(2*x^2)}
 
 
-{(e*x)^m*Erf[d*(a + b*Log[c*x^n])], x, 8, ((e*x)^(1 + m)*Erf[d*(a + b*Log[c*x^n])])/(e*(1 + m)) + (E^(((1 + m)*(1 + m - 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*x*(e*x)^m*Erf[(1 + m - 2*a*b*d^2*n - 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/((1 + m)*(c*x^n)^((1 + m)/n))}
+{(e*x)^m*Erf[d*(a + b*Log[c*x^n])], x, 5, ((e*x)^(1 + m)*Erf[d*(a + b*Log[c*x^n])])/(e*(1 + m)) + (E^(((1 + m)*(1 + m - 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*x*(e*x)^m*Erf[(1 + m - 2*a*b*d^2*n - 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/((1 + m)*(c*x^n)^((1 + m)/n))}
 
 
 (* ::Section::Closed:: *)
@@ -276,15 +276,15 @@
 (*Integrands of the form (e x)^m Erfc[d (a+b Log[c x^n])]*)
 
 
-{x^2*Erfc[d*(a + b*Log[c*x^n])], x, 7, (E^((9 - 12*a*b*d^2*n)/(4*b^2*d^2*n^2))*x^3*Erf[(2*a*b*d^2 - 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*(c*x^n)^(3/n)) + (x^3*Erfc[d*(a + b*Log[c*x^n])])/3}
-{x^1*Erfc[d*(a + b*Log[c*x^n])], x, 7, (E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2*Erf[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*(c*x^n)^(2/n)) + (x^2*Erfc[d*(a + b*Log[c*x^n])])/2}
-{x^0*Erfc[d*(a + b*Log[c*x^n])], x, 7, (E^((1 - 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*x*Erf[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(c*x^n)^n^(-1) + x*Erfc[d*(a + b*Log[c*x^n])]}
+{x^2*Erfc[d*(a + b*Log[c*x^n])], x, 5, (E^((9 - 12*a*b*d^2*n)/(4*b^2*d^2*n^2))*x^3*Erf[(2*a*b*d^2 - 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*(c*x^n)^(3/n)) + (x^3*Erfc[d*(a + b*Log[c*x^n])])/3}
+{x^1*Erfc[d*(a + b*Log[c*x^n])], x, 5, (E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2*Erf[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*(c*x^n)^(2/n)) + (x^2*Erfc[d*(a + b*Log[c*x^n])])/2}
+{x^0*Erfc[d*(a + b*Log[c*x^n])], x, 5, (E^((1 - 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*x*Erf[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(c*x^n)^n^(-1) + x*Erfc[d*(a + b*Log[c*x^n])]}
 {Erfc[d*(a + b*Log[c*x^n])]/x^1, x, 3, -(1/(b*d*E^(d^2*(a + b*Log[c*x^n])^2)*n*Sqrt[Pi])) + (Erfc[d*(a + b*Log[c*x^n])]*(a + b*Log[c*x^n]))/(b*n)}
-{Erfc[d*(a + b*Log[c*x^n])]/x^2, x, 7, -((E^(1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erf[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x) - Erfc[d*(a + b*Log[c*x^n])]/x}
-{Erfc[d*(a + b*Log[c*x^n])]/x^3, x, 7, -(E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n)*Erf[(1 + a*b*d^2*n + b^2*d^2*n*Log[c*x^n])/(b*d*n)])/(2*x^2) - Erfc[d*(a + b*Log[c*x^n])]/(2*x^2)}
+{Erfc[d*(a + b*Log[c*x^n])]/x^2, x, 5, -((E^(1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erf[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x) - Erfc[d*(a + b*Log[c*x^n])]/x}
+{Erfc[d*(a + b*Log[c*x^n])]/x^3, x, 5, -(E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n)*Erf[(1 + a*b*d^2*n + b^2*d^2*n*Log[c*x^n])/(b*d*n)])/(2*x^2) - Erfc[d*(a + b*Log[c*x^n])]/(2*x^2)}
 
 
-{(e*x)^m*Erfc[d*(a + b*Log[c*x^n])], x, 8, -((E^(((1 + m)*(1 + m - 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*x*(e*x)^m*Erf[(1 + m - 2*a*b*d^2*n - 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/((1 + m)*(c*x^n)^((1 + m)/n))) + ((e*x)^(1 + m)*Erfc[d*(a + b*Log[c*x^n])])/(e*(1 + m))}
+{(e*x)^m*Erfc[d*(a + b*Log[c*x^n])], x, 5, -((E^(((1 + m)*(1 + m - 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*x*(e*x)^m*Erf[(1 + m - 2*a*b*d^2*n - 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/((1 + m)*(c*x^n)^((1 + m)/n))) + ((e*x)^(1 + m)*Erfc[d*(a + b*Log[c*x^n])])/(e*(1 + m))}
 
 
 (* ::Section::Closed:: *)
@@ -471,15 +471,15 @@
 (*Integrands of the form (e x)^m Erfi[d (a+b Log[c x^n])]*)
 
 
-{x^2*Erfi[d*(a + b*Log[c*x^n])], x, 7, (x^3*Erfi[d*(a + b*Log[c*x^n])])/3 - (x^3*Erfi[(2*a*b*d^2 + 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*E^((3*(3 + 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*(c*x^n)^(3/n))}
-{x^1*Erfi[d*(a + b*Log[c*x^n])], x, 7, (x^2*Erfi[d*(a + b*Log[c*x^n])])/2 - (x^2*Erfi[(a*b*d^2 + n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n))}
-{x^0*Erfi[d*(a + b*Log[c*x^n])], x, 7, x*Erfi[d*(a + b*Log[c*x^n])] - (x*Erfi[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(E^((1 + 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*(c*x^n)^n^(-1))}
+{x^2*Erfi[d*(a + b*Log[c*x^n])], x, 5, (x^3*Erfi[d*(a + b*Log[c*x^n])])/3 - (x^3*Erfi[(2*a*b*d^2 + 3/n + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(3*E^((3*(3 + 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*(c*x^n)^(3/n))}
+{x^1*Erfi[d*(a + b*Log[c*x^n])], x, 5, (x^2*Erfi[d*(a + b*Log[c*x^n])])/2 - (x^2*Erfi[(a*b*d^2 + n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*E^((1 + 2*a*b*d^2*n)/(b^2*d^2*n^2))*(c*x^n)^(2/n))}
+{x^0*Erfi[d*(a + b*Log[c*x^n])], x, 5, x*Erfi[d*(a + b*Log[c*x^n])] - (x*Erfi[(2*a*b*d^2 + n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/(E^((1 + 4*a*b*d^2*n)/(4*b^2*d^2*n^2))*(c*x^n)^n^(-1))}
 {Erfi[d*(a + b*Log[c*x^n])]/x^1, x, 3, -(E^(a*d + b*d*Log[c*x^n])^2/(b*d*n*Sqrt[Pi])) + (Erfi[d*(a + b*Log[c*x^n])]*(a + b*Log[c*x^n]))/(b*n)}
-{Erfi[d*(a + b*Log[c*x^n])]/x^2, x, 7, -(Erfi[d*(a + b*Log[c*x^n])]/x) + (E^(-1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erfi[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x}
-{Erfi[d*(a + b*Log[c*x^n])]/x^3, x, 7, -Erfi[d*(a + b*Log[c*x^n])]/(2*x^2) + ((c*x^n)^(2/n)*Erfi[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2)}
+{Erfi[d*(a + b*Log[c*x^n])]/x^2, x, 5, -(Erfi[d*(a + b*Log[c*x^n])]/x) + (E^(-1/(4*b^2*d^2*n^2) + a/(b*n))*(c*x^n)^n^(-1)*Erfi[(2*a*b*d^2 - n^(-1) + 2*b^2*d^2*Log[c*x^n])/(2*b*d)])/x}
+{Erfi[d*(a + b*Log[c*x^n])]/x^3, x, 5, -Erfi[d*(a + b*Log[c*x^n])]/(2*x^2) + ((c*x^n)^(2/n)*Erfi[(a*b*d^2 - n^(-1) + b^2*d^2*Log[c*x^n])/(b*d)])/(2*E^((1 - 2*a*b*d^2*n)/(b^2*d^2*n^2))*x^2)}
 
 
-{(e*x)^m*Erfi[d*(a + b*Log[c*x^n])], x, 8, ((e*x)^(1 + m)*Erfi[d*(a + b*Log[c*x^n])])/(e*(1 + m)) - (x*(e*x)^m*Erfi[(1 + m + 2*a*b*d^2*n + 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/(E^(((1 + m)*(1 + m + 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*(1 + m)*(c*x^n)^((1 + m)/n))}
+{(e*x)^m*Erfi[d*(a + b*Log[c*x^n])], x, 5, ((e*x)^(1 + m)*Erfi[d*(a + b*Log[c*x^n])])/(e*(1 + m)) - (x*(e*x)^m*Erfi[(1 + m + 2*a*b*d^2*n + 2*b^2*d^2*n*Log[c*x^n])/(2*b*d*n)])/(E^(((1 + m)*(1 + m + 4*a*b*d^2*n))/(4*b^2*d^2*n^2))*(1 + m)*(c*x^n)^((1 + m)/n))}
 
 
 (* ::Section::Closed:: *)

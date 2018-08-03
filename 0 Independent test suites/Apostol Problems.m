@@ -257,7 +257,7 @@
 {E^ArcTan[x]/(1 + x^2)^(3/2), x, 1, (E^ArcTan[x]*(1 + x))/(2*Sqrt[1 + x^2])}
 {x^2/(1 + x^2)^2, x, 2, -(x/(2*(1 + x^2))) + ArcTan[x]/2}
 {E^x/(1 + E^(2*x)), x, 2, ArcTan[E^x]}
-{ArcCot[E^x]/E^x, x, 6, -x - ArcCot[E^x]/E^x + (1/2)*Log[1 + E^(2*x)]}
+{ArcCot[E^x]/E^x, x, 5, -x - ArcCot[E^x]/E^x + (1/2)*Log[1 + E^(2*x)]}
 {((a + x)/(a - x))^(1/2), x, 3, -((a - x)*Sqrt[(a + x)/(a - x)]) + 2*a*ArcTan[Sqrt[(a + x)/(a - x)]]}
 {Sqrt[(x - a)*(b - x)], x, 4, (-(1/4))*(a + b - 2*x)*Sqrt[(-a)*b + (a + b)*x - x^2] - (1/8)*(a - b)^2*ArcTan[(a + b - 2*x)/(2*Sqrt[(-a)*b + (a + b)*x - x^2])]}
 {1/Sqrt[(x - a)*(b - x)], x, 3, -ArcTan[(a + b - 2*x)/(2*Sqrt[(-a)*b + (a + b)*x - x^2])]}
@@ -343,7 +343,7 @@
 {(8*x^3 + 7)/((x + 1)*(2*x + 1)^3), x, 2, -(3/(1 + 2*x)^2) + 3/(1 + 2*x) + Log[1 + x]}
 {(4*x^2 + x + 1)/(x^3 - 1), x, 3, 2*Log[1 - x] + Log[1 + x + x^2]}
 {x^4/(x^4 + 5*x^2 + 4), x, 4, x - (8/3)*ArcTan[x/2] + ArcTan[x]/3}
-{(x + 2)/(x^2 + x), x, 3, 2*Log[x] - Log[1 + x]}
+{(x + 2)/(x^2 + x), x, 2, 2*Log[x] - Log[1 + x]}
 {1/(x*(x^2 + 1)^2), x, 3, 1/(2*(1 + x^2)) + Log[x] - (1/2)*Log[1 + x^2]}
 {1/((x + 1)*(x + 2)^2*(x + 3)^3), x, 2, 1/(2 + x) + 1/(4*(3 + x)^2) + 5/(4*(3 + x)) + (1/8)*Log[1 + x] + 2*Log[2 + x] - (17/8)*Log[3 + x]}
 

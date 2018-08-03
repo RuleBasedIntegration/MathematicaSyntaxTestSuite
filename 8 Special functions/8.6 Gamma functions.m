@@ -195,9 +195,9 @@
 {Gamma[0, a + b*x]/(c+ d*x)^4, x, 7, -((b^3*E^(-a + (b*c)/d)*Gamma[-2, (b*(c + d*x))/d])/(3*d^3*(b*c - a*d))) - (b^3*E^(-a + (b*c)/d)*Gamma[-1, (b*(c + d*x))/d])/(3*d^2*(b*c - a*d)^2) + (b^3*Gamma[0, a + b*x])/(3*d*(b*c - a*d)^3) - Gamma[0, a + b*x]/(3*d*(c + d*x)^3) - (b^3*E^(-a + (b*c)/d)*Gamma[0, (b*(c + d*x))/d])/(3*d*(b*c - a*d)^3)}
 
 
-{(c+ d*x)^4*Gamma[1, a + b*x], x, 5, -((d^4*E^((b*c - a*d)/d)*Gamma[5, (b*(c + d*x))/d])/b^5), -((24*d^4*E^(-a - b*x))/b^5) - (24*d^3*E^(-a - b*x)*(c + d*x))/b^4 - (12*d^2*E^(-a - b*x)*(c + d*x)^2)/b^3 - (4*d*E^(-a - b*x)*(c + d*x)^3)/b^2 - (E^(-a - b*x)*(c + d*x)^4)/b}
-{(c+ d*x)^3*Gamma[1, a + b*x], x, 4, -((d^3*E^((b*c - a*d)/d)*Gamma[4, (b*(c + d*x))/d])/b^4), -((6*d^3*E^(-a - b*x))/b^4) - (6*d^2*E^(-a - b*x)*(c + d*x))/b^3 - (3*d*E^(-a - b*x)*(c + d*x)^2)/b^2 - (E^(-a - b*x)*(c + d*x)^3)/b}
-{(c+ d*x)^2*Gamma[1, a + b*x], x, 3, -((d^2*E^((b*c - a*d)/d)*Gamma[3, (b*(c + d*x))/d])/b^3), -((2*d^2*E^(-a - b*x))/b^3) - (2*d*E^(-a - b*x)*(c + d*x))/b^2 - (E^(-a - b*x)*(c + d*x)^2)/b}
+{(c+ d*x)^4*Gamma[1, a + b*x], x, 5, -((24*d^4*E^(-a - b*x))/b^5) - (24*d^3*E^(-a - b*x)*(c + d*x))/b^4 - (12*d^2*E^(-a - b*x)*(c + d*x)^2)/b^3 - (4*d*E^(-a - b*x)*(c + d*x)^3)/b^2 - (E^(-a - b*x)*(c + d*x)^4)/b}
+{(c+ d*x)^3*Gamma[1, a + b*x], x, 4, -((6*d^3*E^(-a - b*x))/b^4) - (6*d^2*E^(-a - b*x)*(c + d*x))/b^3 - (3*d*E^(-a - b*x)*(c + d*x)^2)/b^2 - (E^(-a - b*x)*(c + d*x)^3)/b}
+{(c+ d*x)^2*Gamma[1, a + b*x], x, 3, -((2*d^2*E^(-a - b*x))/b^3) - (2*d*E^(-a - b*x)*(c + d*x))/b^2 - (E^(-a - b*x)*(c + d*x)^2)/b}
 {(c+ d*x)^1*Gamma[1, a + b*x], x, 2, -((d*E^(-a - b*x))/b^2) - (E^(-a - b*x)*(c + d*x))/b}
 {(c+ d*x)^0*Gamma[1, a + b*x], x, 1, -(E^(-a - b*x)/b)}
 {Gamma[1, a + b*x]/(c+ d*x)^1, x, 1, (E^(-a + (b*c)/d)*ExpIntegralEi[-((b*(c + d*x))/d)])/d}

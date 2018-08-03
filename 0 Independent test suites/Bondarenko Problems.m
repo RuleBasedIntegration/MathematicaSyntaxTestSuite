@@ -49,7 +49,7 @@
 
 
 {Sqrt[1 + Tanh[4*x]], x, 2, ArcTanh[Sqrt[1 + Tanh[4*x]]/Sqrt[2]]/(2*Sqrt[2])}
-{Tanh[x]/Sqrt[Exp[2*x] + Exp[x]], x, -13, (2*Sqrt[E^x + E^(2*x)])/E^x - ArcTan[(I - (1 - 2*I)*E^x)/(2*Sqrt[1 + I]*Sqrt[E^x + E^(2*x)])]/Sqrt[1 + I] + ArcTan[(I + (1 + 2*I)*E^x)/(2*Sqrt[1 - I]*Sqrt[E^x + E^(2*x)])]/Sqrt[1 - I]}
+{Tanh[x]/Sqrt[Exp[2*x] + Exp[x]], x, -11, (2*Sqrt[E^x + E^(2*x)])/E^x - ArcTan[(I - (1 - 2*I)*E^x)/(2*Sqrt[1 + I]*Sqrt[E^x + E^(2*x)])]/Sqrt[1 + I] + ArcTan[(I + (1 + 2*I)*E^x)/(2*Sqrt[1 - I]*Sqrt[E^x + E^(2*x)])]/Sqrt[1 - I]}
 {Sqrt[Sinh[2*x]/Cosh[x]], x, 5, (2*I*Sqrt[2]*EllipticE[Pi/4 - (I*x)/2, 2]*Sqrt[Sinh[x]])/Sqrt[I*Sinh[x]], (2*I*EllipticE[Pi/4 - (I*x)/2, 2]*Sqrt[Sech[x]*Sinh[2*x]])/Sqrt[I*Sinh[x]]}
 
 

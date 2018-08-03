@@ -36,7 +36,7 @@
 (*Problem #5*)
 
 
-{Cos[x]^2/Sqrt[Cos[x]^4 + Cos[x]^2 + 1], x, -4, x/3 + (1/3)*ArcTan[(Cos[x]*(1 + Cos[x]^2)*Sin[x])/(1 + Cos[x]^2*Sqrt[1 + Cos[x]^2 + Cos[x]^4])]}
+{Cos[x]^2/Sqrt[Cos[x]^4 + Cos[x]^2 + 1], x, -5, x/3 + (1/3)*ArcTan[(Cos[x]*(1 + Cos[x]^2)*Sin[x])/(1 + Cos[x]^2*Sqrt[1 + Cos[x]^2 + Cos[x]^4])]}
 
 
 (* ::Subsection::Closed:: *)
